@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from pip._internal.resolution.resolvelib.resolver import Result
+# from pip._internal.resolution.resolvelib.resolver import Result
 
 
 # A model for a course that contains quizzes and flashcards
@@ -117,7 +117,8 @@ def update_score(sender, instance, created, **kwargs):
         score.save()
 
         # Update or create a result object for the question and the choice
-        result, created = Result.objects.update_or_create(question=question, choice=choice)
+        from pip._internal.resolution.resolvelib.resolver import Result
+        result, created = Result.objects.update_or_create(question=question, choice=choice) # generating an error
         if created:  # If a new result object is created, initialize its fields
             result.count = 0  # Set the count of users who selected this choice to zero
 
