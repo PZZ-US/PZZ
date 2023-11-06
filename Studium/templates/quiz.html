@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz - Algorytmy i struktury danych | Sfera Inżyniera</title>
+        <link rel="stylesheet" href="../static/styles/main.css">
+    </head>
+
+    <body>
+        {% include "header.html" %}
+        <section class="active-quiz-section">
+            <div class="wrapper">
+                <h1>Algorytmy i struktury danych</h1>
+                <p>PROGRES:</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%;">
+                        <p>6/10 pytań</p>
+                    </div>
+                </div>
+                <div class="section-container">
+
+                    <div class="question">
+                        <h2>Czym jest szyfr cezara?</h2>
+                        <ul>
+                        <li class="answer" onclick="selectAnswer(this)">A. Odpowiedź A</li>
+                        <li class="answer" onclick="selectAnswer(this)">B. Odpowiedź B</li>
+                        <li class="answer" onclick="selectAnswer(this)">C. Odpowiedź C</li>
+                        </ul>
+                    </div>               
+                </div>
+                <div class="button-section">
+                <div onclick="location.href='/my-result'" class="next-button">Następne pytanie</div>
+                </div>
+            </div>
+        </section>
+            {% include "footer.html" %}
+
+        <script>
+            function selectAnswer(selectedElement) {
+                document.querySelectorAll('.answer').forEach(function (answer) {
+                    answer.classList.remove('active');
+                });
+
+                selectedElement.classList.add('active');
+            }
+        </script>
+
+    </body>
+
+</html>

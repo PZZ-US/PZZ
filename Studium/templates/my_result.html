@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wyniki Testu | Sfera Inżyniera</title>
+
+        <link rel="stylesheet" href="../static/styles/main.css">
+    </head>
+
+    <body>
+        {% include "header.html" %}
+
+        <section class="my-result-section">
+            <div class="wrapper">
+                <h1>Wyniki Testu</h1>
+                <div class="section-container">
+                    <div class="results-summary">
+                        <h2>Twój wynik to: <strong>80%</strong></h2>
+                        <p>Świetnie odpowiedziałeś na pytania!</p>
+                    </div>
+                    <div class="answer-container">
+                        <div class="question">
+                            <h2><span>1.</span>Czym jest szyfr cezara?</h2>
+                            <ul>
+
+                                <li class="answer selected-answer">A. Metodą szyfrowania tekstu</li>
+                                <li class="answer correct-answer">B. Techniką kryptograficzną</li>
+                                <li class="answer">C. Algorytmem sortowania</li>
+                            </ul>
+                        </div>
+            
+                    </div>
+                </div>
+
+
+        <div class="button-section">
+            <div class="status-button">
+                <a class="return" onclick="location.href='/quizzes'">POWRÓT</a>
+                <a class="status" onclick="selectQuiz(this)">ZALICZONO</a>
+            </div>
+        </div>
+
+                    </div>
+                    </section>
+        {% include "footer.html" %}
+        <script>
+            function selectQuiz(selectedElement) {
+                selectedElement.classList.add('active');
+            }
+        </script>
+
+    </body>
+
+</html>

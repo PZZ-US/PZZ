@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strona główna | Sfera Inżyniera</title>
+        <link rel="stylesheet" href="../static/styles/main.css">
+    </head>
+
+
+    <body>
+        {% include "header.html" %}
+
+        <section class="welcome-section">
+
+            <div class="wrapper">
+                <h1>Witamy w Sferze Inżyniera</h1>
+                <div class="icon-container">
+                    <img src="../static/images/logo-icon-blue.png" alt="Ucz się z nami!">
+                </div>
+
+                <p><a href="/choose-learning">Wybierz metodę uczenia się</a></p>
+                <p><a href="my-progress">Sprawdź swoje postępy</a></p>
+            </div>
+        </section>
+
+
+        <section class="about-project-section">
+            <div class="wrapper">
+
+                <h2>O projekcie</h2>
+                <div class="section-container">
+                    <p>Aplikacja e-learningowa dedykowana przyszłym inżynierom. To innowacyjna platforma stworzona
+                        specjalnie dla osób
+                        przygotowujących się do egzaminu inżynierskiego. Użytkownicy mają dostęp do bogatej bazy
+                        gotowych quizów i fiszek, które
+                        ułatwiają przyswajanie wiedzy oraz systematyczne powtarzanie materiału. Zaawansowany
+                        system śledzenia postępów pozwala na monitorowanie swojego rozwoju. Nasza aplikacja
+                        to kompleksowe narzędzie, które czyni przygotowania do egzaminu inżynierskiego efektywnymi i
+                        przyjemnymi.</p>
+                    <p>Wiedza, interakcja i postęp w jednym miejscu!
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        {% include "footer.html" %}
+        <script>
+        </script>
+
+    </body>
+
+</html>
