@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mój postęp w nauce | Sfera Inżyniera</title>
+        <link rel="stylesheet" href="../static/styles/main.css">
+    </head>
+
+    <body>
+        {% include "header.html" %}
+
+        <section class="my-progress-section">
+            <div class="wrapper">
+                <h1>Mój postęp w nauce</h1>
+                <div class="section-container">
+                    <div class="course-container">
+                        <div class="course-title">
+                            <h2>Algorytmy i struktury danych</h2>
+                            <span class="course-type">Quiz</span>
+                        </div>
+                        <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%;">
+                            <p>70%</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="course-container">
+                        <div class="course-title">
+                            <h2>Programowanie obiektowe</h2>
+                            <span class="course-type">Fiszki</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 0%;"><p>0%</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        {% include "footer.html" %}
+        <script>
+        </script>
+    </body>
+
+</html>

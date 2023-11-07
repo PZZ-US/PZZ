@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sposoby nauki | Sfera Inżyniera</title>
+        <link rel="stylesheet" href="../static/styles/main.css">
+    </head>
+
+    <body>
+        {% include "header.html" %}
+
+        <section class="choice-metode-section">
+            <div class="wrapper">
+                <h1>Wybierz sposób nauki</h1>
+                <div class="section-container">
+                    <div class="choice-container">
+                        <div class="choice" onclick="location.href='/quizzes'">
+                            <img src="../static/images/quiz_icon.png" alt="Najlepszy sposób na sprawdzenie wiedzy.">
+                            <h2>Quizy</h2>
+                            <p>Sprawdź swoją wiedzę i ucz się poprzez zabawę. Quizy to szybka i interaktywna
+                                metoda nauki.</p>
+                        </div>
+                    </div>
+
+                    <div class="choice-container">
+                        <div class="choice" onclick="location.href='/flashcards'">
+                            <img src="../static/images/flashcards_icon.png" alt="Najlepszy sposób na naukę.">
+                            <h2>Fiszki</h2>
+                            <p>Powtarzaj materiał i utrwalaj wiedzę używając fiszek. Idealne do nauki słówek
+                                i definicji.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include "footer.html" %}
+
+        <script>
+        </script>
+
+    </body>
+
+
+</html>
