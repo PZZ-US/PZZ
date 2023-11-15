@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Największy wybór fiszek | Sfera Inżyniera</title>
-        <link rel="stylesheet" href="../static/styles/main.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Największy wybór fiszek | Sfera Inżyniera</title>
+    <link rel="stylesheet" href="../static/styles/main.css">
+</head>
 
+<!-- Pozostała część HTML -->
 
-    <body>
-        {% include "header.html" %}
-        <section class="flashcards_section">
-            <div class="wrapper">
-                <h1>Wybór fiszki</h1>
-                <div class="section-container">
-                    <ul class="flashcard-container">
-                        <li class="flashcard" onclick="location.href='/flashcard'">
-                            <h2>Szyfr Cezara</h2>
-                            <p>Doskonalenie umiejętności szyfrowania i deszyfrowania.</p>
+<body>
+    {% include "header.html" %}
+    <section class="flashcards_section">
+        <div class="wrapper">
+            <h1>Wybór fiszki</h1>
+            <div class="section-container">
+                <ul class="flashcard-container">
+                    {% for category in categories %}
+                        <li class="flashcard" onclick="location.href='/flashcard/?selected_category={{ category.name }}'">
+                            <h2>{{ category.name }}</h2>
+                            <!-- Dodaj tutaj inne informacje o kategorii, jeśli są dostępne -->
                             <div class="progress-container">
-                                <div class="progress-bar" style="width: 100%;">
-                                    <p>100%</p>
+                                <div class="progress-bar" style="width: 0%;">
+                                    <p>0%</p>
                                 </div>
                             </div>
-                            <p class="quantity">Liczba fiszek: <span>24</span></p>
+                            <!-- ... -->
                         </li>
-                        <li class="flashcard" onclick="location.href='/flashcard'">
-                            <h2>Programowanie obiektowe</h2>
-                            <p>Najważniejsze zagadnienia.</p>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 5%;">
-                                    <p>5%</p>
-                                </div>
-                            </div>
-                            <p class="quantity">Liczba fiszek: <span>16</span></p>
-                        </li>
-                    </ul>
-                </div>
-                            <div class="button-section">
-                                <a class="return" onclick="location.href='/choose-learning/'">POWRÓT</a>
-                            </div>
+                    {% endfor %}
+                </ul>
             </div>
+            <div class="button-section">
+                <a class="return" onclick="location.href='/choose-learning/'">POWRÓT</a>
+            </div>
+        </div>
+    </section>
+    {% include "footer.html" %}
+    <script>
+        // ...
+    </script>
+</body>
 
-        </section>
-        {% include "footer.html" %}
-        <script>
-        </script>
-
-    </body>
 
 </html>

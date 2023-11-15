@@ -10,53 +10,36 @@
 
     <body>
         {% include "header.html" %}
-
+    
         <section class="quiz_section">
             <div class="wrapper">
                 <h1>Wybierz Quiz</h1>
                 <div class="section-container">
                     <ul class="quiz-list">
-                        <li onclick="location.href='/quiz'">
-                            <h2>Algorytmy i struktury danych</h2>
-                            <p>Liczba pytań: <span>6</span></p>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 100%;">
-                                    <p>100%</p>
-                                </div>
-                            </div>
-                            <div class="completed">ZALICZONE</div>
-                        </li>
-                        <li onclick="location.href='/quiz'">
-                            <h2>Programowanie obiektowe</h3>
-                                <p>Liczba pytań: <span>23</span></p>
+                        {% for category in categories %}
+                            <li onclick="location.href='{% url 'quiz_view' category.name %}'">
+                                <h2>{{ category.name }}</h2>
+                                <p>Liczba pytań: <span>{{ category.quizzes.count }}</span></p>
                                 <div class="progress-container">
-                                    <div class="progress-bar" style="width: 20%;">
-                                        <p>20%</p>
+                                    <div class="progress-bar" style="width: {{ category_progress|default:0 }}%;">
+                                        <p>{{ category_progress|default:0 }}%</p>
                                     </div>
                                 </div>
-                        </li>
-                        <li onclick="location.href='/quiz'">
-                            <h2>Bazy danych</h2>
-                            <p>Liczba pytań: <span>14</span></p>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 55%;">
-                                    <p>55%</p>
-                                </div>
-                            </div>
-                            <p class="completed">ZALICZONE</p>
-                        </li>
+                                {% if category_completed|default:False %}
+                                    <p class="completed">ZALICZONE</p>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <div class="button-section">
-                        <a class="return" onclick="location.href='/choose-learning/'">POWRÓT</a>
+                    <a class="return" onclick="location.href='/choose-learning/'">POWRÓT</a>
                 </div>
             </div>
-
         </section>
         {% include "footer.html" %}
         <script>
         </script>
-
     </body>
-
-</html>
+    
+    </html>
