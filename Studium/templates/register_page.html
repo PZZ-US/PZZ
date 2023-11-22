@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zarejestruj się | Sfera Inżyniera</title>
+        <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    </head>
+
+    <body>
+        {% include "header.html" %}
+
+        <section class="registration-page-section">
+            <div class="wrapper">
+
+                <h2>Zarejestruj się</h2>
+                <div class="section-container">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.username }}
+                        {{ form.email }}
+                        {{ form.password1 }}
+                        {{ form.password2 }}
+                        <button type="submit">Zarejestruj się</button>
+                        <a href="{% url 'login' %}">Masz już konto? Zaloguj się</a>
+                    </form>
+
+                </div>
+            </div>
+
+        </section>
+
+        {% include "footer.html" %}
+        <script>
+        </script>
+
+    </body>
+
+</html>
