@@ -20,18 +20,26 @@
                     <p>{{ progress }}/10 pytań</p>
                 </div>
             </div>
+
             <div class="section-container">
-
-                <div class="question">
-                    <h2>{{ quiz_questions.0.question }}</h2>
-                    <ul>
-                        {% for choice in quiz_questions.0.choices %}
-                            <li class="answer" onclick="selectAnswer(this)">{{ choice }}</li>
+                {% if quiz_questions %}
+                    <div class="question" id="question-container">
+                        {% for question in quiz_questions %}
+                            <div class="question-content" style="display: none;">
+                                <h2>{{ question.question }}</h2>
+                                <ul>
+                                    {% for choice in question.choices %}
+                                        <li class="answer" onclick="selectAnswer(this)">{{ choice }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
                         {% endfor %}
-                    </ul>
-                </div>
-
+                    </div>
+                {% else %}
+                    <p>No quiz questions available.</p>
+                {% endif %}
             </div>
+
             <div class="button-section">
                 <div onclick="showNextQuestion()" class="next-button">Następne pytanie</div>
             </div>
@@ -41,26 +49,21 @@
 
     <script>
         var currentQuestion = 0;
+        var questions = document.querySelectorAll('.question-content');
+        var canProceed = true;
 
         function showNextQuestion() {
-            var questions = {{ quiz_questions|safe }};
-            currentQuestion++;
+            if (canProceed && currentQuestion < questions.length - 1) {
+                questions[currentQuestion].style.display = 'none';
+                currentQuestion++;
+                questions[currentQuestion].style.display = 'block';
+                canProceed = false;
 
-            if (currentQuestion < questions.length) {
-                var question = questions[currentQuestion];
-                document.querySelector('.question h2').innerText = question.question;
-                var choicesList = document.querySelector('.question ul');
-                choicesList.innerHTML = "";
-
-                question.choices.forEach(function (choice) {
-                    var li = document.createElement('li');
-                    li.className = 'answer';
-                    li.innerText = choice;
-                    li.onclick = function () { selectAnswer(this); };
-                    choicesList.appendChild(li);
-                });
-            } else {
-                //przekierowanie po ostatnim pytaniu
+                setTimeout(function () {
+                    canProceed = true;
+                }, 2000); // Opóźnienie =  2 sekundy
+            } else if (canProceed && currentQuestion === questions.length - 1) {
+                //koniec quizu
                 window.location.href = '/my-result';
             }
         }
@@ -72,8 +75,16 @@
 
             selectedElement.classList.add('active');
         }
-    </script>
 
+        // Pokaż pierwsze pytanie na początku
+        questions[currentQuestion].style.display = 'block';
+
+        // Prevent form submission on button click
+        document.querySelector('.next-button').addEventListener('click', function (event) {
+            event.preventDefault();
+            showNextQuestion();
+        });
+    </script>
 </body>
 
 </html>

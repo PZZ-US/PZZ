@@ -1,6 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import Quiz, Category, Flashcard
+import json
+from django.utils.html import json_script
+
 
 
 def simplehttp(response):
@@ -26,7 +29,7 @@ def flashcards(request):
     return render(request, 'flashcards.html', context)
 
 def flashcard(request):
-    return render(request, 'flashcard.html') 
+    return render(request, 'flashcard.html')
 
 def learning_choice(request):
     return render(request, 'learning_choice.html')
@@ -51,6 +54,7 @@ def quizzes_view(request):
     return render(request, 'quizzes.html', context)
 
 
+
 def quiz_view(request, category_name):
     category = get_object_or_404(Category, name=category_name)
     quiz_questions = Quiz.objects.filter(category=category)
@@ -59,29 +63,35 @@ def quiz_view(request, category_name):
     for question in quiz_questions:
         choices = question.choices.split(';')
         formatted_questions.append({'question': question, 'choices': choices})
+        print(question)
+        print(choices)
 
     context = {
         'category_name': category_name,
         'progress': 60,
         'quiz_questions': formatted_questions,
+        'questions': quiz_questions,
     }
 
     return render(request, 'quiz.html', context)
 
 
-from django.shortcuts import render
-from .models import Flashcard, Category
 
-def flashcard_view(request):
+
+def flashcard_view(request, category_name):
     selected_category_name = request.GET.get('selected_category')
+    print(category_name)
 
-    if selected_category_name:
-        selected_category = Category.objects.get(name=selected_category_name)
+    if category_name:
+        selected_category = Category.objects.get(name=category_name)
         flashcards = Flashcard.objects.filter(category=selected_category)
+        print(flashcards)
     else:
         flashcards = Flashcard.objects.all()
+        print(flashcards)
 
-    return render(request, 'flashcard.html', {'flashcards': flashcards, 'selected_category': selected_category_name})
+
+    return render(request, 'flashcard.html', {'flashcards': flashcards, 'selected_category': category_name})
 
 
 

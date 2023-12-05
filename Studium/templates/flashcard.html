@@ -1,69 +1,112 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> {{ category_name }} – Uczenie się z fiszek | Sfera Inżyniera</title>
-        <link rel="stylesheet" href="../static/styles/main.css">
-       
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ selected_category }} – Uczenie się z fiszek | Sfera Inżyniera</title>
+    <link rel="stylesheet" href="/static/styles/main.css">
+</head>
 
-    <body>
-        {% include "header.html" %}
+<body>
+    {% include "header.html" %}
 
-        <section class="active-flashcard-section">
-            <div class="wrapper">
-                <h1>{{ category_name }}</h1>
-                <p>PROGRES:</p>
-                <div class="progress-container">
-                    <div class="progress-bar" style="width: 40%;">
-                        <p>40%</p>
-                    </div>
+    <section class="active-flashcard-section">
+        <div class="wrapper">
+            <h1>{{ selected_category }}</h1>
+            <p>PROGRES:</p>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 40%;">
+                    <p>40%</p>
                 </div>
-                <div class="section-container">
-                    <div class="flashcard">
+            </div>
+            <div class="section-container">
+                {% if flashcards %}
+                    <div class="flashcard" id="flashcard-container">
                         <div class="flashcard-inner">
                             <div class="flashcard-front">
-                                <h2>SZYFR CEZARA</h2>
+                                <h2 id="flashcard-sentence">{{ flashcards.0.sentence }}</h2>
                                 <p>Kliknij, aby zobaczyć definicję</p>
                             </div>
                             <div class="flashcard-back">
-                                <p>Tutaj pojawi się definicja szyfru cezara, po kliknięciu.</p>
+                                <p id="flashcard-answer">{{ flashcards.0.answer }}</p>
                             </div>
                         </div>
                     </div>
-                </div>
-
-       
-       
-       
-
-<div class="button-section">
-<div class="chance-button">
-    <a class="previous-button"><</a>
-                    <p><span class="active-number">12</span>/<span class="all-number">24</span></p>
-    <a class="next-button">></a>
-</div>
-<div class="status-button">
-    <a class="return" onclick="location.href='/flashcards'">POWRÓT</a>
-    <a class="status" onclick="selectFlashcard(this)">ZAPAMIĘTANO</a>
-</div>
-</div>
+                {% else %}
+                    <p>Brak fiszek do wyświetlenia.</p>
+                {% endif %}
             </div>
-            
-            </section>
-                {% include "footer.html" %}
-                <script>
-                    const flashcard = document.querySelector('.flashcard');
-                    flashcard.addEventListener('click', function () {
-                        flashcard.classList.toggle('is-flipped');
-                    });
 
-                    function selectFlashcard(selectedElement) {
-                            selectedElement.classList.add('active');
-                        }
-                </script>
-    </body>
+            <div class="button-section">
+                <div class="chance-button">
+                    <a class="previous-button" href="#"><</a>
+                    <p><span class="active-number">1</span>/<span class="all-number">{{ flashcards|length }}</span></p>
+                    <a class="next-button" href="#">></a>
+                </div>
+                <div class="status-button">
+                    <a class="return" onclick="location.href='/flashcards'">POWRÓT</a>
+                    <a class="status" onclick="selectFlashcard(this)">ZAPAMIĘTANO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "footer.html" %}
+
+    <script>
+        const flashcardContainer = document.getElementById('flashcard-container');
+        const flashcardSentence = document.getElementById('flashcard-sentence');
+        const flashcardAnswer = document.getElementById('flashcard-answer');
+
+        let currentFlashcard = 0;
+        let canProceed = true;
+
+        function showFlashcard() {
+            flashcardSentence.textContent = flashcards[currentFlashcard].sentence;
+            flashcardAnswer.textContent = flashcards[currentFlashcard].answer;
+        }
+
+        function showPreviousFlashcard() {
+            if (currentFlashcard > 0) {
+                currentFlashcard--;
+                showFlashcard();
+            }
+        }
+
+        function showNextFlashcard() {
+            if (currentFlashcard < flashcards.length - 1) {
+                currentFlashcard++;
+                showFlashcard();
+            }
+        }
+
+        flashcardContainer.addEventListener('click', function () {
+            if (canProceed) {
+                flashcardContainer.classList.toggle('is-flipped');
+
+                setTimeout(function () {
+                    canProceed = true;
+                    flashcardContainer.classList.toggle('is-flipped');
+                }, 2000);
+
+                canProceed = false;
+            }
+        });
+
+        // Przypisz funkcje do przycisków
+        document.querySelector('.previous-button').addEventListener('click', function (event) {
+            event.preventDefault();
+            showPreviousFlashcard();
+        });
+
+        document.querySelector('.next-button').addEventListener('click', function (event) {
+            event.preventDefault();
+            showNextFlashcard();
+        });
+
+        // Pokaż pierwszą fiszkę na początku
+        showFlashcard();
+    </script>
+</body>
 
 </html>

@@ -3,7 +3,7 @@ from Studium.models import Category, Quiz, Flashcard
 
 class Command(BaseCommand):
     help = 'Uruchom, aby wstawić dane do bazy'
-    
+
     def handle(self, *args, **kwargs):
         ak = Category.objects.create(name='Architektura komputerów')
         sops = Category.objects.create(name='Systemy operacyjne i programowanie systemowe')
@@ -27,11 +27,12 @@ class Command(BaseCommand):
             choices='a) Dodatkowa pamięć RAM służąca do przechowywania plików systemowych; b) Szybka pamięć tymczasowa używana do przechowywania często używanych danych; c) Zewnętrzny dysk twardy do przechowywania kopii zapasowych',
             correct_answer='b) Szybka pamięć tymczasowa używana do przechowywania często używanych danych'
         )
-        
+
         flashcard1 = Flashcard.objects.create(
             category=bd,
             sentence='Normalizacja', answer='Normalizacja to proces organizacji danych w bazie w celu minimalizacji redundancji i zapobiegania anomalii związanych z manipulacją danymi.')
-        
+
         flashcard2 = Flashcard.objects.create(
             category=bd,
             sentence='Klucz główny a klucz obcy', answer='Klucz główny jednoznacznie identyfikuje rekord w tabeli, podczas gdy klucz obcy tworzy relację między dwiema tabelami, odwołując się do klucza głównego w innej tabeli.')
+
