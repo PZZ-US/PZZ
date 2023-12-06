@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -5,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Największy wybór fiszek | Sfera Inżyniera</title>
-        <link rel="stylesheet" href="../static/styles/main.css">
+        <link rel="stylesheet" href="{% static 'styles/main.css' %}">
     </head>
 
 
@@ -16,26 +17,20 @@
                 <h1>Wybór fiszki</h1>
                 <div class="section-container">
                     <ul class="flashcard-container">
-                        <li class="flashcard" onclick="location.href='/flashcard'">
-                            <h2>Szyfr Cezara</h2>
-                            <p>Doskonalenie umiejętności szyfrowania i deszyfrowania.</p>
+                        {% for category in categories %}
+                        <li class="flashcard">
+                            <h2>{{ category.name }}</h2>
+                            <!-- Tutaj możesz dodać więcej informacji o kategorii, jeśli są dostępne -->
+                            <p>Opis kategorii, jeśli jest dostępny.</p>
+                            <!-- Przykładowy postęp, który można zaktualizować dynamicznie -->
                             <div class="progress-container">
-                                <div class="progress-bar" style="width: 100%;">
-                                    <p>100%</p>
+                                <div class="progress-bar">
+                                    <p>{{ category.progress_percentage }}%</p>
                                 </div>
                             </div>
-                            <p class="quantity">Liczba fiszek: <span>24</span></p>
+                            <p class="quantity">Liczba fiszek: <span>{{ category.flashcards.count }}</span></p>
                         </li>
-                        <li class="flashcard" onclick="location.href='/flashcard'">
-                            <h2>Programowanie obiektowe</h2>
-                            <p>Najważniejsze zagadnienia.</p>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 5%;">
-                                    <p>5%</p>
-                                </div>
-                            </div>
-                            <p class="quantity">Liczba fiszek: <span>16</span></p>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
                             <div class="button-section">

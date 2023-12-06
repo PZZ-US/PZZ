@@ -989,15 +989,13 @@ footer .wrapper .footer_menu_container nav ul li a:hover {
 .dashboard-section .wrapper .dashboard-container {
   max-width: 1400px;
   padding: 20px;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   gap: 20px;
 }
 
 .dashboard-section .wrapper .dashboard-container .navbar {
   background-color: #29265d;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   flex-direction: column;
   border-radius: 8px;
   min-height: 400px;
@@ -1006,6 +1004,10 @@ footer .wrapper .footer_menu_container nav ul li a:hover {
 .dashboard-section .wrapper .dashboard-container .navbar .navbar-nav {
   list-style: none;
   margin-right: 40px;
+}
+
+.dashboard-section .wrapper .dashboard-container .navbar .navbar-nav .nav-item {
+  padding: 10px 20px;
 }
 
 .dashboard-section .wrapper .dashboard-container .navbar .navbar-nav .nav-item .nav-link {
@@ -1017,11 +1019,20 @@ footer .wrapper .footer_menu_container nav ul li a:hover {
   color: #6ec9ed;
 }
 
+.dashboard-section .wrapper .dashboard-container .navbar .navbar-nav .nav-item.active {
+  border-radius: 8px;
+}
+
 .dashboard-section .wrapper .dashboard-container .navbar .navbar-nav .nav-item.active .nav-link {
   color: #95c11f;
 }
 
+.dashboard-section .wrapper .dashboard-container .navbar .navbar-nav .nav-item.active .nav-link:hover {
+  color: #6ec9ed;
+}
+
 .dashboard-section .wrapper .dashboard-container .content {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   flex: 1;
   padding: 20px;
   border-radius: 8px;

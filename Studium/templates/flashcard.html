@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Algorytmy i struktury danych – Uczenie się z fiszek | Sfera Inżyniera</title>
         <link rel="stylesheet" href="../static/styles/main.css">
-       
+
     </head>
 
     <body>
@@ -25,45 +25,53 @@
                     <div class="flashcard">
                         <div class="flashcard-inner">
                             <div class="flashcard-front">
-                                <h2>SZYFR CEZARA</h2>
+                                <h2>{{ current_flashcard.term }}</h2>
                                 <p>Kliknij, aby zobaczyć definicję</p>
                             </div>
                             <div class="flashcard-back">
-                                <p>Tutaj pojawi się definicja szyfru cezara, po kliknięciu.</p>
+                                <p>{{ current_flashcard.definition }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-       
-       
-       
 
-<div class="button-section">
-<div class="chance-button">
-    <a class="previous-button"><</a>
-                    <p><span class="active-number">12</span>/<span class="all-number">24</span></p>
-    <a class="next-button">></a>
-</div>
-<div class="status-button">
-    <a class="return" onclick="location.href='/flashcards'">POWRÓT</a>
-    <a class="status" onclick="selectFlashcard(this)">ZAPAMIĘTANO</a>
-</div>
-</div>
+
+
+
+                <div class="button-section">
+                    <div class="chance-button">
+                        {% if prev_flashcard %}
+                        <a class="previous-button" href="{% url 'flashcard-detail' category.id prev_flashcard.id %}">
+                            << /a>
+                                {% endif %}
+                                <p><span class="active-number">{{ forloop.counter }}</span>/<span class="all-number">{{
+                                        flashcard_count
+                                        }}</span></p>
+                                {% if next_flashcard %}
+                                <a class="next-button"
+                                    href="{% url 'flashcard-detail' category.id next_flashcard.id %}">></a>
+                                {% endif %}
+                    </div>
+                    <div class="status-button">
+                        <a class="return" onclick="location.href='/flashcards'">POWRÓT</a>
+                        <a class="status" onclick="selectFlashcard(this)">ZAPAMIĘTANO</a>
+                    </div>
+                </div>
             </div>
-            
-            </section>
-                {% include "footer.html" %}
-                <script>
-                    const flashcard = document.querySelector('.flashcard');
-                    flashcard.addEventListener('click', function () {
-                        flashcard.classList.toggle('is-flipped');
-                    });
 
-                    function selectFlashcard(selectedElement) {
-                            selectedElement.classList.add('active');
-                        }
-                </script>
+        </section>
+        {% include "footer.html" %}
+        <script>
+            const flashcard = document.querySelector('.flashcard');
+            flashcard.addEventListener('click', function () {
+                flashcard.classList.toggle('is-flipped');
+            });
+
+            function selectFlashcard(selectedElement) {
+                selectedElement.classList.add('active');
+            }
+        </script>
     </body>
 
 </html>

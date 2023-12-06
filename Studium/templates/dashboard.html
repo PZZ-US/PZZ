@@ -25,7 +25,7 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'my-progress' %}">Moje postępy</a>
+                                    <a class="nav-link" href="{% url 'progress-block' %}">Moje postępy</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{% url 'learning-choice' %}">Metody nauki</a>
@@ -39,7 +39,7 @@
 
                     <div class="content">
                         {% block content %}
-                        <p>Witaj w panelu dashboard.</p>
+                        <p>Witaj, {{ user.username }} w panelu dashboard.</p>
                         {% endblock %}
                     </div>
                 </div>

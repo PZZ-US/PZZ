@@ -1031,35 +1031,36 @@ footer {
     .dashboard-container {
       max-width: 1400px;
       padding: 20px;
-      background: $white-color;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       display: flex;
       gap: 20px;
 
       .navbar {
-  
         background-color: $dark-blue-color;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         flex-direction: column;
         border-radius: 8px;
         min-height: 400px;
         .navbar-nav {
           list-style: none;
           margin-right: 40px;
-  
+
           .nav-item {
+            padding: 10px 20px;
             .nav-link {
-              
               text-decoration: none;
               color: $white-color;
-              
+
               &:hover {
                 color: $light-blue-color;
               }
             }
             &.active {
+              border-radius: 8px;
               .nav-link {
-                color: $green-color; // Kolor dla aktywnej zakładki
+                color: $green-color;
+                &:hover {
+                  color: $light-blue-color;
+                }
               }
             }
           }
@@ -1067,6 +1068,7 @@ footer {
       }
 
       .content {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         flex: 1;
         padding: 20px;
         border-radius: 8px;
@@ -1110,7 +1112,7 @@ footer {
       input[type="text"],
       input[type="password"],
       input[type="email"],
-      input[type="password-confirm"] { 
+      input[type="password-confirm"] {
         font-family: $secondary-font;
         padding: 10px;
         margin-bottom: 10px;
@@ -1151,7 +1153,7 @@ footer {
       }
 
       a {
-        color:  $light-blue-color;
+        color: $light-blue-color;
         text-align: center;
         display: block;
         margin-top: 10px;
@@ -1165,4 +1167,3 @@ footer {
     }
   }
 }
-

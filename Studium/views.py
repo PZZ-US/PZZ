@@ -1,10 +1,11 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.contrib.auth.views import LoginView
 from django.urls import reverse_lazy
 from .forms import CustomLoginForm
 from .forms import CustomRegisterForm
 from django.contrib import messages
+from .models import FlashcardCategory, Flashcard
 
 def simplehttp(response):
     return HttpResponse("<h1>HI user </h1>")
@@ -40,6 +41,9 @@ def my_result(request):
 def dashboard(request):
     return render(request, 'dashboard.html')
 
+def progress_block(request):
+    return render(request, 'progress_block.html')
+
     
 class CustomLoginView(LoginView):
     form_class = CustomLoginForm
@@ -62,3 +66,27 @@ def register(request):
     else:
         form = CustomRegisterForm()
     return render(request, 'register_page.html', {'form': form})
+
+
+from .models import FlashcardCategory, Flashcard
+
+def flashcards_view(request):
+    categories = FlashcardCategory.objects.all()
+    return render(request, 'flashcards.html', {'categories': categories})
+
+
+def flashcard_detail(request, category_id, flashcard_id):
+    category = get_object_or_404(FlashcardCategory, pk=category_id)
+    flashcards = category.flashcards.all()
+    current_flashcard = get_object_or_404(Flashcard, pk=flashcard_id, category=category)
+    next_flashcard = flashcards.filter(id__gt=flashcard_id).first()
+    prev_flashcard = flashcards.filter(id__lt=flashcard_id).last()
+
+    context = {
+        'category': category,
+        'current_flashcard': current_flashcard,
+        'next_flashcard': next_flashcard,
+        'prev_flashcard': prev_flashcard,
+        'flashcard_count': flashcards.count(),
+    }
+    return render(request, 'flashcard.html', context)

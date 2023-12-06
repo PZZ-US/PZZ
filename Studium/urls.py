@@ -3,13 +3,14 @@ from . import views
 from django.contrib.auth import views as auth_views
 from .views import CustomLoginView
 from .views import register
+from .views import flashcards_view, flashcard_detail
 
 urlpatterns = [
     path('', views.home, name="home"),
     path('room/', views.room, name="room"),
     path('quizzes/', views.quizzes, name='quizzes'),
     path('quiz/', views.quiz, name='quiz'),
-    path('flashcards/', views.flashcards, name='flashcards'),
+    path('flashcards/', flashcards_view, name='flashcards'),
     path('flashcard/', views.flashcard, name='flashcard'),
     path('choose-learning/', views.learning_choice, name='learning-choice'),
     path('my-progress/', views.my_progress, name='my-progress'),
@@ -19,4 +20,6 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(next_page='/login/'), name='logout'),
     path('password_reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),
     path('register/', register, name='register'),
+    path('progress-block/', views.progress_block, name='progress-block'),
+    path('flashcards/<int:category_id>/<int:flashcard_id>/', flashcard_detail, name='flashcard-detail'),
 ]
