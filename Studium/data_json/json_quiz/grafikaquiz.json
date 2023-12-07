@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Modele barw.",
+    "choices": [
+      "a) Modele barw to jedynie schematy kolorów, nie mają praktycznego zastosowania",
+      "b) Modele barw obejmują przestrzenie barw, takie jak RGB, CMYK, HSV, służące do reprezentacji kolorów w grafice komputerowej",
+      "c) Modele barw to jedynie nazwy dla różnych odcieni kolorów"
+    ],
+    "correct_answer": "b) Modele barw obejmują przestrzenie barw, takie jak RGB, CMYK, HSV, służące do reprezentacji kolorów w grafice komputerowej"
+  },
+  {
+    "question": "Metody kompresji obrazów.",
+    "choices": [
+      "a) Kompresja obrazów to jedynie zmniejszanie rozmiaru plików graficznych, nie ma różnych metod kompresji",
+      "b) Metody kompresji obrazów obejmują stratne i bezstratne techniki, takie jak JPEG, PNG, GIF",
+      "c) Kompresja obrazów to tylko jedna uniwersalna technika, niezależna od rodzaju obrazu"
+    ],
+    "correct_answer": "b) Metody kompresji obrazów obejmują stratne i bezstratne techniki, takie jak JPEG, PNG, GIF"
+  },
+  {
+    "question": "Formaty plików graficznych.",
+    "choices": [
+      "a) Formaty plików graficznych to jedynie rozszerzenia plików, nie wpływają na jakość obrazu",
+      "b) Formaty plików graficznych obejmują różne standardy, takie jak JPEG, PNG, BMP, TIFF, które określają sposób przechowywania danych graficznych",
+      "c) Formaty plików graficznych to jedynie nazwy dla różnych kategorii obrazów"
+    ],
+    "correct_answer": "b) Formaty plików graficznych obejmują różne standardy, takie jak JPEG, PNG, BMP, TIFF, które określają sposób przechowywania danych graficznych"
+  },
+  {
+    "question": "Rzutowanie.",
+    "choices": [
+      "a) Rzutowanie to jedynie proces dodawania cienia do obrazu, nie wpływa na perspektywę",
+      "b) Rzutowanie obejmuje przekształcanie trójwymiarowych obiektów na dwuwymiarowe, uwzględniając perspektywę",
+      "c) Rzutowanie to jedynie nazwa dla różnych filtrów graficznych"
+    ],
+    "correct_answer": "b) Rzutowanie obejmuje przekształcanie trójwymiarowych obiektów na dwuwymiarowe, uwzględniając perspektywę"
+  },
+  {
+    "question": "Rendering.",
+    "choices": [
+      "a) Rendering to jedynie dodawanie kolorów do obrazu, nie ma wpływu na oświetlenie",
+      "b) Rendering obejmuje proces generowania finalnego obrazu na podstawie danych trójwymiarowych, uwzględniając oświetlenie, cienie i inne efekty",
+      "c) Rendering to jedynie proces przekształcania obrazów z jednego formatu na inny"
+    ],
+    "correct_answer": "b) Rendering obejmuje proces generowania finalnego obrazu na podstawie danych trójwymiarowych, uwzględniając oświetlenie, cienie i inne efekty"
+  },
+  {
+    "question": "Rasteryzacja, algorytmy rysowania prymitywów graficznych (w szczególności algorytm rysowania odcinka), antyaliasing.",
+    "choices": [
+      "a) Rasteryzacja to tylko proces konwersji obrazów z jednego formatu na inny, algorytmy rysowania prymitywów to jedynie teoretyczne pojęcia, antyaliasing jest zbędny",
+      "b) Rasteryzacja obejmuje przekształcanie obrazu wektorowego na obraz rastrowy, algorytmy rysowania prymitywów to np. Bresenham dla odcinków, antyaliasing to technika wygładzania krawędzi obiektów",
+      "c) Rasteryzacja to jedynie nazwa dla różnych filtrów graficznych, algorytmy rysowania prymitywów są tylko matematycznymi koncepcjami, antyaliasing to jedynie dodatkowy efekt graficzny"
+    ],
+    "correct_answer": "b) Rasteryzacja obejmuje przekształcanie obrazu wektorowego na obraz rastrowy, algorytmy rysowania prymitywów to np. Bresenham dla odcinków, antyaliasing to technika wygładzania krawędzi obiektów"
+  },
+  {
+    "question": "Generowanie sceny przy pomocy “śledzenia promieni”.",
+    "choices": [
+      "a) Generowanie sceny przy pomocy \"śledzenia promieni\" to jedynie teoria, nie ma praktycznego zastosowania",
+      "b) Śledzenie promieni to technika generowania realistycznych obrazów trójwymiarowych, symulująca rzeczywiste oddziaływanie światła z obiektami",
+      "c) Generowanie sceny to jedynie proces dodawania obiektów do obrazu, \"śledzenie promieni\" nie wpływa na jakość renderingu"
+    ],
+    "correct_answer": "b) Śledzenie promieni to technika generowania realistycznych obrazów trójwymiarowych, symulująca rzeczywiste oddziaływanie światła z obiektami"
+  },
+  {
+    "question": "Algorytmy eliminowania powierzchni zasłoniętych.",
+    "choices": [
+      "a) Algorytmy eliminowania powierzchni zasłoniętych są jedynie matematycznymi abstrakcjami, nie mają praktycznego zastosowania",
+      "b) Algorytmy eliminowania powierzchni zasłoniętych obejmują różne metody, takie jak Z-bufor, eliminacja ukrytych powierzchni, algorytm malarski",
+      "c) Eliminacja powierzchni zasłoniętych to jedynie proces dodawania cieni do obrazu, nie wymaga specjalnych algorytmów"
+    ],
+    "correct_answer": "b) Algorytmy eliminowania powierzchni zasłoniętych obejmują różne metody, takie jak Z-bufor, eliminacja ukrytych powierzchni, algorytm malarski"
+  },
+  {
+    "question": "Modele oświetlenia.",
+    "choices": [
+      "a) Modele oświetlenia to jedynie teoretyczne koncepcje, nie mają wpływu na renderowanie obrazów",
+      "b) Modele oświetlenia obejmują różne metody symulacji oświetlenia sceny trójwymiarowej, takie jak model Phonga, Blinna, Lambertiana",
+      "c) Oświetlenie sceny to jedynie proces dodawania kolorów do obrazu, nie wymaga specjalnych modeli"
+    ],
+    "correct_answer": "b) Modele oświetlenia obejmują różne metody symulacji oświetlenia sceny trójwymiarowej, takie jak model Phonga, Blinna, Lambertiana"
+  },
+  {
+    "question": "Materiały, tekstury.",
+    "choices": [
+      "a) Materiały i tekstury to jedynie nazwy dla kolorów i wzorów, nie mają znaczenia w grafice komputerowej",
+      "b) Materiały określają właściwości odbijania światła przez obiekty, tekstury to obrazy nakładane na powierzchnie, zmieniające ich wygląd",
+      "c) Materiały i tekstury to jedynie elementy dekoracyjne, nie mają wpływu na finalny obraz"
+    ],
+    "correct_answer": "b) Materiały określają właściwości odbijania światła przez obiekty, tekstury to obrazy nakładane na powierzchnie, zmieniające ich wygląd"
+  }
+]

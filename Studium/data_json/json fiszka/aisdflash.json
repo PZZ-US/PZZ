@@ -1,0 +1,33 @@
+{
+  "Pojęcie algorytmu": "Algorytm to skończony ciąg precyzyjnie określonych instrukcji, które rozwiązują określony problem lub wykonują określone zadanie.",
+  "Klasyczne algorytmy": {
+    "Badanie, czy liczba jest liczbą pierwszą": "Algorytm sprawdzający, czy dana liczba jest liczbą pierwszą.",
+    "Algorytmy Euklidesa (przez odejmowanie i przez dzielenie)": "Algorytmy służące do obliczenia największego wspólnego dzielnika dwóch liczb.",
+    "Wyszukiwanie elementu w zbiorze uporządkowanym (wyszukiwanie binarne)": "Algorytm wyszukiwania elementu w posortowanym zbiorze.",
+    "Znajdowanie najmniejszego lub największego elementu w zbiorze": "Algorytm znajdujący najmniejszy lub największy element w zbiorze.",
+    "Znajdowanie jednocześnie najmniejszego i największego elementu w zbiorze (algorytm optymalny)": "Efektywny algorytm znajdujący jednocześnie najmniejszy i największy element w zbiorze.",
+    "Obliczanie wartości wielomianu – schemat Hornera": "Algorytm efektywnego obliczania wartości wielomianu, wykorzystujący schemat Hornera.",
+    "Szybkie podnoszenie do potęgi": "Algorytm efektywnego podnoszenia liczby do potęgi.",
+    "Wyszukiwanie wierzchołka 1D i 2D": "Algorytmy wyszukiwania lokalnego minimum lub maksimum w jednowymiarowych i dwuwymiarowych zbiorach danych."
+  },
+  "Czasowa i pamięciowa złożoność obliczeniowa algorytmu": "Złożoność czasowa to ilość czasu potrzebna do wykonania algorytmu, a złożoność pamięciowa to ilość pamięci potrzebna do jego wykonania. Złożoność optymistyczna, pesymistyczna i średnia to różne przypadki analizy złożoności czasowej.",
+  "Notacja asymptotyczna i jej znaczenie w teorii algorytmów, rzędy wielkości funkcji": "Notacja asymptotyczna (np. O, Ω, Θ) opisuje wzrost funkcji w nieskończoności. Rzędy wielkości funkcji pomagają porównywać efektywność algorytmów.",
+  "Algorytmy sortowania": {
+    "Sortowanie bąbelkowe, przez wstawianie, przez wybieranie": "Proste algorytmy sortowania o różnej efektywności.",
+    "Sortowanie przez scalanie": "Algorytm sortowania, który dzieli dane na mniejsze fragmenty, sortuje je, a następnie łączy w wynik posortowany.",
+    "Sortowanie szybkie": "Algorytm sortowania oparty na dzieleniu i podbijaniu.",
+    "Właściwości i złożoności czasowe": "Właściwości i analiza złożoności czasowej różnych algorytmów sortowania."
+  },
+  "Algorytmy rekurencyjne": "Algorytmy, które odwołują się do samych siebie w procesie rozwiązywania problemu.",
+  "Metoda dziel i zwyciężaj, metoda równego podziału, metoda Newtona-Raphsona (stycznych)": "Metoda dziel i zwyciężaj to strategia rozwiązania problemu poprzez podzielenie go na mniejsze podproblemy. Metoda równego podziału to przydzielanie zasobów równo między użytkowników. Metoda Newtona-Raphsona to algorytm znajdowania pierwiastków funkcji.",
+  "Abstrakcyjne struktury danych": {
+    "Stosy, kolejki FIFO, kolejki priorytetowe, słowniki": "Struktury danych do przechowywania i manipulacji danymi, takie jak stosy, kolejki FIFO, kolejki priorytetowe i słowniki.",
+    "Implementacje i zastosowania": "Różne sposoby implementacji abstrakcyjnych struktur danych oraz ich praktyczne zastosowania."
+  },
+  "Kodowanie Huffmana": "Algorytm kompresji danych, który przyporządkowuje krótkie kody binarne częstym symbolom i długie kody binarne rzadkim symbolom, co umożliwia skuteczną kompresję danych.",
+  "Algorytm Kruskala": "Algorytm znajdowania minimalnego drzewa rozpinającego w grafie ważonym, używający koncepcji zbiorów rozłącznych.",
+  "Tablice z haszowaniem (asocjacyjne)": {
+    "Rozwiązywanie kolizji - metoda łańcuchowa i adresowanie otwarte": "Techniki rozwiązania konfliktów w tablicach haszowanych, takie jak metoda łańcuchowa i adresowanie otwarte."
+  },
+  "Szyfrowanie Cezara": "Prosty algorytm szyfrowania polegający na przesunięciu liter w alfabecie o stałą liczbę miejsc."
+}

@@ -1,0 +1,10 @@
+{
+  "Struktura i organizacja typowego systemu komputerowego": "Typowy system komputerowy składa się z jednostki centralnej (CPU), pamięci, systemu wejścia/wyjścia (I/O), urządzeń pamięci masowej i komunikacyjnych.",
+  "Budowa i działanie typowego procesora ogólnego przeznaczenia": "Procesor ogólnego przeznaczenia wykonuje instrukcje zapisane w pamięci, dekoduje je i wykonuje odpowiednie operacje arytmetyczne, logiczne oraz sterujące.",
+  "Wykonywanie rozkazów przez procesor(y), przerwania, wyjątki": "Procesor pobiera instrukcje z pamięci, dekoduje je, wykonuje i aktualizuje stan procesora. Przerwania i wyjątki to sygnały, które przerywają normalny przebieg programu, zazwyczaj w celu obsługi zdarzeń zewnętrznych.",
+  "Dane i ich przetwarzanie w systemie komputerowym": "Dane w systemie komputerowym to informacje przechowywane w pamięci. Procesor przetwarza dane, wykonując na nich operacje, np. dodawanie, odejmowanie, porównywanie.",
+  "Koncepcja „konwencjonalnej maszyny”, język maszynowy, asembler": "Konwencjonalna maszyna to abstrakcyjny model komputera, a język maszynowy oraz asembler to języki programowania niskiego poziomu, związane bezpośrednio z instrukcjami procesora.",
+  "Połączenia wewnątrz- i zewnątrz-systemowe, urządzenia wejścia/wyjścia": "Połączenia wewnątrzsystemowe obejmują komunikację między elementami systemu, natomiast połączenia zewnątrzsystemowe to interakcje z otoczeniem. Urządzenia wejścia/wyjścia służą do komunikacji z użytkownikiem i środowiskiem zewnętrznym.",
+  "Realizacja przetwarzania równoległego w systemach komputerowych": "Przetwarzanie równoległe polega na jednoczesnym wykonywaniu wielu zadań lub instrukcji przez kilka procesorów lub rdzeni. Może być realizowane na poziomie zadania, danych lub instrukcji.",
+  "Optymalizacja wydajności procesora(ów) i systemu komputerowego": "Optymalizacja wydajności obejmuje zoptymalizowane algorytmy, efektywne zarządzanie pamięcią, równoważenie obciążenia, wykorzystanie technik cache, oraz dostosowanie kodu do architektury sprzętowej."
+}

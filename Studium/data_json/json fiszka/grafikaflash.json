@@ -1,0 +1,12 @@
+{
+  "Modele barw": "Modele barw opisują sposób reprezentacji kolorów. Modele RGB (Red, Green, Blue) i CMYK (Cyan, Magenta, Yellow, Key/Black) są powszechnie stosowane w grafice komputerowej.",
+  "Metody kompresji obrazów": "Metody kompresji obrazów mają na celu redukcję rozmiaru plików graficznych. Wyróżnia się kompresję stratną (utratę informacji) i bezstratną (bez utraty informacji). Przykłady to JPEG (stratna) i PNG (bezstratna).",
+  "Formaty plików graficznych": "Formaty plików graficznych określają, jak dane obrazu są przechowywane. Przykłady to JPEG, PNG, GIF, BMP, TIFF.",
+  "Rzutowanie": "Rzutowanie to proces mapowania trójwymiarowej sceny na dwuwymiarowy ekran. Istnieją różne rodzaje rzutów, takie jak rzut perspektywiczny i ortogonalny.",
+  "Rendering": "Rendering to proces generowania obrazu na podstawie trójwymiarowej sceny. Obejmuje oświetlenie, cienie, tekstury i inne efekty w celu uzyskania finalnego obrazu.",
+  "Rasteryzacja, algorytmy rysowania prymitywów graficznych (w szczególności algorytm rysowania odcinka), antyaliasing.": "Rasteryzacja to proces konwersji obiektów graficznych na piksele na ekranie. Algorytmy rysowania prymitywów, takie jak algorytm rysowania odcinka Bresenhama, są używane do generowania obrazów. Antyaliasing to technika redukcji zjawiska drabinkowania (aliasingu) poprzez dodanie pośrednich odcieni kolorów.",
+  "Generowanie sceny przy pomocy “śledzenia promieni”": "Śledzenie promieni to zaawansowana technika renderowania, która śledzi promienie światła, symulując ich interakcje z obiektami sceny w celu uzyskania bardziej realistycznego obrazu.",
+  "Algorytmy eliminowania powierzchni zasłoniętych": "Algorytmy eliminowania powierzchni zasłoniętych decydują, które elementy sceny są widoczne, a które zasłonięte przez inne obiekty. Przykłady to algorytm malarski Z (Z-buffering) i algorytm sortowania malarskiego.",
+  "Modele oświetlenia": "Modele oświetlenia opisują, jak światło oddziałuje z powierzchniami obiektów. Modele Phonga czy Blinna-Phonga to przykłady modeli oświetlenia.",
+  "Materiały, tekstury": "Materiały definiują właściwości powierzchni obiektu, takie jak kolor, połysk i przezroczystość. Tekstury to obrazy nakładane na obiekty w celu uzyskania dodatkowych detali i realizmu."
+}

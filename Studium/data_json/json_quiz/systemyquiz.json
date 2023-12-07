@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Koncepcja systemu operacyjnego, typowa funkcjonalność, realizacje.",
+    "choices": [
+      "a) System operacyjny jako jedynie interfejs graficzny dla użytkownika",
+      "b) System operacyjny jako program kontrolujący działanie komputera, zarządzający zasobami, udostępniający interfejs dla użytkownika",
+      "c) System operacyjny jako jedynie kolekcja różnych aplikacji"
+    ],
+    "correct_answer": "b) System operacyjny jako program kontrolujący działanie komputera, zarządzający zasobami, udostępniający interfejs dla użytkownika"
+  },
+  {
+    "question": "Zarządzanie zasobami, abstrakcje systemowe.",
+    "choices": [
+      "a) Zarządzanie zasobami polegające na dostarczaniu zasobów jedynie dla jednej aplikacji w danym momencie",
+      "b) Zarządzanie zasobami przez przydzielanie i zwalnianie zasobów wielu aplikacjom jednocześnie, abstrakcje systemowe dostarczają interfejsów do korzystania z zasobów",
+      "c) Brak zarządzania zasobami w systemie operacyjnym"
+    ],
+    "correct_answer": "b) Zarządzanie zasobami przez przydzielanie i zwalnianie zasobów wielu aplikacjom jednocześnie, abstrakcje systemowe dostarczają interfejsów do korzystania z zasobów"
+  },
+  {
+    "question": "Procesy i wątki, wielozadaniowość/wielowątkowość, wielodostęp.",
+    "choices": [
+      "a) Procesy i wątki to synonimy, system operacyjny nie obsługuje wielozadaniowości ani wielowątkowości",
+      "b) Procesy to niezależne jednostki wykonawcze, wątki to jednostki wykonawcze współdzielące zasoby procesu, wielozadaniowość oznacza możliwość wykonywania wielu procesów jednocześnie, wielowątkowość to możliwość jednoczesnego wykonywania wielu wątków",
+      "c) Wielodostęp oznacza możliwość jednoczesnego dostępu do jednego zasobu przez wiele procesów"
+    ],
+    "correct_answer": "b) Procesy to niezależne jednostki wykonawcze, wątki to jednostki wykonawcze współdzielące zasoby procesu, wielozadaniowość oznacza możliwość wykonywania wielu procesów jednocześnie, wielowątkowość to możliwość jednoczesnego wykonywania wielu wątków"
+  },
+  {
+    "question": "Mechanizmy komunikacji wewnątrzsystemowej.",
+    "choices": [
+      "a) Brak możliwości komunikacji między procesami wewnątrzsystemowymi",
+      "b) Komunikacja oparta wyłącznie na plikach, procesy nie mogą bezpośrednio się ze sobą komunikować",
+      "c) Mechanizmy komunikacji obejmują współdzieloną pamięć, komunikację przez sygnały, potoki, kolejki komunikatów i inne"
+    ],
+    "correct_answer": "c) Mechanizmy komunikacji obejmują współdzieloną pamięć, komunikację przez sygnały, potoki, kolejki komunikatów i inne"
+  },
+  {
+    "question": "Zarządzanie zbiorami danych, pliki, systemy plików.",
+    "choices": [
+      "a) Brak możliwości zarządzania zbiorami danych w systemie operacyjnym",
+      "b) Zarządzanie zbiorami danych przez aplikacje, pliki traktowane jako nieistotne dla systemu operacyjnego",
+      "c) System operacyjny zapewnia mechanizmy zarządzania plikami, systemy plików organizują dane na dysku, umożliwiając ich efektywne zarządzanie"
+    ],
+    "correct_answer": "c) System operacyjny zapewnia mechanizmy zarządzania plikami, systemy plików organizują dane na dysku, umożliwiając ich efektywne zarządzanie"
+  },
+  {
+    "question": "Interfejsy systemowe dla wykonywanego kodu, dla programisty, dla użytkownika.",
+    "choices": [
+      "a) Brak interfejsów w systemie operacyjnym",
+      "b) Interfejsy tylko dla użytkownika, programista nie ma dostępu do interfejsów systemowych",
+      "c) System operacyjny zapewnia interfejsy dla wykonywanego kodu, programisty i użytkowników, umożliwiając kontrolę i dostęp do funkcji systemu"
+    ],
+    "correct_answer": "c) System operacyjny zapewnia interfejsy dla wykonywanego kodu, programisty i użytkowników, umożliwiając kontrolę i dostęp do funkcji systemu"
+  },
+  {
+    "question": "Wirtualizacja sprzętu i zasobów systemowych.",
+    "choices": [
+      "a) Wirtualizacja to jedynie symulacja sprzętu, bez realnego dostępu do zasobów",
+      "b) Wirtualizacja sprzętu i zasobów umożliwia uruchamianie wielu systemów operacyjnych na jednym fizycznym komputerze, zapewniając izolację i efektywne wykorzystanie zasobów",
+      "c) Wirtualizacja jest możliwa tylko w przypadku systemów operacyjnych o otwartym kodzie źródłowym"
+    ],
+    "correct_answer": "b) Wirtualizacja sprzętu i zasobów umożliwia uruchamianie wielu systemów operacyjnych na jednym fizycznym komputerze, zapewniając izolację i efektywne wykorzystanie zasobów"
+  },
+  {
+    "question": "Współczesne koncepcje budowy systemów operacyjnych.",
+    "choices": [
+      "a) Współczesne systemy operacyjne opierają się wyłącznie na koncepcji monolitycznej",
+      "b) Koncepcje mikrojądra, architektury typu klient-serwer, systemy operacyjne dostosowane do urządzeń mobilnych są przykładami współczesnych koncepcji",
+      "c) Koncepcja budowy systemów operacyjnych nie zmienia się od czasów ich powstania"
+    ],
+    "correct_answer": "b) Koncepcje mikrojądra, architektury typu klient-serwer, systemy operacyjne dostosowane do urządzeń mobilnych są przykładami współczesnych koncepcji"
+  }
+]
