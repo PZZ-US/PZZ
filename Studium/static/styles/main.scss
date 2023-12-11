@@ -95,6 +95,22 @@ header {
             &:first-child {
               margin-left: 0;
             }
+            &:last-child {
+              a {
+                background-color: $green-color;
+                padding: 10px 25px;
+                border-radius: 30px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $text-color;
+                font-family: $primary-font;
+                transition: color 0.3s ease;
+
+                &:hover {
+                  color: $white-color;
+                }
+              }
+            }
 
             a {
               text-decoration: none;
@@ -121,7 +137,6 @@ footer {
   font-size: 0.8em;
 
   z-index: 10000000;
-
 
   .wrapper {
     display: flex;
@@ -628,6 +643,9 @@ footer {
 
           .flashcard-back {
             transform: rotateX(180deg);
+            p{
+              font-family: $secondary-font;
+            }
           }
 
           .flashcard-front {
@@ -917,6 +935,253 @@ footer {
 
       p {
         font-family: $secondary-font;
+      }
+    }
+  }
+}
+
+.login-page-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: $gradient-color;
+
+  .wrapper {
+    background: $white-color;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+    h2 {
+      color: $dark-blue-color;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: $dark-blue-color;
+        font-size: 15px;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        font-family: $secondary-font;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid $dark-blue-color;
+        border-radius: 5px;
+        width: 100%;
+        color: $dark-blue-color;
+        opacity: 1;
+        font-size: 15px;
+
+        &::placeholder {
+          color: $dark-blue-color;
+          opacity: 1;
+          font-size: 15px;
+        }
+
+        &:focus {
+          border-color: $light-blue-color;
+          outline: none;
+        }
+      }
+
+      button[type="submit"] {
+        background-color: $dark-blue-color;
+        color: $white-color;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 15px;
+
+        font-family: $secondary-font;
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $light-blue-color;
+        }
+      }
+
+      a {
+        color: $dark-blue-color;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-family: $secondary-font;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .register_btn {
+        background-color: $green-color;
+        color: $white-color;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-family: $secondary-font;
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $light-blue-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.dashboard-section {
+  .wrapper {
+    .dashboard-container {
+      max-width: 1400px;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+
+      .navbar {
+        background-color: $dark-blue-color;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        border-radius: 8px;
+        min-height: 400px;
+        .navbar-nav {
+          list-style: none;
+          margin-right: 40px;
+
+          .nav-item {
+            padding: 10px 20px;
+            .nav-link {
+              text-decoration: none;
+              color: $white-color;
+
+              &:hover {
+                color: $light-blue-color;
+              }
+            }
+            &.active {
+              border-radius: 8px;
+              .nav-link {
+                color: $green-color;
+                &:hover {
+                  color: $light-blue-color;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .content {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        padding: 20px;
+        border-radius: 8px;
+        background: $light-blue-color;
+        color: $text-color;
+        min-height: 400px;
+
+        p {
+          font-family: $secondary-font;
+        }
+      }
+    }
+  }
+}
+
+.registration-page-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: $gradient-color;
+
+  .wrapper {
+    background: $white-color;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+    h2 {
+      color: $dark-blue-color;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="password-confirm"] {
+        font-family: $secondary-font;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid $dark-blue-color;
+        border-radius: 5px;
+        color: $dark-blue-color;
+        opacity: 1;
+        font-size: 15px;
+        width: 95%;
+
+        &::placeholder {
+          color: $dark-blue-color;
+          opacity: 1;
+          font-size: 15px;
+        }
+
+        &:focus {
+          border-color: $light-blue-color;
+          outline: none;
+        }
+      }
+
+      button[type="submit"] {
+        background-color: $dark-blue-color;
+        color: $white-color;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: $secondary-font;
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $light-blue-color;
+        }
+      }
+
+      a {
+        color: $light-blue-color;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-family: $secondary-font;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

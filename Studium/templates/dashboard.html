@@ -1,0 +1,55 @@
+{% load static %}
+{% load nav_tags %}
+
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard | Sfera Inżyniera</title>
+        <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    </head>
+
+    <body>
+        {% include "header.html" %}
+
+
+        <section class="dashboard-section">
+            <div class="wrapper">
+                <h1>Dashboard</h1>
+                <div class="dashboard-container">
+                    <nav class="navbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item {% active 'dashboard' %}">
+                                    <a class="nav-link" href="{% url 'dashboard' %}">Dashboard <span>
+
+                                </li>
+                                <li class="nav-item {% active 'progress-block' %}">
+                                    <a class="nav-link" href="{% url 'progress-block' %}">Moje postępy</a>
+                                </li>
+
+                                <li class="nav-item {% active 'logout' %}">
+                                    <a class="nav-link" href="{% url 'logout' %}">Wyloguj</a>
+                                </li>
+                            </ul>
+     
+                    </nav>
+
+                    <div class="content">
+                        {% block content %}
+                        <p>Witaj {{ user.username }} w panelu dashboard.</p>
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        {% include "footer.html" %}
+        <script>
+        </script>
+    </body>
+
+</html>

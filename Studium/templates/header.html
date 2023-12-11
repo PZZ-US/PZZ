@@ -1,8 +1,9 @@
+{% load static %}
 <header>
     <div class="wrapper">
         <div class="header_logo_container">
             <a href="/">
-                <img src="../static/images/logo-horizontal-layout-white.png" alt="Logo Sfera Inżyniera" />
+                <img src="{% static 'images/logo-horizontal-layout-white.png' %}" alt="Logo Sfera Inżyniera" />
                 <p>Sfera Inżyniera</p>
             </a>
         </div>
@@ -11,7 +12,13 @@
                 <ul>
                     <li><a href="/">Strona główna</a></li>
                     <li><a href="/choose-learning">Metody nauki</a></li>
-                    <li><a href="/my-progress">Moje postępy</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="/dashboard">Dashboard</a></li>
+                        <li><a href="/logout">Wyloguj się</a></li>
+                    {% else %}
+                        <li><a href="/login">Zaloguj się</a></li>
+                        <li><a href="/register">Zarejestruj się</a></li>
+                    {% endif %}
                 </ul>
             </nav>
         </div>

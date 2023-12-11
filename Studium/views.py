@@ -1,45 +1,56 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
-from .models import Quiz, Category, Flashcard
-import json
+from django.urls import reverse_lazy
+from django.contrib import messages
+from django.contrib.auth.views import LoginView
+from django.contrib.auth.decorators import login_required
+from django.db.models import Count
 from django.utils.html import json_script
-
-
-
-def simplehttp(response):
-    return HttpResponse("<h1>HI user </h1>")
+from django.utils.safestring import mark_safe
+from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
+import json
+from .forms import CustomLoginForm, CustomRegisterForm
+from .models import Quiz, Category, Flashcard, UserProgress
 
 def home(request):
-     return render(request, 'index.html')
+    return render(request, 'index.html')
 
-def room(request):
-    return HttpResponse("Quiz")
+def learning_choice(request):
+    return render(request, 'learning_choice.html')
 
+
+@csrf_exempt
+def update_progress(request):
+    data = json.loads(request.body)
+    category_name = data.get('categoryName')
+    new_progress = data.get('progress')
+
+    category = Category.objects.get(name=category_name)
+    user_progress, created = UserProgress.objects.update_or_create(
+        user=request.user, 
+        category=category, 
+        category_type='flashcard',
+        defaults={'progress': new_progress}
+    )
+
+    return JsonResponse({'status': 'success'})
+
+
+
+# ------------------         QUIZ       ------------------------
+
+@login_required(redirect_field_name='next')
+def quiz(request):
+    return render(request, 'quiz.html')
+
+@login_required(redirect_field_name='next')
 def quizzes(request):
     categories = Category.objects.all()
     context = {'categories': categories}
     return render(request, 'quizzes.html', context)
 
-def quiz(request):
-    return render(request, 'quiz.html')
-
-def flashcards(request):
-    categories = Category.objects.all()
-    context = {'categories': categories}
-    return render(request, 'flashcards.html', context)
-
-def flashcard(request):
-    return render(request, 'flashcard.html')
-
-def learning_choice(request):
-    return render(request, 'learning_choice.html')
-
-def my_progress(request):
-    return render(request, 'my_progress.html')
-
-def my_result(request):
-    return render(request, 'my_result.html')
-
+@login_required(redirect_field_name='next')
 def quizzes_view(request):
     categories = Category.objects.all()
     category_progress = {category.name: 20 for category in categories}
@@ -52,8 +63,6 @@ def quizzes_view(request):
     }
 
     return render(request, 'quizzes.html', context)
-
-
 
 def quiz_view(request, category_name):
     category = get_object_or_404(Category, name=category_name)
@@ -76,25 +85,78 @@ def quiz_view(request, category_name):
     return render(request, 'quiz.html', context)
 
 
+# ------------------         FLASHCARD       ------------------------
 
+@login_required(redirect_field_name='next')
+def flashcards(request):
+    categories = Category.objects.annotate(num_flashcards=Count('flashcards')).filter(num_flashcards__gt=1)
+
+    for category in categories:
+        user_progress = UserProgress.objects.filter(user=request.user, category=category, category_type='flashcard').first()
+        category.user_progress = user_progress.progress if user_progress else 0
+
+    return render(request, 'flashcards.html', {'categories': categories})
+
+def flashcard(request):
+    return render(request, 'flashcard.html')
 
 def flashcard_view(request, category_name):
-    selected_category_name = request.GET.get('selected_category')
-    print(category_name)
+    category = Category.objects.get(name=category_name)
+    flashcards = Flashcard.objects.filter(category=category)
+    flashcards_json = mark_safe(json.dumps(list(flashcards.values('sentence', 'answer'))))
+    
+    user_progress, created = UserProgress.objects.get_or_create(
+        user=request.user, 
+        category=category,
+        category_type='flashcard',
+        defaults={'progress': 0}
+    )
+    
+    context = {
+        'selected_category': category.name,
+        'flashcards': flashcards,
+        'flashcards_json': flashcards_json,
+        'user_progress': round(user_progress.progress)
+    }
+    
+    return render(request, 'flashcard.html', context)
 
-    if category_name:
-        selected_category = Category.objects.get(name=category_name)
-        flashcards = Flashcard.objects.filter(category=selected_category)
-        print(flashcards)
+
+# ------------------         LOGIN       ------------------------
+
+class CustomLoginView(LoginView):
+    form_class = CustomLoginForm
+    template_name = 'registration/login.html'
+    redirect_authenticated_user = True
+    
+    def get_success_url(self):
+        return reverse_lazy('dashboard')
+    
+def register(request):
+    if request.method == 'POST':
+        form = CustomRegisterForm(request.POST)
+        if form.is_valid():
+            messages.success(request, 'Konto zostało utworzone, zaloguj się.')
+            user = form.save()
+            return redirect('login')  
+        else:
+            print(form.errors)
+            messages.error(request, 'Wystąpił błąd podczas tworzenia konta.')
     else:
-        flashcards = Flashcard.objects.all()
-        print(flashcards)
+        form = CustomRegisterForm()
+    return render(request, 'registration/register.html', {'form': form})
+
+# ------------------         DASHBOARD       ------------------------
 
 
-    return render(request, 'flashcard.html', {'flashcards': flashcards, 'selected_category': category_name})
+@login_required(redirect_field_name='next')
+def dashboard(request):
+    return render(request, 'dashboard.html') 
 
+@login_required(redirect_field_name='next')
+def progress_block(request):
+    return render(request, 'progress_block.html')
 
-
-
-
-
+@login_required(redirect_field_name='next')
+def my_result(request):
+    return render(request, 'my_result.html')

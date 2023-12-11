@@ -16,8 +16,8 @@
             <h1>{{ selected_category }}</h1>
             <p>PROGRES:</p>
             <div class="progress-container">
-                <div class="progress-bar" style="width: 40%;">
-                    <p>40%</p>
+                <div class="progress-bar" style="width: {{ user_progress }}%;">
+                    <p>{{ user_progress }}%</p>
                 </div>
             </div>
             <div class="section-container">
@@ -40,9 +40,9 @@
 
             <div class="button-section">
                 <div class="chance-button">
-                    <a class="previous-button" href="#"><</a>
+                    <a class="previous-button"><</a>
                     <p><span class="active-number">1</span>/<span class="all-number">{{ flashcards|length }}</span></p>
-                    <a class="next-button" href="#">></a>
+                    <a class="next-button">></a>
                 </div>
                 <div class="status-button">
                     <a class="return" onclick="location.href='/flashcards'">POWRÓT</a>
@@ -53,18 +53,34 @@
     </section>
     {% include "footer.html" %}
 
-    <script>
+    <script id="flashcards-data" type="application/json">{{ flashcards_json|safe }}</script>
+    <script >
         const flashcardContainer = document.getElementById('flashcard-container');
         const flashcardSentence = document.getElementById('flashcard-sentence');
         const flashcardAnswer = document.getElementById('flashcard-answer');
 
+        const csrftoken = '{{ csrf_token }}';
         let currentFlashcard = 0;
-        let canProceed = true;
+         const categoryName = "{{ selected_category }}";
+
+        const flashcardsData = JSON.parse(document.getElementById('flashcards-data').textContent).map(flashcard => ({
+                ...flashcard,
+                remembered: false
+            }));
 
         function showFlashcard() {
-            flashcardSentence.textContent = flashcards[currentFlashcard].sentence;
-            flashcardAnswer.textContent = flashcards[currentFlashcard].answer;
+            flashcardSentence.textContent = flashcardsData[currentFlashcard].sentence;
+            flashcardAnswer.textContent = flashcardsData[currentFlashcard].answer;
+            document.querySelector('.active-number').textContent = currentFlashcard + 1;
+
+                const statusButton = document.querySelector('.status-button .status');
+            if (flashcardsData[currentFlashcard].remembered) {
+                statusButton.classList.add('active');
+            } else {
+                statusButton.classList.remove('active');
+            }
         }
+
 
         function showPreviousFlashcard() {
             if (currentFlashcard > 0) {
@@ -74,26 +90,37 @@
         }
 
         function showNextFlashcard() {
-            if (currentFlashcard < flashcards.length - 1) {
+            if (currentFlashcard < flashcardsData.length - 1) {
                 currentFlashcard++;
                 showFlashcard();
             }
         }
 
         flashcardContainer.addEventListener('click', function () {
-            if (canProceed) {
                 flashcardContainer.classList.toggle('is-flipped');
-
-                setTimeout(function () {
-                    canProceed = true;
-                    flashcardContainer.classList.toggle('is-flipped');
-                }, 2000);
-
-                canProceed = false;
-            }
         });
 
-        // Przypisz funkcje do przycisków
+        function selectFlashcard(selectedElement) {
+            selectedElement.classList.toggle('active');
+            flashcardsData[currentFlashcard].remembered = !flashcardsData[currentFlashcard].remembered;
+            updateProgressBar();
+            const newProgress = calculateNewProgress(); 
+            updateProgress(categoryName, newProgress); 
+        }
+
+        function calculateNewProgress() {
+                const rememberedCount = flashcardsData.filter(flashcard => flashcard.remembered).length;
+                return (rememberedCount / flashcardsData.length) * 100; 
+            }
+
+        function updateProgressBar() {
+                const progressPercentage = calculateNewProgress();
+
+                const progressBar = document.querySelector('.progress-bar');
+                progressBar.style.width = `${progressPercentage}%`;
+                progressBar.querySelector('p').textContent = `${progressPercentage.toFixed(0)}%`;
+            }
+
         document.querySelector('.previous-button').addEventListener('click', function (event) {
             event.preventDefault();
             showPreviousFlashcard();
@@ -104,8 +131,26 @@
             showNextFlashcard();
         });
 
-        // Pokaż pierwszą fiszkę na początku
-        showFlashcard();
+    function updateProgress(categoryName, newProgress) {
+        console.log("Wysyłanie do /update-progress/:", categoryName, newProgress);
+        fetch('/update-progress/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': csrftoken
+            },
+            body: JSON.stringify({ categoryName: categoryName, progress: newProgress })
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+
+
     </script>
 </body>
 
