@@ -11,7 +11,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 import json
 from .forms import CustomLoginForm, CustomRegisterForm
-from .models import Quiz, Category, Flashcard, UserProgress
+from .models import Quiz, Category, Flashcard, UserProgress, UserFlashcardProgress
 
 def home(request):
     return render(request, 'index.html')
@@ -20,21 +20,32 @@ def learning_choice(request):
     return render(request, 'learning_choice.html')
 
 
-@csrf_exempt
-def update_progress(request):
-    data = json.loads(request.body)
-    category_name = data.get('categoryName')
-    new_progress = data.get('progress')
 
-    category = Category.objects.get(name=category_name)
-    user_progress, created = UserProgress.objects.update_or_create(
-        user=request.user, 
-        category=category, 
-        category_type='flashcard',
-        defaults={'progress': new_progress}
-    )
+def update_flashcard_and_progress(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        flashcard_id = data.get('flashcardId')
+        remembered = data.get('remembered')
+        category_name = data.get('categoryName')
+        new_progress = data.get('progress')
 
-    return JsonResponse({'status': 'success'})
+        category = Category.objects.get(name=category_name)
+        user_flashcard_progress, created = UserFlashcardProgress.objects.update_or_create(
+            user=request.user, 
+            flashcard_id=flashcard_id,
+            defaults={'remembered': remembered}
+        )
+        
+        user_progress, created = UserProgress.objects.update_or_create(
+            user=request.user, 
+            category=category, 
+            category_type='flashcard',
+            defaults={'progress': new_progress}
+        )
+
+        return JsonResponse({'status': 'success'})
+    else:
+        return JsonResponse({'status': 'error', 'message': 'Invalid request'}, status=400)
 
 
 
@@ -64,6 +75,7 @@ def quizzes_view(request):
 
     return render(request, 'quizzes.html', context)
 
+@login_required(redirect_field_name='next')
 def quiz_view(request, category_name):
     category = get_object_or_404(Category, name=category_name)
     quiz_questions = Quiz.objects.filter(category=category)
@@ -97,13 +109,30 @@ def flashcards(request):
 
     return render(request, 'flashcards.html', {'categories': categories})
 
+@login_required(redirect_field_name='next')
 def flashcard(request):
     return render(request, 'flashcard.html')
 
+@login_required(redirect_field_name='next')
 def flashcard_view(request, category_name):
     category = Category.objects.get(name=category_name)
     flashcards = Flashcard.objects.filter(category=category)
-    flashcards_json = mark_safe(json.dumps(list(flashcards.values('sentence', 'answer'))))
+    
+    flashcards_data = []
+    for flashcard in flashcards:
+        user_flashcard_progress = UserFlashcardProgress.objects.filter(
+            user=request.user, flashcard=flashcard
+        ).first()
+
+        remembered = user_flashcard_progress.remembered if user_flashcard_progress else False
+        flashcards_data.append({
+            'id': flashcard.id,
+            'sentence': flashcard.sentence,
+            'answer': flashcard.answer,
+            'remembered': remembered
+        })
+
+    flashcards_json = mark_safe(json.dumps(flashcards_data))
     
     user_progress, created = UserProgress.objects.get_or_create(
         user=request.user, 
@@ -155,7 +184,12 @@ def dashboard(request):
 
 @login_required(redirect_field_name='next')
 def progress_block(request):
-    return render(request, 'progress_block.html')
+    user_progresses = UserProgress.objects.filter(user=request.user, progress__gt=0)
+    context = {
+        'user_progresses': user_progresses,
+    }
+    return render(request, 'progress_block.html', context)
+
 
 @login_required(redirect_field_name='next')
 def my_result(request):

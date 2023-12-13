@@ -6,7 +6,8 @@ from .views import CustomLoginView, flashcard_view, register
 urlpatterns = [
     path('', views.home, name="home"),
     
-    path('update-progress/', views.update_progress, name='update_progress'),
+    path('update-flashcard-and-progress/', views.update_flashcard_and_progress, name='update_flashcard_and_progress'),
+    
     
     path('quizzes/', views.quizzes, name='quizzes'),
     path('quiz/', views.quiz, name='quiz'),
@@ -17,7 +18,7 @@ urlpatterns = [
     path('flashcards/', views.flashcards, name='flashcards'),
     path('flashcard/', views.flashcard, name='flashcard'), 
     path('flashcards/<str:category_name>/', flashcard_view, name='flashcard_view'),
-    
+
     
     path('choose-learning/', views.learning_choice, name='learning-choice'),
     

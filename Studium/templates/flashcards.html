@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../static/styles/main.css">
 </head>
 
-<!-- Pozostała część HTML -->
 
 <body>
     {% include "header.html" %}
@@ -22,14 +21,14 @@
                             <h2>{{ category.name }}</h2>
                             <p>Liczba fiszek: {{ category.num_flashcards }}</p>
                             <div class="progress-container">
-                                <div class="progress-bar" style="width: {{ category.user_progress }}%;">
-                                    <p>{{ category.user_progress }}%</p>
+                                <div class="progress-bar" style="width: {{ category.user_progress|floatformat:'0' }}%;">
+                                    <p>{{ category.user_progress|floatformat:"0" }}%</p>
                                 </div>
                             </div>
 
                         </li>
                     {% empty %}
-                      <li>Brak fiszek.</li>
+                    <li>Brak fiszek.</li>
                     {% endfor %}
                 </ul>
             </div>
@@ -40,7 +39,6 @@
     </section>
     {% include "footer.html" %}
     <script>
-        // ...
     </script>
 </body>
 

@@ -61,19 +61,23 @@
 
         const csrftoken = '{{ csrf_token }}';
         let currentFlashcard = 0;
-         const categoryName = "{{ selected_category }}";
+        const categoryName = "{{ selected_category }}";
 
-        const flashcardsData = JSON.parse(document.getElementById('flashcards-data').textContent).map(flashcard => ({
-                ...flashcard,
-                remembered: false
-            }));
+        let flashcardsData = JSON.parse(document.getElementById('flashcards-data').textContent);
+
+        function initializeFlashcards() {
+            console.log("Stan początkowy fiszek:", flashcardsData);
+            showFlashcard();
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeFlashcards);
 
         function showFlashcard() {
             flashcardSentence.textContent = flashcardsData[currentFlashcard].sentence;
             flashcardAnswer.textContent = flashcardsData[currentFlashcard].answer;
             document.querySelector('.active-number').textContent = currentFlashcard + 1;
 
-                const statusButton = document.querySelector('.status-button .status');
+            const statusButton = document.querySelector('.status-button .status');
             if (flashcardsData[currentFlashcard].remembered) {
                 statusButton.classList.add('active');
             } else {
@@ -102,10 +106,12 @@
 
         function selectFlashcard(selectedElement) {
             selectedElement.classList.toggle('active');
-            flashcardsData[currentFlashcard].remembered = !flashcardsData[currentFlashcard].remembered;
+            const flashcardId = flashcardsData[currentFlashcard].id;
+            const remembered = !flashcardsData[currentFlashcard].remembered;
+            flashcardsData[currentFlashcard].remembered = remembered;
+
+            updateFlashcardProgress(flashcardId, remembered);
             updateProgressBar();
-            const newProgress = calculateNewProgress(); 
-            updateProgress(categoryName, newProgress); 
         }
 
         function calculateNewProgress() {
@@ -131,25 +137,32 @@
             showNextFlashcard();
         });
 
-    function updateProgress(categoryName, newProgress) {
-        console.log("Wysyłanie do /update-progress/:", categoryName, newProgress);
-        fetch('/update-progress/', {
+
+
+    function updateFlashcardProgress(flashcardId, remembered) {
+        const newProgress = calculateNewProgress();
+        fetch('/update-flashcard-and-progress/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'X-CSRFToken': csrftoken
             },
-            body: JSON.stringify({ categoryName: categoryName, progress: newProgress })
+            body: JSON.stringify({
+                flashcardId: flashcardId,
+                remembered: remembered,
+                categoryName: categoryName,
+                progress: newProgress
+            })
         })
             .then(response => response.json())
             .then(data => {
-                console.log('Success:', data);
+                console.log('Flashcard and progress updated:', data);
+                updateProgressBar();
             })
             .catch((error) => {
-                console.error('Error:', error);
+                console.error('Error updating flashcard and progress:', error);
             });
     }
-
 
     </script>
 </body>

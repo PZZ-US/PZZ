@@ -5,30 +5,24 @@
     <div class="wrapper">
         <h1>Mój postęp w nauce</h1>
         <div class="section-container">
+            {% if user_progresses %}
+            {% for progress in user_progresses %}
             <div class="course-container">
                 <div class="course-title">
-                    <h2>Algorytmy i struktury danych</h2>
-                    <span class="course-type">Quiz</span>
+                    <h2>{{ progress.category.name }}</h2>
+                    <span class="course-type">{{ progress.category_type|title }}</span>
                 </div>
                 <div class="progress-container">
-                    <div class="progress-bar" style="width: 70%;">
-                        <p>70%</p>
+                    <div class="progress-bar" style="width: {{ progress.progress|floatformat:'0' }}%;">
+                        <p>{{ progress.progress|floatformat:"0" }}%</p>
                     </div>
                 </div>
             </div>
-            <div class="course-container">
-                <div class="course-title">
-                    <h2>Programowanie obiektowe</h2>
-                    <span class="course-type">Fiszki</span>
-                </div>
-                <div class="progress-container">
-                    <div class="progress-bar" style="width: 0%;">
-                        <p>0%</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
+            {% else %}
+            <p>Rozwiąż quiz lub ucz się z fiszek, aby śledzić swoje postępy.</p>
+            {% endif %}
         </div>
-    </div>
     </div>
 </section>
 
