@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Aplikacja wspomagająca naukę na egzamin inżynierski (Platforma E-learningowa)'
+project = 'Sfera Inżyniera'
 copyright = '2023, DOMINIKA BRYŁA, PIOTR RUDEK, KINGA KANIK'
 author = 'DOMINIKA BRYŁA, PIOTR RUDEK, KINGA KANIK'
 release = 'v1'
@@ -15,7 +15,6 @@ release = 'v1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = []
-
 templates_path = ['_templates']
 exclude_patterns = []
 
@@ -26,6 +25,10 @@ language = 'pl'
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+html_css_files = [
+    'custom.css',
+]
+html_logo = '_static/images/logo-horizontal-layout-white.png'
 
 import os
 import sys

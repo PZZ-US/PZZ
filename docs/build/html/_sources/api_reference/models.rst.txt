@@ -1,0 +1,7 @@
+Models
+=======
+
+.. automodule:: Studium.models
+   :members:
+   :undoc-members:
+   :show-inheritance:

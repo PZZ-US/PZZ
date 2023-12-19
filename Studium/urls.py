@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
 from .views import CustomLoginView, flashcard_view, register
+from django.contrib.staticfiles.views import serve
 
 urlpatterns = [
     # Strona główna

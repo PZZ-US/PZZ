@@ -1,25 +1,28 @@
-.. Aplikacja wspomagająca naukę na egzamin inżynierski (Platforma E-learningowa) documentation master file, created by
+.. Sfera Inżyniera documentation master file, created by
    sphinx-quickstart on Mon Dec 18 10:55:12 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Aplikacja wspomagająca naukę na egzamin inżynierski (Platforma E-learningowa)'s documentation!
+Witaj w dokumentacji aplikacji Sfera Inżyniera
 =========================================================================================================
+
+Rozdziały
+----------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
+   introduction
+   getting_started
+   user_guide/index
+   api_reference/index
+   changelog
+   about
 
-
-Indices and tables
-==================
+Indeksy i tabele
+----------------
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
 
-.. automodule:: Studium.models
-   :members:
-   :undoc-members:
-   :show-inheritance:
