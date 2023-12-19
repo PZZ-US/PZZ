@@ -129,4 +129,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = '/dashboard/'
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 
+#tu użyłam swojego gmaila i dedykowanego hasła do aplikacji wygenerowanego w ustawieniach konta google, ale nie chcę tego wrzucać na gita, więc zostawiam tylko wzór, żeby każdy mógł wpisać swoje dane
+EMAIL_HOST_USER = 'twoj@gmail.com'
+EMAIL_HOST_PASSWORD = 'haslo do aplikacji'
