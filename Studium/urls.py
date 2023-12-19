@@ -1,12 +1,15 @@
-from django.urls import path
-from . import views
 from django.contrib.auth import views as auth_views
+from django.urls import path
+
+from . import views
 from .views import CustomLoginView, flashcard_view, register
 
 urlpatterns = [
     path('', views.home, name="home"),
     
     path('update-flashcard-and-progress/', views.update_flashcard_and_progress, name='update_flashcard_and_progress'),
+    path('update-quiz-and-progress/', views.update_quiz_and_progress, name='update_quiz_and_progress'),
+
     
     
     path('quizzes/', views.quizzes, name='quizzes'),

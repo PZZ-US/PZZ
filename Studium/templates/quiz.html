@@ -16,8 +16,8 @@
             <h1>{{ category_name }}</h1>
             <p>PROGRES:</p>
             <div class="progress-container">
-                <div class="progress-bar" style="width: {{ progress }}%;">
-                    <p>{{ progress }}/10 pytań</p>
+                <div class="progress-bar" style="width: 0%;">
+                    <p><span id="progress-percent">0</span>%</p>
                 </div>
             </div>
 
@@ -49,8 +49,13 @@
 
     <script>
         var currentQuestion = 0;
+        var totalQuestions = {{ quiz_questions|length }};
         var questions = document.querySelectorAll('.question-content');
         var canProceed = true;
+        var correctAnswers = {{ correct_answers|safe }};
+        var userAnswers = [];
+        var category_name = "{{ category_name }}";
+        updateProgress();
 
         function showNextQuestion() {
             if (canProceed && currentQuestion < questions.length - 1) {
@@ -59,11 +64,15 @@
                 questions[currentQuestion].style.display = 'block';
                 canProceed = false;
 
+                updateProgress();
+
                 setTimeout(function () {
                     canProceed = true;
-                }, 2000); // Opóźnienie =  2 sekundy
+                }, 1000);
             } else if (canProceed && currentQuestion === questions.length - 1) {
-                //koniec quizu
+                var correctCount = calculateScore();
+                userProgressQuiz(correctCount, category_name);
+
                 window.location.href = '/my-result';
             }
         }
@@ -72,18 +81,69 @@
             document.querySelectorAll('.answer').forEach(function (answer) {
                 answer.classList.remove('active');
             });
+            userAnswers[currentQuestion] = selectedElement.textContent;
 
             selectedElement.classList.add('active');
         }
 
-        // Pokaż pierwsze pytanie na początku
         questions[currentQuestion].style.display = 'block';
 
-        // Prevent form submission on button click
         document.querySelector('.next-button').addEventListener('click', function (event) {
             event.preventDefault();
             showNextQuestion();
         });
+
+        function updateProgress() {
+            var progressPercentElement = document.getElementById('progress-percent');
+            var progress = ((currentQuestion + 1) / totalQuestions) * 100;
+            progressPercentElement.textContent = Math.round(progress);
+
+            var progressBarElement = document.querySelector('.progress-bar');
+            progressBarElement.style.width = progress + '%';
+        }
+
+        function calculateScore() {
+            var correctCount = 0;
+
+            for (var i = 0; i < questions.length; i++) {
+                if (userAnswers[i] === " " + correctAnswers[i]) {
+                    correctCount++;
+                }
+            }
+            correctCount = correctCount/questions.length*100
+
+            return correctCount;
+        }
+
+        var csrftoken = '{{ csrf_token }}';
+
+        function userProgressQuiz(correctCount, categoryName) {
+            const newProgress = calculateScore();
+
+            fetch('/update-quiz-and-progress/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': csrftoken
+                },
+                body: JSON.stringify({
+                    correctCount: correctCount,
+                    categoryName: categoryName,
+                    progress: newProgress,
+                    categoryType: 'quiz'
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Quiz and progress updated:', data);
+                updateProgressBar();
+            })
+            .catch((error) => {
+                console.error('Error updating Quiz and progress:', error);
+            });
+        }
+
+
     </script>
 </body>
 

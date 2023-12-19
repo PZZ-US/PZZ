@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-import datetime
 
 
 class Category(models.Model):
@@ -8,16 +7,18 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
-    
+
+
 class Quiz(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='quizzes')
     question = models.TextField()
     choices = models.TextField()
-    correct_answer = models.CharField(max_length=255) 
+    correct_answer = models.CharField(max_length=255)
 
     def __str__(self):
         return self.question
-    
+
+
 class Flashcard(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='flashcards')
     sentence = models.CharField(max_length=100)
@@ -25,7 +26,8 @@ class Flashcard(models.Model):
 
     def __str__(self):
         return self.sentence
-    
+
+
 class UserProgress(models.Model):
     CATEGORY_TYPE_CHOICES = (
         ('quiz', 'Quiz'),
@@ -35,7 +37,7 @@ class UserProgress(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     category_type = models.CharField(max_length=10, choices=CATEGORY_TYPE_CHOICES)
-    progress = models.FloatField(default=0)  
+    progress = models.FloatField(default=0)
 
     class Meta:
         unique_together = ('user', 'category', 'category_type')
