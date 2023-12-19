@@ -8,7 +8,8 @@ from django.utils.safestring import mark_safe
 from django.http import JsonResponse
 import json
 from .forms import CustomLoginForm, CustomRegisterForm
-from .models import Quiz, Category, Flashcard, UserProgress, UserFlashcardProgress
+from .models import Quiz, Category, Flashcard, UserProgress, UserFlashcardProgress, UserAnswers
+
 
 def home(request):
     return render(request, 'index.html')
@@ -58,7 +59,7 @@ def update_quiz_and_progress(request):
 
         category = Category.objects.get(name=category_name)
 
-        # Określ, ile razy spróbować ponownie operację w przypadku blokady bazy danych
+        # blokada bazy danych
         max_retries = 5
         retries = 0
 
@@ -246,7 +247,11 @@ def progress_block(request):
 @login_required(redirect_field_name='next')
 def my_result(request):
     user_progresses = UserProgress.objects.filter(user=request.user, progress__gt=0)
+    user_answers = UserAnswers.objects.filter(user=request.user)
+
     context = {
         'user_progresses': user_progresses,
+        'user_answers': user_answers,
     }
+
     return render(request, 'my_result.html', context)

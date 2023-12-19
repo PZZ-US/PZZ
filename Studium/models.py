@@ -50,3 +50,11 @@ class UserFlashcardProgress(models.Model):
 
     class Meta:
         unique_together = ('user', 'flashcard')
+
+
+class UserAnswers(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user_answers = models.TextField()
+
+    def __str__(self):
+        return self.user_answers
