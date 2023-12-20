@@ -2,8 +2,8 @@
   {
     "question": "Struktura i organizacja typowego systemu komputerowego.",
     "choices": [
-      "a) Procesor, pamięć RAM, dysk twardy, karta graficzna",
-      "b) Klawiatura, mysz, monitor, głośniki",
+      "a) Procesor, pamięć RAM, dysk twardy, karta graficzna;",
+      "b) Klawiatura, mysz, monitor, głośniki;",
       "c) Jednostka centralna, pamięć operacyjna, urządzenia wejścia/wyjścia, magistrale"
     ],
     "correct_answer": "c) Jednostka centralna, pamięć operacyjna, urządzenia wejścia/wyjścia, magistrale"
@@ -11,26 +11,26 @@
   {
     "question": "Budowa i działanie typowego procesora ogólnego przeznaczenia.",
     "choices": [
-      "a) Wielordzeniowy, posiadający jednostki ALU, rejestrów, pamięć podręczną",
-      "b) Jedna jednostka wykonawcza, brak rejestrów, brak pamięci podręcznej",
+      "a) Wielordzeniowy, posiadający jednostki ALU, rejestrów, pamięć podręczną;",
+      "b) Jedna jednostka wykonawcza, brak rejestrów, brak pamięci podręcznej;",
       "c) Wyłącznie zegar synchroniczny, bez jednostek wspomagających"
     ],
-    "correct_answer": "a) Wielordzeniowy, posiadający jednostki ALU, rejestrów, pamięć podręczną"
+    "correct_answer": "a) Wielordzeniowy, posiadający jednostki ALU, rejestrów, pamięć podręczną;"
   },
   {
     "question": "Wykonywanie rozkazów przez procesor(y), przerwania, wyjątki.",
     "choices": [
-      "a) Procesor wykonuje rozkazy sekwencyjnie, brak przerwań, brak wyjątków",
-      "b) Wykonywanie rozkazów zgodnie z algorytmem planowania, przerwania obsługiwane asynchronicznie, wyjątki reprezentują sytuacje błędne",
+      "a) Procesor wykonuje rozkazy sekwencyjnie, brak przerwań, brak wyjątków;",
+      "b) Wykonywanie rozkazów zgodnie z algorytmem planowania, przerwania obsługiwane asynchronicznie, wyjątki reprezentują sytuacje błędne;",
       "c) Brak możliwości obsługi przerwań w procesorze"
     ],
-    "correct_answer": "b) Wykonywanie rozkazów zgodnie z algorytmem planowania, przerwania obsługiwane asynchronicznie, wyjątki reprezentują sytuacje błędne"
+    "correct_answer": "b) Wykonywanie rozkazów zgodnie z algorytmem planowania, przerwania obsługiwane asynchronicznie, wyjątki reprezentują sytuacje błędne;"
   },
   {
     "question": "Dane i ich przetwarzanie w systemie komputerowym.",
     "choices": [
-      "a) Dane przechowywane w pamięci RAM, przetwarzane sekwencyjnie przez procesor",
-      "b) Brak możliwości przetwarzania danych w systemie komputerowym",
+      "a) Dane przechowywane w pamięci RAM, przetwarzane sekwencyjnie przez procesor;",
+      "b) Brak możliwości przetwarzania danych w systemie komputerowym;",
       "c) Dane reprezentowane w formie binarnej, przechowywane w różnych typach pamięci, przetwarzane za pomocą operacji arytmetyczno-logicznych"
     ],
     "correct_answer": "c) Dane reprezentowane w formie binarnej, przechowywane w różnych typach pamięci, przetwarzane za pomocą operacji arytmetyczno-logicznych"
@@ -38,26 +38,26 @@
   {
     "question": "Koncepcja „konwencjonalnej maszyny”, język maszynowy, asembler.",
     "choices": [
-      "a) Konwencjonalna maszyna opiera się na technologii kwantowej, język maszynowy to assembler, asembler to wysokopoziomowy język programowania",
-      "b) Konwencjonalna maszyna to abstrakcyjny model komputera, język maszynowy to zestaw instrukcji zrozumiały dla procesora, asembler to język programowania",
+      "a) Konwencjonalna maszyna opiera się na technologii kwantowej, język maszynowy to assembler, asembler to wysokopoziomowy język programowania;",
+      "b) Konwencjonalna maszyna to abstrakcyjny model komputera, język maszynowy to zestaw instrukcji zrozumiały dla procesora, asembler to język programowania;",
       "c) Konwencjonalna maszyna to maszyna do pisania, język maszynowy to język używany do komunikacji między maszynami, asembler to narzędzie do konserwacji maszyn"
     ],
-    "correct_answer": "b) Konwencjonalna maszyna to abstrakcyjny model komputera, język maszynowy to zestaw instrukcji zrozumiały dla procesora, asembler to język programowania"
+    "correct_answer": "b) Konwencjonalna maszyna to abstrakcyjny model komputera, język maszynowy to zestaw instrukcji zrozumiały dla procesora, asembler to język programowania;"
   },
   {
     "question": "Połączenia wewnątrz- i zewnątrz-systemowe, urządzenia wejścia/wyjścia.",
     "choices": [
-      "a) Połączenia wewnątrzsystemowe umożliwiają komunikację między komponentami, połączenia zewnętrzne z innymi systemami, urządzenia wejścia/wyjścia są interfejsem między systemem a środowiskiem zewnętrznym",
-      "b) Brak możliwości połączeń wewnątrzsystemowych, tylko połączenia zewnętrzne, urządzenia wejścia/wyjścia są zbędne w systemie komputerowym",
+      "a) Połączenia wewnątrzsystemowe umożliwiają komunikację między komponentami, połączenia zewnętrzne z innymi systemami, urządzenia wejścia/wyjścia są interfejsem między systemem a środowiskiem zewnętrznym;",
+      "b) Brak możliwości połączeń wewnątrzsystemowych, tylko połączenia zewnętrzne, urządzenia wejścia/wyjścia są zbędne w systemie komputerowym;",
       "c) Wszystkie połączenia są jednokierunkowe, urządzenia wejścia/wyjścia są zintegrowane bezpośrednio z jednostką centralną"
     ],
-    "correct_answer": "a) Połączenia wewnątrzsystemowe umożliwiają komunikację między komponentami, połączenia zewnętrzne z innymi systemami, urządzenia wejścia/wyjścia są interfejsem między systemem a środowiskiem zewnętrznym"
+    "correct_answer": "a) Połączenia wewnątrzsystemowe umożliwiają komunikację między komponentami, połączenia zewnętrzne z innymi systemami, urządzenia wejścia/wyjścia są interfejsem między systemem a środowiskiem zewnętrznym;"
   },
   {
     "question": "Realizacja przetwarzania równoległego w systemach komputerowych.",
     "choices": [
-      "a) Przetwarzanie równoległe nie jest możliwe w systemach komputerowych, każdy proces musi być wykonywany sekwencyjnie",
-      "b) Równoległe przetwarzanie opiera się wyłącznie na technologii kwantowej",
+      "a) Przetwarzanie równoległe nie jest możliwe w systemach komputerowych, każdy proces musi być wykonywany sekwencyjnie;",
+      "b) Równoległe przetwarzanie opiera się wyłącznie na technologii kwantowej;",
       "c) Wykorzystanie wielordzeniowych procesorów, klastrów komputerowych, technik SIMD i MIMD do realizacji przetwarzania równoległego"
     ],
     "correct_answer": "c) Wykorzystanie wielordzeniowych procesorów, klastrów komputerowych, technik SIMD i MIMD do realizacji przetwarzania równoległego"
@@ -65,8 +65,8 @@
   {
     "question": "Optymalizacja wydajności procesora(ów) i systemu komputerowego.",
     "choices": [
-      "a) Optymalizacja nie jest istotna, każdy procesor ma taką samą wydajność",
-      "b) Wydajność systemu komputerowego nie jest związana z optymalizacją",
+      "a) Optymalizacja nie jest istotna, każdy procesor ma taką samą wydajność;",
+      "b) Wydajność systemu komputerowego nie jest związana z optymalizacją;",
       "c) Optymalizacja obejmuje dostosowanie algorytmów, zarządzanie pamięcią podręczną, równoważenie obciążenia i inne techniki mające na celu poprawę efektywności systemu"
     ],
     "correct_answer": "c) Optymalizacja obejmuje dostosowanie algorytmów, zarządzanie pamięcią podręczną, równoważenie obciążenia i inne techniki mające na celu poprawę efektywności systemu"

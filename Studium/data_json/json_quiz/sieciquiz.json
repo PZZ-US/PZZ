@@ -2,17 +2,17 @@
   {
     "question": "Modele referencyjne systemu sieciowego, usługi, protokoły, interfejsy, standaryzacja.",
     "choices": [
-      "a) Modele OSI i TCP/IP, usługi obejmują komunikację między systemami, protokoły to standardy określające reguły komunikacji, interfejsy i standaryzacja są nieistotne w sieciach",
-      "b) Brak modeli referencyjnych w systemach sieciowych",
+      "a) Modele OSI i TCP/IP, usługi obejmują komunikację między systemami, protokoły to standardy określające reguły komunikacji, interfejsy i standaryzacja są nieistotne w sieciach;",
+      "b) Brak modeli referencyjnych w systemach sieciowych;",
       "c) Tylko model TCP/IP jest modelem referencyjnym w sieciach komputerowych"
     ],
-    "correct_answer": "a) Modele OSI i TCP/IP, usługi obejmują komunikację między systemami, protokoły to standardy określające reguły komunikacji, interfejsy i standaryzacja są nieistotne w sieciach"
+    "correct_answer": "a) Modele OSI i TCP/IP, usługi obejmują komunikację między systemami, protokoły to standardy określające reguły komunikacji, interfejsy i standaryzacja są nieistotne w sieciach;"
   },
   {
     "question": "Koncepcja kanału komunikacyjnego, media komunikacyjne, współdzielenie medium.",
     "choices": [
-      "a) Kanał komunikacyjny to tylko oprogramowanie odpowiedzialne za przesyłanie danych, media komunikacyjne są zawsze bezprzewodowe, współdzielenie medium nie jest istotne w sieciach",
-      "b) W sieciach nie występuje koncepcja kanału komunikacyjnego ani media komunikacyjne",
+      "a) Kanał komunikacyjny to tylko oprogramowanie odpowiedzialne za przesyłanie danych, media komunikacyjne są zawsze bezprzewodowe, współdzielenie medium nie jest istotne w sieciach;",
+      "b) W sieciach nie występuje koncepcja kanału komunikacyjnego ani media komunikacyjne;",
       "c) Koncepcja kanału komunikacyjnego obejmuje medium transmisyjne, media komunikacyjne to nośniki sygnałów, współdzielenie medium dotyczy możliwości jednoczesnego korzystania z tego samego medium przez wiele urządzeń"
     ],
     "correct_answer": "c) Koncepcja kanału komunikacyjnego obejmuje medium transmisyjne, media komunikacyjne to nośniki sygnałów, współdzielenie medium dotyczy możliwości jednoczesnego korzystania z tego samego medium przez wiele urządzeń"
@@ -20,17 +20,17 @@
   {
     "question": "Sieci komputerowe z komutacją pakietów, enkapsulacja danych, przełączanie, przełączniki.",
     "choices": [
-      "a) Sieci komputerowe z komutacją pakietów są wyłącznie bezprzewodowe, enkapsulacja danych polega na eliminowaniu pakietów danych, przełączanie to proces konfiguracji sieci, przełączniki są tylko jednym z wielu rodzajów urządzeń sieciowych",
-      "b) Sieci komputerowe z komutacją pakietów to sieci, w których dane są podzielone na pakiety i przesyłane niezależnie, enkapsulacja danych polega na dodawaniu nagłówków i stopki do pakietu, przełączanie to proces przekazywania pakietów do odpowiednich portów, przełączniki są urządzeniami, które przesyłają pakiety tylko do odpowiednich portów",
+      "a) Sieci komputerowe z komutacją pakietów są wyłącznie bezprzewodowe, enkapsulacja danych polega na eliminowaniu pakietów danych, przełączanie to proces konfiguracji sieci, przełączniki są tylko jednym z wielu rodzajów urządzeń sieciowych;",
+      "b) Sieci komputerowe z komutacją pakietów to sieci, w których dane są podzielone na pakiety i przesyłane niezależnie, enkapsulacja danych polega na dodawaniu nagłówków i stopki do pakietu, przełączanie to proces przekazywania pakietów do odpowiednich portów, przełączniki są urządzeniami, które przesyłają pakiety tylko do odpowiednich portów;",
       "c) Sieci komputerowe z komutacją pakietów to tylko sieci kablowe, enkapsulacja danych polega na usuwaniu nagłówków i stopki z pakietu, przełączanie to proces eliminacji pakietów z sieci, przełączniki są zbędne w nowoczesnych sieciach"
     ],
-    "correct_answer": "b) Sieci komputerowe z komutacją pakietów to sieci, w których dane są podzielone na pakiety i przesyłane niezależnie, enkapsulacja danych polega na dodawaniu nagłówków i stopki do pakietu, przełączanie to proces przekazywania pakietów do odpowiednich portów, przełączniki są urządzeniami, które przesyłają pakiety tylko do odpowiednich portów"
+    "correct_answer": "b) Sieci komputerowe z komutacją pakietów to sieci, w których dane są podzielone na pakiety i przesyłane niezależnie, enkapsulacja danych polega na dodawaniu nagłówków i stopki do pakietu, przełączanie to proces przekazywania pakietów do odpowiednich portów, przełączniki są urządzeniami, które przesyłają pakiety tylko do odpowiednich portów;"
   },
   {
     "question": "Sieci komputerowe z komutacją obwodów, obwody wirtualne, tunelowanie.",
     "choices": [
-      "a) Sieci komputerowe z komutacją obwodów są przestarzałe, obwody wirtualne to jedynie abstrakcje teoretyczne, tunelowanie jest niebezpieczne i nie stosuje się go w sieciach",
-      "b) Sieci komputerowe z komutacją obwodów to jedyna forma sieci komputerowej, obwody wirtualne są jedynie koncepcją, tunelowanie jest jedynie teoretyczną możliwością",
+      "a) Sieci komputerowe z komutacją obwodów są przestarzałe, obwody wirtualne to jedynie abstrakcje teoretyczne, tunelowanie jest niebezpieczne i nie stosuje się go w sieciach;",
+      "b) Sieci komputerowe z komutacją obwodów to jedyna forma sieci komputerowej, obwody wirtualne są jedynie koncepcją, tunelowanie jest jedynie teoretyczną możliwością;",
       "c) Sieci komputerowe z komutacją obwodów to sieci, w których przed przesłaniem danych nawiązywane są stałe połączenia, obwody wirtualne to tymczasowe połączenia między urządzeniami, tunelowanie to technika przesyłania danych w formie zaszyfrowanych tuneli przez publiczną sieć"
     ],
     "correct_answer": "c) Sieci komputerowe z komutacją obwodów to sieci, w których przed przesłaniem danych nawiązywane są stałe połączenia, obwody wirtualne to tymczasowe połączenia między urządzeniami, tunelowanie to technika przesyłania danych w formie zaszyfrowanych tuneli przez publiczną sieć"
@@ -38,35 +38,35 @@
   {
     "question": "Trasowanie, sterowanie ruchem, obciążeniem, przepływnością, jakością usług.",
     "choices": [
-      "a) Trasowanie to proces eliminacji ruchu w sieci, sterowanie ruchem to jedynie kontroli ilości przesyłanych danych, obciążenie to brak kontroli nad ilością danych w sieci, przepływność oznacza jedynie ilość przesyłanych danych, jakość usług nie ma znaczenia w sieciach",
-      "b) Trasowanie to proces wybierania ścieżki dla przesyłania danych, sterowanie ruchem to kontrola ilości i przepływu danych w sieci, obciążenie to stopień obciążenia sieci, przepływność oznacza ilość danych, które mogą być przesłane w danym czasie, jakość usług obejmuje parametry takie jak opóźnienia, przepustowość i niezawodność",
+      "a) Trasowanie to proces eliminacji ruchu w sieci, sterowanie ruchem to jedynie kontroli ilości przesyłanych danych, obciążenie to brak kontroli nad ilością danych w sieci, przepływność oznacza jedynie ilość przesyłanych danych, jakość usług nie ma znaczenia w sieciach;",
+      "b) Trasowanie to proces wybierania ścieżki dla przesyłania danych, sterowanie ruchem to kontrola ilości i przepływu danych w sieci, obciążenie to stopień obciążenia sieci, przepływność oznacza ilość danych, które mogą być przesłane w danym czasie, jakość usług obejmuje parametry takie jak opóźnienia, przepustowość i niezawodność;",
       "c) Trasowanie to proces eliminacji niechcianych danych w sieci, sterowanie ruchem to nieistotna koncepcja, obciążenie to jedynie problem natury sprzętowej, przepływność oznacza ilość dostępnej pamięci RAM, jakość usług to jedynie pojęcie marketingowe"
     ],
-    "correct_answer": "b) Trasowanie to proces wybierania ścieżki dla przesyłania danych, sterowanie ruchem to kontrola ilości i przepływu danych w sieci, obciążenie to stopień obciążenia sieci, przepływność oznacza ilość danych, które mogą być przesłane w danym czasie, jakość usług obejmuje parametry takie jak opóźnienia, przepustowość i niezawodność"
+    "correct_answer": "b) Trasowanie to proces wybierania ścieżki dla przesyłania danych, sterowanie ruchem to kontrola ilości i przepływu danych w sieci, obciążenie to stopień obciążenia sieci, przepływność oznacza ilość danych, które mogą być przesłane w danym czasie, jakość usług obejmuje parametry takie jak opóźnienia, przepustowość i niezawodność;"
   },
   {
     "question": "Typowe protokoły sieciowe i transportowe.",
     "choices": [
-      "a) TCP/IP, UDP, HTTP, FTP, SNMP to przykłady protokołów sieciowych, protokoły transportowe obejmują TCP i UDP",
-      "b) Protokoły sieciowe i transportowe to jedynie dokumentacja sieci",
+      "a) TCP/IP, UDP, HTTP, FTP, SNMP to przykłady protokołów sieciowych, protokoły transportowe obejmują TCP i UDP;",
+      "b) Protokoły sieciowe i transportowe to jedynie dokumentacja sieci;",
       "c) Protokoły sieciowe i transportowe są zawsze zaimplementowane w sprzęcie, nie są wymieniane w trakcie komunikacji między urządzeniami"
     ],
-    "correct_answer": "a) TCP/IP, UDP, HTTP, FTP, SNMP to przykłady protokołów sieciowych, protokoły transportowe obejmują TCP i UDP"
+    "correct_answer": "a) TCP/IP, UDP, HTTP, FTP, SNMP to przykłady protokołów sieciowych, protokoły transportowe obejmują TCP i UDP;"
   },
   {
     "question": "Typowe usługi sieciowe, związane z nimi protokoły i aplikacje.",
     "choices": [
-      "a) Usługi sieciowe obejmują przesyłanie plików, udostępnianie zasobów, dostęp do zdalnych serwisów; protokoły to np. FTP, SMB, HTTP, aplikacje to przeglądarki internetowe, klienty FTP itp.",
-      "b) Usługi sieciowe to jedynie dostęp do internetu, protokoły i aplikacje są nieistotne",
+      "a) Usługi sieciowe obejmują przesyłanie plików, udostępnianie zasobów, dostęp do zdalnych serwisów, protokoły to np. FTP, SMB, HTTP, aplikacje to przeglądarki internetowe, klienty FTP itp.;",
+      "b) Usługi sieciowe to jedynie dostęp do internetu, protokoły i aplikacje są nieistotne;",
       "c) Usługi sieciowe to jedynie dostarczanie dostępu do internetu, protokoły i aplikacje są tylko koncepcją"
     ],
-    "correct_answer": "a) Usługi sieciowe obejmują przesyłanie plików, udostępnianie zasobów, dostęp do zdalnych serwisów; protokoły to np. FTP, SMB, HTTP, aplikacje to przeglądarki internetowe, klienty FTP itp."
+    "correct_answer": "a) Usługi sieciowe obejmują przesyłanie plików, udostępnianie zasobów, dostęp do zdalnych serwisów, protokoły to np. FTP, SMB, HTTP, aplikacje to przeglądarki internetowe, klienty FTP itp.;"
   },
   {
     "question": "Zagrożenia bezpieczeństwa w środowiskach sieciowych, ochrona i przeciwdziałanie.",
     "choices": [
-      "a) Bezpieczeństwo w sieciach komputerowych nie stanowi problemu, zagrożenia są jedynie teoretyczne",
-      "b) Zagrożenia obejmują ataki hakerskie, malware, phishing, ochrona polega na zainstalowaniu antywirusa i firewala, przeciwdziałanie to jedynie reakcja na ataki",
+      "a) Bezpieczeństwo w sieciach komputerowych nie stanowi problemu, zagrożenia są jedynie teoretyczne;",
+      "b) Zagrożenia obejmują ataki hakerskie, malware, phishing, ochrona polega na zainstalowaniu antywirusa i firewala, przeciwdziałanie to jedynie reakcja na ataki;",
       "c) Bezpieczeństwo w sieciach to jedynie kwestia zabezpieczenia przed wirusami, ochrona sprowadza się do stosowania haseł, przeciwdziałanie to wyłącznie reakcja na ataki"
     ],
     "correct_answer": "b) Zagrożenia obejmują ataki hakerskie, malware, phishing, ochrona polega na zainstalowaniu antywirusa i firewala, przeciwdziałanie to jedynie reakcja na ataki"
