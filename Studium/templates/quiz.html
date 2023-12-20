@@ -72,6 +72,7 @@
             } else if (canProceed && currentQuestion === questions.length - 1) {
                 var correctCount = calculateScore();
                 userProgressQuiz(correctCount, category_name);
+                sendUserAnswers(userAnswers);
 
                 window.location.href = '/my-result';
             }
@@ -142,6 +143,34 @@
             .catch((error) => {
                 console.error('Error updating Quiz and progress:', error);
             });
+        }
+
+        function sendUserAnswers(userAnswers) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/my-result/', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+
+            var csrfToken = getCookie('csrftoken');
+
+            xhr.setRequestHeader('X-CSRFToken', csrfToken);
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log('Odpowiedzi użytkownika wysłane pomyślnie.');
+                } else {
+                    console.error('Błąd podczas wysyłania odpowiedzi użytkownika.');
+                }
+            };
+
+            var data = JSON.stringify({ userAnswers: userAnswers , category_name: category_name});
+            xhr.send(data);
+        }
+
+        // Funkcja do pobierania wartości ciasteczka o podanej nazwie
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length === 2) return parts.pop().split(";").shift();
         }
 
 

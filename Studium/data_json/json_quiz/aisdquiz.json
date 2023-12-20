@@ -2,8 +2,8 @@
 {
 "question": "Pojęcie algorytmu.",
 "choices": [
-"a) Algorytm to jedynie plan działania w życiu codziennym, bez zastosowania w informatyce",
-"b) Algorytm to ciąg kroków prowadzących do rozwiązania określonego problemu, stosowany również w informatyce",
+"a) Algorytm to jedynie plan działania w życiu codziennym, bez zastosowania w informatyce;",
+"b) Algorytm to ciąg kroków prowadzących do rozwiązania określonego problemu, stosowany również w informatyce;",
 "c) Algorytm to jedynie zapis matematyczny, bez praktycznego zastosowania w rzeczywistości"
 ],
 "correct_answer": "b) Algorytm to ciąg kroków prowadzących do rozwiązania określonego problemu, stosowany również w informatyce"
@@ -11,8 +11,8 @@
 {
 "question": "Czasowa i pamięciowa złożoność obliczeniowa algorytmu. Złożoność optymistyczna, pesymistyczna, średnia.",
 "choices": [
-"a) Złożoność czasowa i pamięciowa algorytmu to jedynie teoretyczne koncepcje, nie mające praktycznego znaczenia",
-"b) Złożoność czasowa to miara ilości czasu potrzebnego do wykonania algorytmu, złożoność pamięciowa to ilość dostępnej pamięci RAM; złożoność optymistyczna, pesymistyczna i średnia odnoszą się do różnych przypadków wejściowych i określają minimalny, maksymalny i średni czas wykonania",
+"a) Złożoność czasowa i pamięciowa algorytmu to jedynie teoretyczne koncepcje, nie mające praktycznego znaczenia;",
+"b) Złożoność czasowa to miara ilości czasu potrzebnego do wykonania algorytmu, złożoność pamięciowa to ilość dostępnej pamięci RAM złożoność optymistyczna, pesymistyczna i średnia odnoszą się do różnych przypadków wejściowych i określają minimalny, maksymalny i średni czas wykonania;",
 "c) Złożoność czasowa i pamięciowa algorytmu to jedynie jednorodne pojęcia, złożoność optymistyczna, pesymistyczna i średnia są tożsame"
 ],
 "correct_answer": "b) Złożoność czasowa to miara ilości czasu potrzebnego do wykonania algorytmu, złożoność pamięciowa to ilość dostępnej pamięci RAM; złożoność optymistyczna, pesymistyczna i średnia odnoszą się do różnych przypadków wejściowych i określają minimalny, maksymalny i średni czas wykonania"

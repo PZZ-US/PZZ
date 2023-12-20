@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wyniki Testu | Sfera Inżyniera</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyniki Testu | Sfera Inżyniera</title>
+    <link rel="stylesheet" href="../static/styles/main.css">
+</head>
 
-        <link rel="stylesheet" href="../static/styles/main.css">
-    </head>
+<body>
+    {% include "header.html" %}
 
-    <body>
-        {% include "header.html" %}
-
-        <section class="my-result-section">
-            <div class="wrapper">
-                <h1>Wyniki Testu</h1>
-                <div class="section-container">
-                    <div class="results-summary">
-                        <h2>Twój wynik to: <strong>{{ progress }}</strong></h2>
-                        <p>Świetnie odpowiedziałeś na pytania!</p>
-                    </div>
-                    <div class="answer-container">
-                        <div class="question">
-                            <h2><span>1.</span>Czym jest szyfr cezara?</h2>
-                            <ul>
-
-                                <li class="answer selected-answer">A. Metodą szyfrowania tekstu</li>
-                                <li class="answer correct-answer">B. Techniką kryptograficzną</li>
-                                <li class="answer">C. Algorytmem sortowania</li>
-                            </ul>
-                        </div>
-
-                    </div>
+    <section class="my-result-section">
+        <div class="wrapper">
+            <h1>Wyniki Testu</h1>
+            <div class="section-container">
+                <div class="results-summary">
+                    {% if user_progress %}
+                        {% if user_progress.progress >= 50 %}
+                            <h2>Twój wynik to: <strong>{{ user_progress.progress }}%</strong></h2>
+                            <p>Świetnie odpowiedziałeś na pytania!</p>
+                        {% else %}
+                            <h2>Twój wynik to: <strong>{{ user_progress.progress }}%</strong></h2>
+                            <p>Powinieneś się jeszcze trochę pouczyć!</p>
+                        {% endif %}
+                    {% else %}
+                        <p>Brak wyników do wyświetlenia.</p>
+                    {% endif %}
                 </div>
+                <div class="answer-container">
 
+                    {% if quiz_questions %}
+                        {% for question in quiz_questions %}
+                            <div class="question">
+                                <h2><span>{{ forloop.counter }}.</span>{{ question.question_text }}</h2>
+                                <ul>
+                                    {% for choice in question.choices %}
+                                        {% if choice == question.correct_answer %}
+                                            <li class="answer correct-answer">{{ choice }}</li>
+                                        {% elif choice in user_answers and choice != question.correct_answer %}
+                                            <li class="answer wrong-answer">{{ choice }}</li>
+                                        {% else %}
+                                            <li class="answer">{{ choice }}</li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <p>Brak pytań do wyświetlenia.</p>
+                    {% endif %}
+                </div>
+            </div>
 
-        <div class="button-section">
-            <div class="status-button">
-                <a class="return" onclick="location.href='/quizzes'">POWRÓT</a>
-                <a class="status" onclick="selectQuiz(this)">ZALICZONO</a>
+            <div class="button-section">
+                <div class="status-button">
+                    <a class="return" onclick="location.href='/quizzes'">POWRÓT</a>
+                    <a class="status" onclick="selectQuiz(this)">ZALICZONO</a>
+                </div>
             </div>
         </div>
+    </section>
 
-                    </div>
-                    </section>
-        {% include "footer.html" %}
-        <script>
-            function selectQuiz(selectedElement) {
-                selectedElement.classList.add('active');
-            }
-        </script>
-
-    </body>
+    {% include "footer.html" %}
+    <script>
+        function selectQuiz(selectedElement) {
+            selectedElement.classList.add('active');
+        }
+    </script>
+</body>
 
 </html>

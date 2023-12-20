@@ -54,7 +54,8 @@ class UserFlashcardProgress(models.Model):
 
 class UserAnswers(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     user_answers = models.TextField()
 
     def __str__(self):
-        return self.user_answers
+        return f"{self.user.username} - {self.category.name}"

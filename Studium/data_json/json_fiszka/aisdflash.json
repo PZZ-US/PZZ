@@ -1,6 +1,5 @@
 {
   "Pojęcie algorytmu": "Algorytm to skończony ciąg precyzyjnie określonych instrukcji, które rozwiązują określony problem lub wykonują określone zadanie.",
-  "Klasyczne algorytmy": {
     "Badanie, czy liczba jest liczbą pierwszą": "Algorytm sprawdzający, czy dana liczba jest liczbą pierwszą.",
     "Algorytmy Euklidesa (przez odejmowanie i przez dzielenie)": "Algorytmy służące do obliczenia największego wspólnego dzielnika dwóch liczb.",
     "Wyszukiwanie elementu w zbiorze uporządkowanym (wyszukiwanie binarne)": "Algorytm wyszukiwania elementu w posortowanym zbiorze.",
@@ -8,8 +7,7 @@
     "Znajdowanie jednocześnie najmniejszego i największego elementu w zbiorze (algorytm optymalny)": "Efektywny algorytm znajdujący jednocześnie najmniejszy i największy element w zbiorze.",
     "Obliczanie wartości wielomianu – schemat Hornera": "Algorytm efektywnego obliczania wartości wielomianu, wykorzystujący schemat Hornera.",
     "Szybkie podnoszenie do potęgi": "Algorytm efektywnego podnoszenia liczby do potęgi.",
-    "Wyszukiwanie wierzchołka 1D i 2D": "Algorytmy wyszukiwania lokalnego minimum lub maksimum w jednowymiarowych i dwuwymiarowych zbiorach danych."
-  },
+    "Wyszukiwanie wierzchołka 1D i 2D": "Algorytmy wyszukiwania lokalnego minimum lub maksimum w jednowymiarowych i dwuwymiarowych zbiorach danych.",
   "Czasowa i pamięciowa złożoność obliczeniowa algorytmu": "Złożoność czasowa to ilość czasu potrzebna do wykonania algorytmu, a złożoność pamięciowa to ilość pamięci potrzebna do jego wykonania. Złożoność optymistyczna, pesymistyczna i średnia to różne przypadki analizy złożoności czasowej.",
   "Notacja asymptotyczna i jej znaczenie w teorii algorytmów, rzędy wielkości funkcji": "Notacja asymptotyczna (np. O, Ω, Θ) opisuje wzrost funkcji w nieskończoności. Rzędy wielkości funkcji pomagają porównywać efektywność algorytmów.",
   "Algorytmy sortowania": {
