@@ -2,29 +2,29 @@
   {
     "question": "Relacyjny model danych i algebra relacji: atrybuty, dziedziny atrybutów, krotki i relacje; operacje na relacjach",
     "choices": [
-      "a) Relacyjny model danych to jedynie abstrakcyjna koncepcja, algebra relacji obejmuje jedynie dodawanie i odejmowanie relacji",
-      "b) Relacyjny model danych obejmuje atrybuty, dziedziny atrybutów, krotki i relacje, operacje na relacjach to np. projekcja, selekcja, złączenia",
+      "a) Relacyjny model danych obejmuje atrybuty, dziedziny atrybutów, krotki i relacje, operacje na relacjach to np. projekcja, selekcja, złączenia",
+      "b) Relacyjny model danych to jedynie abstrakcyjna koncepcja, algebra relacji obejmuje jedynie dodawanie i odejmowanie relacji",
       "c) Relacyjny model danych opiera się wyłącznie na tekstowych opisach danych, algebra relacji to jedynie teoria matematyczna"
     ],
-    "correct_answer": "b) Relacyjny model danych obejmuje atrybuty, dziedziny atrybutów, krotki i relacje, operacje na relacjach to np. projekcja, selekcja, złączenia"
+    "correct_answer": "a) Relacyjny model danych obejmuje atrybuty, dziedziny atrybutów, krotki i relacje, operacje na relacjach to np. projekcja, selekcja, złączenia"
   },
   {
     "question": "Język SQL – zapytania, selekcja, sortowanie, grupowanie, funkcje agregujące, podzapytania.",
     "choices": [
-      "a) Język SQL to jedynie narzędzie do tworzenia baz danych, zapytania są zbędne",
-      "b) Język SQL obejmuje tworzenie baz danych, zapytania, selekcję, sortowanie, grupowanie, funkcje agregujące, podzapytania",
+      "a) Język SQL obejmuje tworzenie baz danych, zapytania, selekcję, sortowanie, grupowanie, funkcje agregujące, podzapytania",
+      "b) Język SQL to jedynie narzędzie do tworzenia baz danych, zapytania są zbędne",
       "c) Język SQL służy tylko do wprowadzania danych do tabel"
     ],
-    "correct_answer": "b) Język SQL obejmuje tworzenie baz danych, zapytania, selekcję, sortowanie, grupowanie, funkcje agregujące, podzapytania"
+    "correct_answer": "a) Język SQL obejmuje tworzenie baz danych, zapytania, selekcję, sortowanie, grupowanie, funkcje agregujące, podzapytania"
   },
   {
     "question": "Instrukcje DML – usuwanie, aktualizacja i dołączanie danych.",
     "choices": [
       "a) Instrukcje DML to jedynie abstrakcyjne pojęcia, usuwanie, aktualizacja i dołączanie danych są nieistotne",
-      "b) Instrukcje DML obejmują operacje na danych, takie jak usuwanie, aktualizacja i dołączanie danych",
-      "c) Instrukcje DML są jedynie częścią języka SQL, nie mają praktycznego zastosowania"
+      "b) Instrukcje DML są jedynie częścią języka SQL, nie mają praktycznego zastosowania",
+      "c) Instrukcje DML obejmują operacje na danych, takie jak usuwanie, aktualizacja i dołączanie danych"
     ],
-    "correct_answer": "b) Instrukcje DML obejmują operacje na danych, takie jak usuwanie, aktualizacja i dołączanie danych"
+    "correct_answer": "c) Instrukcje DML obejmują operacje na danych, takie jak usuwanie, aktualizacja i dołączanie danych"
   },
   {
     "question": "Instrukcje DDL – tworzenie tabel, modyfikacje struktury tabel, usuwanie tabel.",
@@ -39,10 +39,10 @@
     "question": "Zależności funkcyjne. Aksjomaty Armstronga. Integralność danych (klucze, klucze obce). Opcje propagacji.",
     "choices": [
       "a) Zależności funkcyjne to jedynie teoria matematyczna, aksjomaty Armstronga są niepraktyczne",
-      "b) Zależności funkcyjne, aksjomaty Armstronga, integralność danych (klucze, klucze obce) są istotne w projektowaniu baz danych, opcje propagacji dotyczą automatycznego aktualizowania zależnych danych",
-      "c) Zależności funkcyjne to jedynie teoretyczne pojęcia, integralność danych to jedynie kontrola dostępu"
+      "b) Zależności funkcyjne to jedynie teoretyczne pojęcia, integralność danych to jedynie kontrola dostępu",
+      "c) Zależności funkcyjne, aksjomaty Armstronga, integralność danych (klucze, klucze obce) są istotne w projektowaniu baz danych, opcje propagacji dotyczą automatycznego aktualizowania zależnych danych"
     ],
-    "correct_answer": "b) Zależności funkcyjne, aksjomaty Armstronga, integralność danych (klucze, klucze obce) są istotne w projektowaniu baz danych, opcje propagacji dotyczą automatycznego aktualizowania zależnych danych"
+    "correct_answer": "c) Zależności funkcyjne, aksjomaty Armstronga, integralność danych (klucze, klucze obce) są istotne w projektowaniu baz danych, opcje propagacji dotyczą automatycznego aktualizowania zależnych danych"
   },
   {
     "question": "Postacie normalne: 1NF, 2NF, 3NF, BCNF, 4NF. Normalizacja.",
@@ -56,29 +56,29 @@
   {
     "question": "Indeksy. Widoki. Procedury składowane. Wyzwalacze.",
     "choices": [
-      "a) Indeksy, widoki, procedury składowane, wyzwalacze są zbędne w bazach danych",
-      "b) Indeksy służą do przyspieszenia wyszukiwania danych, widoki to wirtualne tabele, procedury składowane to zapisane sekwencje instrukcji, wyzwalacze to reakcje na określone zdarzenia",
+      "a) Indeksy służą do przyspieszenia wyszukiwania danych, widoki to wirtualne tabele, procedury składowane to zapisane sekwencje instrukcji, wyzwalacze to reakcje na określone zdarzenia",
+      "b) Indeksy, widoki, procedury składowane, wyzwalacze są zbędne w bazach danych",
       "c) Indeksy to jedynie nazwy dla kolumn, widoki to niepotrzebne narzędzia, procedury składowane to jedynie złożone zapytania, wyzwalacze są zbędne"
     ],
-    "correct_answer": "b) Indeksy służą do przyspieszenia wyszukiwania danych, widoki to wirtualne tabele, procedury składowane to zapisane sekwencje instrukcji, wyzwalacze to reakcje na określone zdarzenia"
+    "correct_answer": "a) Indeksy służą do przyspieszenia wyszukiwania danych, widoki to wirtualne tabele, procedury składowane to zapisane sekwencje instrukcji, wyzwalacze to reakcje na określone zdarzenia"
   },
   {
     "question": "Modelowanie danych: model logiczny (diagram związków encji - ERD) i model relacyjny",
     "choices": [
       "a) Modelowanie danych to jedynie rysowanie diagramów, model logiczny i relacyjny są jednoznaczne",
-      "b) Modelowanie danych obejmuje tworzenie diagramów związków encji (ERD) oraz modelu relacyjnego, są to różne etapy projektowania baz danych",
-      "c) Modelowanie danych to jedynie abstrakcja, diagram związków encji i model relacyjny są zbędne"
+      "b) Modelowanie danych to jedynie abstrakcja, diagram związków encji i model relacyjny są zbędne",
+      "c) Modelowanie danych obejmuje tworzenie diagramów związków encji (ERD) oraz modelu relacyjnego, są to różne etapy projektowania baz danych"
     ],
-    "correct_answer": "b) Modelowanie danych obejmuje tworzenie diagramów związków encji (ERD) oraz modelu relacyjnego, są to różne etapy projektowania baz danych"
+    "correct_answer": "c) Modelowanie danych obejmuje tworzenie diagramów związków encji (ERD) oraz modelu relacyjnego, są to różne etapy projektowania baz danych"
   },
   {
     "question": "Systemy transakcyjne i analityczne - podstawowe różnice",
     "choices": [
       "a) Systemy transakcyjne i analityczne to jedno i to samo, różnice są nieistotne",
-      "b) Systemy transakcyjne obsługują codzienne operacje biznesowe, systemy analityczne służą do analizy dużych zbiorów danych w celu podejmowania strategicznych decyzji",
-      "c) Systemy transakcyjne są tylko do zapisywania danych, systemy analityczne są jedynie do raportowania"
+      "b) Systemy transakcyjne są tylko do zapisywania danych, systemy analityczne są jedynie do raportowania",
+      "c) Systemy transakcyjne obsługują codzienne operacje biznesowe, systemy analityczne służą do analizy dużych zbiorów danych w celu podejmowania strategicznych decyzji"
     ],
-    "correct_answer": "b) Systemy transakcyjne obsługują codzienne operacje biznesowe, systemy analityczne służą do analizy dużych zbiorów danych w celu podejmowania strategicznych decyzji"
+    "correct_answer": "c) Systemy transakcyjne obsługują codzienne operacje biznesowe, systemy analityczne służą do analizy dużych zbiorów danych w celu podejmowania strategicznych decyzji"
   },
   {
     "question": "Transakcje. Własności ACID. Poziomy izolacji.",
@@ -92,10 +92,10 @@
   {
     "question": "Administrowanie użytkownikami bazy danych i ochrona danych.",
     "choices": [
-      "a) Administrowanie użytkownikami to jedynie tworzenie loginów, ochrona danych jest zbędna",
-      "b) Administrowanie użytkownikami obejmuje zarządzanie uprawnieniami dostępu do bazy danych, ochrona danych to zabezpieczanie informacji przed nieautoryzowanym dostępem i utratą",
+      "a) Administrowanie użytkownikami obejmuje zarządzanie uprawnieniami dostępu do bazy danych, ochrona danych to zabezpieczanie informacji przed nieautoryzowanym dostępem i utratą",
+      "b) Administrowanie użytkownikami to jedynie tworzenie loginów, ochrona danych jest zbędna",
       "c) Administrowanie użytkownikami to tylko formalność, ochrona danych to jedynie kontrola dostępu do danych"
     ],
-    "correct_answer": "b) Administrowanie użytkownikami obejmuje zarządzanie uprawnieniami dostępu do bazy danych, ochrona danych to zabezpieczanie informacji przed nieautoryzowanym dostępem i utratą"
+    "correct_answer": "a) Administrowanie użytkownikami obejmuje zarządzanie uprawnieniami dostępu do bazy danych, ochrona danych to zabezpieczanie informacji przed nieautoryzowanym dostępem i utratą"
   }
 ]

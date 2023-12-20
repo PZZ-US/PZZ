@@ -2,20 +2,20 @@
   {
     "question": "Modele referencyjne systemu sieciowego, usługi, protokoły, interfejsy, standaryzacja.",
     "choices": [
-      "a) Brak modeli referencyjnych w systemach sieciowych",
-      "b) Modele OSI i TCP/IP, usługi obejmują komunikację między systemami, protokoły to standardy określające reguły komunikacji, interfejsy i standaryzacja są nieistotne w sieciach",
+      "a) Modele OSI i TCP/IP, usługi obejmują komunikację między systemami, protokoły to standardy określające reguły komunikacji, interfejsy i standaryzacja są nieistotne w sieciach",
+      "b) Brak modeli referencyjnych w systemach sieciowych",
       "c) Tylko model TCP/IP jest modelem referencyjnym w sieciach komputerowych"
     ],
-    "correct_answer": "b) Modele OSI i TCP/IP, usługi obejmują komunikację między systemami, protokoły to standardy określające reguły komunikacji, interfejsy i standaryzacja są nieistotne w sieciach"
+    "correct_answer": "a) Modele OSI i TCP/IP, usługi obejmują komunikację między systemami, protokoły to standardy określające reguły komunikacji, interfejsy i standaryzacja są nieistotne w sieciach"
   },
   {
     "question": "Koncepcja kanału komunikacyjnego, media komunikacyjne, współdzielenie medium.",
     "choices": [
       "a) Kanał komunikacyjny to tylko oprogramowanie odpowiedzialne za przesyłanie danych, media komunikacyjne są zawsze bezprzewodowe, współdzielenie medium nie jest istotne w sieciach",
-      "b) Koncepcja kanału komunikacyjnego obejmuje medium transmisyjne, media komunikacyjne to nośniki sygnałów, współdzielenie medium dotyczy możliwości jednoczesnego korzystania z tego samego medium przez wiele urządzeń",
-      "c) W sieciach nie występuje koncepcja kanału komunikacyjnego ani media komunikacyjne"
+      "b) W sieciach nie występuje koncepcja kanału komunikacyjnego ani media komunikacyjne",
+      "c) Koncepcja kanału komunikacyjnego obejmuje medium transmisyjne, media komunikacyjne to nośniki sygnałów, współdzielenie medium dotyczy możliwości jednoczesnego korzystania z tego samego medium przez wiele urządzeń"
     ],
-    "correct_answer": "b) Koncepcja kanału komunikacyjnego obejmuje medium transmisyjne, media komunikacyjne to nośniki sygnałów, współdzielenie medium dotyczy możliwości jednoczesnego korzystania z tego samego medium przez wiele urządzeń"
+    "correct_answer": "c) Koncepcja kanału komunikacyjnego obejmuje medium transmisyjne, media komunikacyjne to nośniki sygnałów, współdzielenie medium dotyczy możliwości jednoczesnego korzystania z tego samego medium przez wiele urządzeń"
   },
   {
     "question": "Sieci komputerowe z komutacją pakietów, enkapsulacja danych, przełączanie, przełączniki.",
@@ -30,10 +30,10 @@
     "question": "Sieci komputerowe z komutacją obwodów, obwody wirtualne, tunelowanie.",
     "choices": [
       "a) Sieci komputerowe z komutacją obwodów są przestarzałe, obwody wirtualne to jedynie abstrakcje teoretyczne, tunelowanie jest niebezpieczne i nie stosuje się go w sieciach",
-      "b) Sieci komputerowe z komutacją obwodów to sieci, w których przed przesłaniem danych nawiązywane są stałe połączenia, obwody wirtualne to tymczasowe połączenia między urządzeniami, tunelowanie to technika przesyłania danych w formie zaszyfrowanych tuneli przez publiczną sieć",
-      "c) Sieci komputerowe z komutacją obwodów to jedyna forma sieci komputerowej, obwody wirtualne są jedynie koncepcją, tunelowanie jest jedynie teoretyczną możliwością"
+      "b) Sieci komputerowe z komutacją obwodów to jedyna forma sieci komputerowej, obwody wirtualne są jedynie koncepcją, tunelowanie jest jedynie teoretyczną możliwością",
+      "c) Sieci komputerowe z komutacją obwodów to sieci, w których przed przesłaniem danych nawiązywane są stałe połączenia, obwody wirtualne to tymczasowe połączenia między urządzeniami, tunelowanie to technika przesyłania danych w formie zaszyfrowanych tuneli przez publiczną sieć"
     ],
-    "correct_answer": "b) Sieci komputerowe z komutacją obwodów to sieci, w których przed przesłaniem danych nawiązywane są stałe połączenia, obwody wirtualne to tymczasowe połączenia między urządzeniami, tunelowanie to technika przesyłania danych w formie zaszyfrowanych tuneli przez publiczną sieć"
+    "correct_answer": "c) Sieci komputerowe z komutacją obwodów to sieci, w których przed przesłaniem danych nawiązywane są stałe połączenia, obwody wirtualne to tymczasowe połączenia między urządzeniami, tunelowanie to technika przesyłania danych w formie zaszyfrowanych tuneli przez publiczną sieć"
   },
   {
     "question": "Trasowanie, sterowanie ruchem, obciążeniem, przepływnością, jakością usług.",
@@ -47,20 +47,20 @@
   {
     "question": "Typowe protokoły sieciowe i transportowe.",
     "choices": [
-      "a) Protokoły sieciowe i transportowe to jedynie dokumentacja sieci",
-      "b) TCP/IP, UDP, HTTP, FTP, SNMP to przykłady protokołów sieciowych, protokoły transportowe obejmują TCP i UDP",
+      "a) TCP/IP, UDP, HTTP, FTP, SNMP to przykłady protokołów sieciowych, protokoły transportowe obejmują TCP i UDP",
+      "b) Protokoły sieciowe i transportowe to jedynie dokumentacja sieci",
       "c) Protokoły sieciowe i transportowe są zawsze zaimplementowane w sprzęcie, nie są wymieniane w trakcie komunikacji między urządzeniami"
     ],
-    "correct_answer": "b) TCP/IP, UDP, HTTP, FTP, SNMP to przykłady protokołów sieciowych, protokoły transportowe obejmują TCP i UDP"
+    "correct_answer": "a) TCP/IP, UDP, HTTP, FTP, SNMP to przykłady protokołów sieciowych, protokoły transportowe obejmują TCP i UDP"
   },
   {
     "question": "Typowe usługi sieciowe, związane z nimi protokoły i aplikacje.",
     "choices": [
-      "a) Usługi sieciowe to jedynie dostęp do internetu, protokoły i aplikacje są nieistotne",
-      "b) Usługi sieciowe obejmują przesyłanie plików, udostępnianie zasobów, dostęp do zdalnych serwisów; protokoły to np. FTP, SMB, HTTP, aplikacje to przeglądarki internetowe, klienty FTP itp.",
+      "a) Usługi sieciowe obejmują przesyłanie plików, udostępnianie zasobów, dostęp do zdalnych serwisów; protokoły to np. FTP, SMB, HTTP, aplikacje to przeglądarki internetowe, klienty FTP itp.",
+      "b) Usługi sieciowe to jedynie dostęp do internetu, protokoły i aplikacje są nieistotne",
       "c) Usługi sieciowe to jedynie dostarczanie dostępu do internetu, protokoły i aplikacje są tylko koncepcją"
     ],
-    "correct_answer": "b) Usługi sieciowe obejmują przesyłanie plików, udostępnianie zasobów, dostęp do zdalnych serwisów; protokoły to np. FTP, SMB, HTTP, aplikacje to przeglądarki internetowe, klienty FTP itp."
+    "correct_answer": "a) Usługi sieciowe obejmują przesyłanie plików, udostępnianie zasobów, dostęp do zdalnych serwisów; protokoły to np. FTP, SMB, HTTP, aplikacje to przeglądarki internetowe, klienty FTP itp."
   },
   {
     "question": "Zagrożenia bezpieczeństwa w środowiskach sieciowych, ochrona i przeciwdziałanie.",

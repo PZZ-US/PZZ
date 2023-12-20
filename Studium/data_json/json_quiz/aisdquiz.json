@@ -2,11 +2,11 @@
 {
 "question": "Pojęcie algorytmu.",
 "choices": [
-"a) Algorytm to jedynie plan działania w życiu codziennym, bez zastosowania w informatyce",
-"b) Algorytm to ciąg kroków prowadzących do rozwiązania określonego problemu, stosowany również w informatyce",
+"a) Algorytm to ciąg kroków prowadzących do rozwiązania określonego problemu, stosowany również w informatyce",
+"b) Algorytm to jedynie plan działania w życiu codziennym, bez zastosowania w informatyce",
 "c) Algorytm to jedynie zapis matematyczny, bez praktycznego zastosowania w rzeczywistości"
 ],
-"correct_answer": "b) Algorytm to ciąg kroków prowadzących do rozwiązania określonego problemu, stosowany również w informatyce"
+"correct_answer": "a) Algorytm to ciąg kroków prowadzących do rozwiązania określonego problemu, stosowany również w informatyce"
 },
 {
 "question": "Czasowa i pamięciowa złożoność obliczeniowa algorytmu. Złożoność optymistyczna, pesymistyczna, średnia.",
@@ -20,20 +20,20 @@
 {
 "question": "Notacja asymptotyczna i jej znaczenie w teorii algorytmów, rzędy wielkości funkcji.",
 "choices": [
-"a) Notacja asymptotyczna to jedynie ozdobnik matematyczny, nie mający praktycznego znaczenia; rzędy wielkości funkcji to jedynie pojęcia matematyczne, bez odzwierciedlenia w rzeczywistości",
-"b) Notacja asymptotyczna jest narzędziem do określania tempa wzrostu funkcji i porównywania efektywności algorytmów; rzędy wielkości funkcji to klasy funkcji, które pozwalają określić, jak szybko dana funkcja rośnie w porównaniu z innymi",
+"a) Notacja asymptotyczna jest narzędziem do określania tempa wzrostu funkcji i porównywania efektywności algorytmów; rzędy wielkości funkcji to klasy funkcji, które pozwalają określić, jak szybko dana funkcja rośnie w porównaniu z innymi",
+"b) Notacja asymptotyczna to jedynie ozdobnik matematyczny, nie mający praktycznego znaczenia; rzędy wielkości funkcji to jedynie pojęcia matematyczne, bez odzwierciedlenia w rzeczywistości",
 "c) Notacja asymptotyczna to jedynie skomplikowane oznaczenia matematyczne, rzędy wielkości funkcji to jedynie abstrakcyjne pojęcia"
 ],
-"correct_answer": "b) Notacja asymptotyczna jest narzędziem do określania tempa wzrostu funkcji i porównywania efektywności algorytmów; rzędy wielkości funkcji to klasy funkcji, które pozwalają określić, jak szybko dana funkcja rośnie w porównaniu z innymi"
+"correct_answer": "a) Notacja asymptotyczna jest narzędziem do określania tempa wzrostu funkcji i porównywania efektywności algorytmów; rzędy wielkości funkcji to klasy funkcji, które pozwalają określić, jak szybko dana funkcja rośnie w porównaniu z innymi"
 },
 {
 "question": "Algorytmy sortowania. Dokładny opis wraz z pseudokodem, sortowania bąbelkowego, przez wstawianie oraz sortowania przez wybieranie. Zasada działania sortowania przez scalanie oraz sortowania szybkiego. Właściwości wszystkich powyższych algorytmów oraz ich złożoności czasowe.",
 "choices": [
 "a) Algorytmy sortowania to jedynie skomplikowane koncepcje, bez praktycznego zastosowania; sortowanie bąbelkowe, przez wstawianie i przez wybieranie to jedynie nazwy, bez znaczącej implementacji",
-"b) Algorytmy sortowania są narzędziem do uporządkowania danych; sortowanie bąbelkowe porównuje i zamienia sąsiednie elementy, sortowanie przez wstawianie buduje posortowaną część jednego elementu na raz, sortowanie przez wybieranie znajduje najmniejszy element i umieszcza go na początku; sortowanie przez scalanie łączy posortowane sekwencje, sortowanie szybkie dzieli dane na mniejsze podzbiory, sortuje je i scala",
-"c) Algorytmy sortowania to jedynie procesy sortujące dane w sposób losowy; sortowanie bąbelkowe porównuje sąsiednie elementy i zamienia je, sortowanie przez wstawianie porównuje elementy z posortowaną sekwencją i umieszcza je na odpowiednim miejscu, sortowanie przez wybieranie znajduje najmniejszy element i umieszcza go na początku; sortowanie przez scalanie scala posortowane sekwencje, sortowanie szybkie dzieli dane, sortuje je i scala"
+"b) Algorytmy sortowania to jedynie procesy sortujące dane w sposób losowy; sortowanie bąbelkowe porównuje sąsiednie elementy i zamienia je, sortowanie przez wstawianie porównuje elementy z posortowaną sekwencją i umieszcza je na odpowiednim miejscu, sortowanie przez wybieranie znajduje najmniejszy element i umieszcza go na początku; sortowanie przez scalanie scala posortowane sekwencje, sortowanie szybkie dzieli dane, sortuje je i scala",
+"c) Algorytmy sortowania są narzędziem do uporządkowania danych; sortowanie bąbelkowe porównuje i zamienia sąsiednie elementy, sortowanie przez wstawianie buduje posortowaną część jednego elementu na raz, sortowanie przez wybieranie znajduje najmniejszy element i umieszcza go na początku; sortowanie przez scalanie łączy posortowane sekwencje, sortowanie szybkie dzieli dane na mniejsze podzbiory, sortuje je i scala"
 ],
-"correct_answer": "b) Algorytmy sortowania są narzędziem do uporządkowania danych; sortowanie bąbelkowe porównuje i zamienia sąsiednie elementy, sortowanie przez wstawianie buduje posortowaną część jednego elementu na raz, sortowanie przez wybieranie znajduje najmniejszy element i umieszcza go na początku; sortowanie przez scalanie łączy posortowane sekwencje, sortowanie szybkie dzieli dane na mniejsze podzbiory, sortuje je i scala"
+"correct_answer": "c) Algorytmy sortowania są narzędziem do uporządkowania danych; sortowanie bąbelkowe porównuje i zamienia sąsiednie elementy, sortowanie przez wstawianie buduje posortowaną część jednego elementu na raz, sortowanie przez wybieranie znajduje najmniejszy element i umieszcza go na początku; sortowanie przez scalanie łączy posortowane sekwencje, sortowanie szybkie dzieli dane na mniejsze podzbiory, sortuje je i scala"
 },
 {
 "question": "Algorytmy rekurencyjne; zapisywanie wybranych klasycznych algorytmów w postaci rekurencyjnej.",
@@ -47,11 +47,11 @@
 {
 "question": "Metoda dziel i zwyciężaj. Metoda równego podziału, metoda Newtona-Raphsona (stycznych).",
 "choices": [
-"a) Metoda dziel i zwyciężaj to jedynie slogan motywacyjny, bez praktycznego zastosowania; metoda równego podziału to abstrakcyjne pojęcie matematyczne, metoda Newtona-Raphsona to jedynie twierdzenie matematyczne",
-"b) Metoda dziel i zwyciężaj to podejście polegające na rozwiązaniu dużego problemu poprzez podzielenie go na mniejsze; metoda równego podziału to sposób podziału problemu na równe części, metoda Newtona-Raphsona to algorytm znajdowania przybliżonego miejsca zerowego funkcji",
+"a) Metoda dziel i zwyciężaj to podejście polegające na rozwiązaniu dużego problemu poprzez podzielenie go na mniejsze; metoda równego podziału to sposób podziału problemu na równe części, metoda Newtona-Raphsona to algorytm znajdowania przybliżonego miejsca zerowego funkcji",    
+"b) Metoda dziel i zwyciężaj to jedynie slogan motywacyjny, bez praktycznego zastosowania; metoda równego podziału to abstrakcyjne pojęcie matematyczne, metoda Newtona-Raphsona to jedynie twierdzenie matematyczne",
 "c) Metoda dziel i zwyciężaj to jedynie teoretyczne podejście, metoda równego podziału to jedynie schemat blokowy, metoda Newtona-Raphsona to jedynie notacja matematyczna"
 ],
-"correct_answer": "b) Metoda dziel i zwyciężaj to podejście polegające na rozwiązaniu dużego problemu poprzez podzielenie go na mniejsze; metoda równego podziału to sposób podziału problemu na równe części, metoda Newtona-Raphsona to algorytm znajdowania przybliżonego miejsca zerowego funkcji"
+"correct_answer": "a) Metoda dziel i zwyciężaj to podejście polegające na rozwiązaniu dużego problemu poprzez podzielenie go na mniejsze; metoda równego podziału to sposób podziału problemu na równe części, metoda Newtona-Raphsona to algorytm znajdowania przybliżonego miejsca zerowego funkcji"
 },
 {
 "question": "Abstrakcyjne struktury danych: stosy, kolejki FIFO, kolejki priorytetowe, słowniki - ich implementacje (np. tablice, listy dowiązane, kopce, drzewa binarne, drzewa BST) oraz zastosowania.",
@@ -65,29 +65,29 @@
 {
 "question": "Kodowanie Huffmana.",
 "choices": [
-"a) Kodowanie Huffmana to jedynie metoda kompresji tekstu, bez znaczącego zastosowania; nie jest używane w praktyce",
-"b) Kodowanie Huffmana to algorytm kompresji danych, szczególnie skuteczny dla często występujących symboli; wykorzystuje drzewo binarne do przypisania krótszych kodów do częstszych symboli, a dłuższych do rzadszych",
+"a) Kodowanie Huffmana to algorytm kompresji danych, szczególnie skuteczny dla często występujących symboli; wykorzystuje drzewo binarne do przypisania krótszych kodów do częstszych symboli, a dłuższych do rzadszych",
+"b) Kodowanie Huffmana to jedynie metoda kompresji tekstu, bez znaczącego zastosowania; nie jest używane w praktyce",
 "c) Kodowanie Huffmana to jedynie teoretyczna koncepcja, bez możliwości praktycznego zastosowania"
 ],
-"correct_answer": "b) Kodowanie Huffmana to algorytm kompresji danych, szczególnie skuteczny dla często występujących symboli; wykorzystuje drzewo binarne do przypisania krótszych kodów do częstszych symboli, a dłuższych do rzadszych"
+"correct_answer": "a) Kodowanie Huffmana to algorytm kompresji danych, szczególnie skuteczny dla często występujących symboli; wykorzystuje drzewo binarne do przypisania krótszych kodów do częstszych symboli, a dłuższych do rzadszych"
 },
 {
 "question": "Algorytm Kruskala.",
 "choices": [
-"a) Algorytm Kruskala to jedynie teoretyczna koncepcja, bez praktycznego zastosowania; nie ma zastosowania w rzeczywistych problemach",
-"b) Algorytm Kruskala to algorytm wyznaczania minimalnego drzewa rozpinającego w grafie nieskierowanym; polega na wybieraniu krawędzi o najmniejszej wadze, nie tworząc przy tym cykli, aż do uzyskania drzewa rozpinającego o minimalnej sumie wag",
+"a) Algorytm Kruskala to algorytm wyznaczania minimalnego drzewa rozpinającego w grafie nieskierowanym; polega na wybieraniu krawędzi o najmniejszej wadze, nie tworząc przy tym cykli, aż do uzyskania drzewa rozpinającego o minimalnej sumie wag",    
+"b) Algorytm Kruskala to jedynie teoretyczna koncepcja, bez praktycznego zastosowania; nie ma zastosowania w rzeczywistych problemach",
 "c) Algorytm Kruskala to jedynie nazwa, nie mająca konkretnego znaczenia; nie jest używane w informatyce"
 ],
-"correct_answer": "b) Algorytm Kruskala to algorytm wyznaczania minimalnego drzewa rozpinającego w grafie nieskierowanym; polega na wybieraniu krawędzi o najmniejszej wadze, nie tworząc przy tym cykli, aż do uzyskania drzewa rozpinającego o minimalnej sumie wag"
+"correct_answer": "a) Algorytm Kruskala to algorytm wyznaczania minimalnego drzewa rozpinającego w grafie nieskierowanym; polega na wybieraniu krawędzi o najmniejszej wadze, nie tworząc przy tym cykli, aż do uzyskania drzewa rozpinającego o minimalnej sumie wag"
 },
 {
 "question": "Tablice z haszowaniem (asocjacyjne). Rozwiązywanie kolizji - metoda łańcuchowa i adresowanie otwarte.",
 "choices": [
 "a) Tablice z haszowaniem to jedynie teoretyczne podejście do przechowywania danych, nie mające praktycznego zastosowania; rozwiązywanie kolizji to problem jedynie teoretyczny",
-"b) Tablice z haszowaniem to struktury danych pozwalające szybko odnaleźć elementy za pomocą funkcji haszującej; rozwiązywanie kolizji może odbywać się poprzez metodę łańcuchową, gdzie kolizje są rozwiązywane przez tworzenie list elementów o jednakowym haszowaniu, lub przez adresowanie otwarte, gdzie próbuje się znaleźć inne miejsce dla kolizyjnego elementu w tej samej tablicy",
-"c) Tablice z haszowaniem to jedynie przypadkowe implementacje, nie mające znaczenia w praktyce; rozwiązywanie kolizji to jedynie teoretyczna koncepcja"
+"b) Tablice z haszowaniem to jedynie przypadkowe implementacje, nie mające znaczenia w praktyce; rozwiązywanie kolizji to jedynie teoretyczna koncepcja",
+"c) Tablice z haszowaniem to struktury danych pozwalające szybko odnaleźć elementy za pomocą funkcji haszującej; rozwiązywanie kolizji może odbywać się poprzez metodę łańcuchową, gdzie kolizje są rozwiązywane przez tworzenie list elementów o jednakowym haszowaniu, lub przez adresowanie otwarte, gdzie próbuje się znaleźć inne miejsce dla kolizyjnego elementu w tej samej tablicy"
 ],
-"correct_answer": "b) Tablice z haszowaniem to struktury danych pozwalające szybko odnaleźć elementy za pomocą funkcji haszującej; rozwiązywanie kolizji może odbywać się poprzez metodę łańcuchową, gdzie kolizje są rozwiązywane przez tworzenie list elementów o jednakowym haszowaniu, lub przez adresowanie otwarte, gdzie próbuje się znaleźć inne miejsce dla kolizyjnego elementu w tej samej tablicy"
+"correct_answer": "c) Tablice z haszowaniem to struktury danych pozwalające szybko odnaleźć elementy za pomocą funkcji haszującej; rozwiązywanie kolizji może odbywać się poprzez metodę łańcuchową, gdzie kolizje są rozwiązywane przez tworzenie list elementów o jednakowym haszowaniu, lub przez adresowanie otwarte, gdzie próbuje się znaleźć inne miejsce dla kolizyjnego elementu w tej samej tablicy"
 },
 {
 "question": "Szyfrowanie Cezara.",

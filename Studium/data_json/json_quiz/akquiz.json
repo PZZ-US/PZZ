@@ -3,19 +3,19 @@
     "question": "Struktura i organizacja typowego systemu komputerowego.",
     "choices": [
       "a) Procesor, pamięć RAM, dysk twardy, karta graficzna",
-      "b) Jednostka centralna, pamięć operacyjna, urządzenia wejścia/wyjścia, magistrale",
-      "c) Klawiatura, mysz, monitor, głośniki"
+      "b) Klawiatura, mysz, monitor, głośniki",
+      "c) Jednostka centralna, pamięć operacyjna, urządzenia wejścia/wyjścia, magistrale"
     ],
-    "correct_answer": "b) Jednostka centralna, pamięć operacyjna, urządzenia wejścia/wyjścia, magistrale"
+    "correct_answer": "c) Jednostka centralna, pamięć operacyjna, urządzenia wejścia/wyjścia, magistrale"
   },
   {
     "question": "Budowa i działanie typowego procesora ogólnego przeznaczenia.",
     "choices": [
-      "a) Jedna jednostka wykonawcza, brak rejestrów, brak pamięci podręcznej",
-      "b) Wielordzeniowy, posiadający jednostki ALU, rejestrów, pamięć podręczną",
+      "a) Wielordzeniowy, posiadający jednostki ALU, rejestrów, pamięć podręczną",
+      "b) Jedna jednostka wykonawcza, brak rejestrów, brak pamięci podręcznej",
       "c) Wyłącznie zegar synchroniczny, bez jednostek wspomagających"
     ],
-    "correct_answer": "b) Wielordzeniowy, posiadający jednostki ALU, rejestrów, pamięć podręczną"
+    "correct_answer": "a) Wielordzeniowy, posiadający jednostki ALU, rejestrów, pamięć podręczną"
   },
   {
     "question": "Wykonywanie rozkazów przez procesor(y), przerwania, wyjątki.",
@@ -30,10 +30,10 @@
     "question": "Dane i ich przetwarzanie w systemie komputerowym.",
     "choices": [
       "a) Dane przechowywane w pamięci RAM, przetwarzane sekwencyjnie przez procesor",
-      "b) Dane reprezentowane w formie binarnej, przechowywane w różnych typach pamięci, przetwarzane za pomocą operacji arytmetyczno-logicznych",
-      "c) Brak możliwości przetwarzania danych w systemie komputerowym"
+      "b) Brak możliwości przetwarzania danych w systemie komputerowym",
+      "c) Dane reprezentowane w formie binarnej, przechowywane w różnych typach pamięci, przetwarzane za pomocą operacji arytmetyczno-logicznych"
     ],
-    "correct_answer": "b) Dane reprezentowane w formie binarnej, przechowywane w różnych typach pamięci, przetwarzane za pomocą operacji arytmetyczno-logicznych"
+    "correct_answer": "c) Dane reprezentowane w formie binarnej, przechowywane w różnych typach pamięci, przetwarzane za pomocą operacji arytmetyczno-logicznych"
   },
   {
     "question": "Koncepcja „konwencjonalnej maszyny”, język maszynowy, asembler.",
@@ -47,28 +47,28 @@
   {
     "question": "Połączenia wewnątrz- i zewnątrz-systemowe, urządzenia wejścia/wyjścia.",
     "choices": [
-      "a) Brak możliwości połączeń wewnątrzsystemowych, tylko połączenia zewnętrzne, urządzenia wejścia/wyjścia są zbędne w systemie komputerowym",
-      "b) Połączenia wewnątrzsystemowe umożliwiają komunikację między komponentami, połączenia zewnętrzne z innymi systemami, urządzenia wejścia/wyjścia są interfejsem między systemem a środowiskiem zewnętrznym",
+      "a) Połączenia wewnątrzsystemowe umożliwiają komunikację między komponentami, połączenia zewnętrzne z innymi systemami, urządzenia wejścia/wyjścia są interfejsem między systemem a środowiskiem zewnętrznym",
+      "b) Brak możliwości połączeń wewnątrzsystemowych, tylko połączenia zewnętrzne, urządzenia wejścia/wyjścia są zbędne w systemie komputerowym",
       "c) Wszystkie połączenia są jednokierunkowe, urządzenia wejścia/wyjścia są zintegrowane bezpośrednio z jednostką centralną"
     ],
-    "correct_answer": "b) Połączenia wewnątrzsystemowe umożliwiają komunikację między komponentami, połączenia zewnętrzne z innymi systemami, urządzenia wejścia/wyjścia są interfejsem między systemem a środowiskiem zewnętrznym"
+    "correct_answer": "a) Połączenia wewnątrzsystemowe umożliwiają komunikację między komponentami, połączenia zewnętrzne z innymi systemami, urządzenia wejścia/wyjścia są interfejsem między systemem a środowiskiem zewnętrznym"
   },
   {
     "question": "Realizacja przetwarzania równoległego w systemach komputerowych.",
     "choices": [
       "a) Przetwarzanie równoległe nie jest możliwe w systemach komputerowych, każdy proces musi być wykonywany sekwencyjnie",
-      "b) Wykorzystanie wielordzeniowych procesorów, klastrów komputerowych, technik SIMD i MIMD do realizacji przetwarzania równoległego",
-      "c) Równoległe przetwarzanie opiera się wyłącznie na technologii kwantowej"
+      "b) Równoległe przetwarzanie opiera się wyłącznie na technologii kwantowej",
+      "c) Wykorzystanie wielordzeniowych procesorów, klastrów komputerowych, technik SIMD i MIMD do realizacji przetwarzania równoległego"
     ],
-    "correct_answer": "b) Wykorzystanie wielordzeniowych procesorów, klastrów komputerowych, technik SIMD i MIMD do realizacji przetwarzania równoległego"
+    "correct_answer": "c) Wykorzystanie wielordzeniowych procesorów, klastrów komputerowych, technik SIMD i MIMD do realizacji przetwarzania równoległego"
   },
   {
     "question": "Optymalizacja wydajności procesora(ów) i systemu komputerowego.",
     "choices": [
       "a) Optymalizacja nie jest istotna, każdy procesor ma taką samą wydajność",
-      "b) Optymalizacja obejmuje dostosowanie algorytmów, zarządzanie pamięcią podręczną, równoważenie obciążenia i inne techniki mające na celu poprawę efektywności systemu",
-      "c) Wydajność systemu komputerowego nie jest związana z optymalizacją"
+      "b) Wydajność systemu komputerowego nie jest związana z optymalizacją",
+      "c) Optymalizacja obejmuje dostosowanie algorytmów, zarządzanie pamięcią podręczną, równoważenie obciążenia i inne techniki mające na celu poprawę efektywności systemu"
     ],
-    "correct_answer": "b) Optymalizacja obejmuje dostosowanie algorytmów, zarządzanie pamięcią podręczną, równoważenie obciążenia i inne techniki mające na celu poprawę efektywności systemu"
+    "correct_answer": "c) Optymalizacja obejmuje dostosowanie algorytmów, zarządzanie pamięcią podręczną, równoważenie obciążenia i inne techniki mające na celu poprawę efektywności systemu"
   }
 ]
