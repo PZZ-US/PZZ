@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from .views import logout_view
 from django.contrib.auth import views as auth_views
 from .views import CustomLoginView, flashcard_view, register
 from django.contrib.staticfiles.views import serve
@@ -27,7 +28,8 @@ urlpatterns = [
     
     # Autentykacja i rejestracja użytkowników
     path('login/', CustomLoginView.as_view(), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(next_page='/login/'), name='logout'),
+    #path('logout/', auth_views.LogoutView.as_view(next_page='/login/'), name='logout'),
+    path('logout/', logout_view, name='logout'),
     path('register/', register, name='register'),
 
     # Proces resetowania hasła

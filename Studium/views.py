@@ -3,6 +3,7 @@ from django.urls import path
 from django.http import HttpResponse
 from django.urls import reverse_lazy
 from django.contrib import messages
+from django.contrib.auth import logout
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
 from django.db.models import Count
@@ -321,6 +322,12 @@ def register(request):
     else:
         form = CustomRegisterForm()
     return render(request, 'registration/register.html', {'form': form})
+
+# ------------------          LOGOUT        ------------------------
+
+def logout_view(request):
+    logout(request)
+    return redirect('login')
 
 # ------------------         DASHBOARD       ------------------------
 
