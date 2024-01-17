@@ -16,39 +16,14 @@
             <h1>Wyniki Testu</h1>
             <div class="section-container">
                 <div class="results-summary">
-                    {% if user_progress %}
-                        {% if user_progress.progress >= 50 %}
-                            <h2>Twój wynik to: <strong>{{ user_progress.progress }}%</strong></h2>
-                            <p>Świetnie odpowiedziałeś na pytania!</p>
-                        {% else %}
-                            <h2>Twój wynik to: <strong>{{ user_progress.progress }}%</strong></h2>
-                            <p>Powinieneś się jeszcze trochę pouczyć!</p>
-                        {% endif %}
+                    {% if user_progresses.first.progress >= 50 %}
+                        <h2>Twój wynik to: <strong>{{ user_progresses.first.progress }}%</strong></h2>
+                        <p>Świetnie odpowiedziałeś na pytania!</p>
+                    {% elif user_progresses %}
+                        <h2>Twój wynik to: <strong>{{ user_progresses.first.progress }}%</strong></h2>
+                        <p>Powinieneś się jeszcze trochę pouczyć!</p>
                     {% else %}
                         <p>Brak wyników do wyświetlenia.</p>
-                    {% endif %}
-                </div>
-                <div class="answer-container">
-
-                    {% if quiz_questions %}
-                        {% for question in quiz_questions %}
-                            <div class="question">
-                                <h2><span>{{ forloop.counter }}.</span>{{ question.question_text }}</h2>
-                                <ul>
-                                    {% for choice in question.choices %}
-                                        {% if choice == question.correct_answer %}
-                                            <li class="answer correct-answer">{{ choice }}</li>
-                                        {% elif choice in user_answers and choice != question.correct_answer %}
-                                            <li class="answer wrong-answer">{{ choice }}</li>
-                                        {% else %}
-                                            <li class="answer">{{ choice }}</li>
-                                        {% endif %}
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        {% endfor %}
-                    {% else %}
-                        <p>Brak pytań do wyświetlenia.</p>
                     {% endif %}
                 </div>
             </div>

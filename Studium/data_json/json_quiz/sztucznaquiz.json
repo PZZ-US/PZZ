@@ -2,8 +2,8 @@
   {
     "question": "Rodzaje uczenia maszynowego: Uczenie nadzorowane, nienadzorowane, ze wzmocnieniem.",
     "choices": [
-      "a) Uczenie maszynowe nie obejmuje różnych rodzajów, to jedna uniwersalna metoda",
-      "b) Rodzaje uczenia maszynowego to jedynie nazwy dla różnych etapów procesu uczenia",
+      "a) Uczenie maszynowe nie obejmuje różnych rodzajów, to jedna uniwersalna metoda;",
+      "b) Rodzaje uczenia maszynowego to jedynie nazwy dla różnych etapów procesu uczenia;",
       "c) Uczenie maszynowe obejmuje różne rodzaje, takie jak uczenie nadzorowane, nienadzorowane, ze wzmocnieniem"
     ],
     "correct_answer": "c) Uczenie maszynowe obejmuje różne rodzaje, takie jak uczenie nadzorowane, nienadzorowane, ze wzmocnieniem"
@@ -11,82 +11,82 @@
   {
     "question": "Model Regresji logistycznej. Metoda gradientu prostego i jej znaczenie w minimalizacji funkcji kosztów.",
     "choices": [
-      "a) Regresja logistyczna to jedynie nazwa dla modeli regresyjnych w uczeniu maszynowym",
-      "b) Metoda gradientu prostego to technika minimalizacji funkcji kosztów w procesie uczenia modelu regresji logistycznej",
+      "a) Regresja logistyczna to jedynie nazwa dla modeli regresyjnych w uczeniu maszynowym;",
+      "b) Metoda gradientu prostego to technika minimalizacji funkcji kosztów w procesie uczenia modelu regresji logistycznej;",
       "c) Regresja logistyczna i metoda gradientu prostego nie mają ze sobą żadnego związku"
     ],
-    "correct_answer": "b) Metoda gradientu prostego to technika minimalizacji funkcji kosztów w procesie uczenia modelu regresji logistycznej"
+    "correct_answer": "b) Metoda gradientu prostego to technika minimalizacji funkcji kosztów w procesie uczenia modelu regresji logistycznej;"
   },
   {
     "question": "Znaczenie normalizacji danych w technikach uczenia maszynowego.",
     "choices": [
-      "a) Normalizacja danych nie jest potrzebna w uczeniu maszynowym, dane są automatycznie dostosowywane przez algorytmy",
-      "b) Normalizacja danych ma na celu standaryzację zakresu wartości, co może poprawić wydajność algorytmów uczenia maszynowego",
+      "a) Normalizacja danych ma na celu standaryzację zakresu wartości, co może poprawić wydajność algorytmów uczenia maszynowego;",
+      "b) Normalizacja danych nie jest potrzebna w uczeniu maszynowym, dane są automatycznie dostosowywane przez algorytmy;",
       "c) Normalizacja danych to jedynie dodatkowy krok, który nie wpływa na wyniki uczenia maszynowego"
     ],
-    "correct_answer": "b) Normalizacja danych ma na celu standaryzację zakresu wartości, co może poprawić wydajność algorytmów uczenia maszynowego"
+    "correct_answer": "a) Normalizacja danych ma na celu standaryzację zakresu wartości, co może poprawić wydajność algorytmów uczenia maszynowego;"
   },
   {
     "question": "Koncepcja Naiwnego Klasyfikatora Bayesa.",
     "choices": [
-      "a) Naiwny Klasyfikator Bayesa to jedynie teoria, nie ma praktycznego zastosowania w uczeniu maszynowym",
-      "b) Naiwny Klasyfikator Bayesa opiera się na twierdzeniu Bayesa i jest używany do klasyfikacji, zakładając niezależność cech",
+      "a) Naiwny Klasyfikator Bayesa to jedynie teoria, nie ma praktycznego zastosowania w uczeniu maszynowym;",
+      "b) Naiwny Klasyfikator Bayesa opiera się na twierdzeniu Bayesa i jest używany do klasyfikacji, zakładając niezależność cech;",
       "c) Naiwny Klasyfikator Bayesa to jedynie inna nazwa dla algorytmu k-NN"
     ],
-    "correct_answer": "b) Naiwny Klasyfikator Bayesa opiera się na twierdzeniu Bayesa i jest używany do klasyfikacji, zakładając niezależność cech"
+    "correct_answer": "b) Naiwny Klasyfikator Bayesa opiera się na twierdzeniu Bayesa i jest używany do klasyfikacji, zakładając niezależność cech;"
   },
   {
     "question": "Klasyfikator minimalno-odległościowy i algorytm k-najbliższych sąsiadów, model leniwego uczenia.",
     "choices": [
-      "a) Klasyfikator minimalno-odległościowy to jedynie teoretyczne pojęcie, nie ma praktycznego zastosowania",
-      "b) Algorytm k-najbliższych sąsiadów opiera się na koncepcji znalezienia najbliższych danych treningowych do danego punktu, jest przykładem modelu leniwego uczenia",
+      "a) Algorytm k-najbliższych sąsiadów opiera się na koncepcji znalezienia najbliższych danych treningowych do danego punktu, jest przykładem modelu leniwego uczenia;",
+      "b) Klasyfikator minimalno-odległościowy to jedynie teoretyczne pojęcie, nie ma praktycznego zastosowania;",
       "c) Klasyfikator minimalno-odległościowy i algorytm k-najbliższych sąsiadów to różne kategorie algorytmów, nie mają ze sobą związku"
     ],
-    "correct_answer": "b) Algorytm k-najbliższych sąsiadów opiera się na koncepcji znalezienia najbliższych danych treningowych do danego punktu, jest przykładem modelu leniwego uczenia"
+    "correct_answer": "a) Algorytm k-najbliższych sąsiadów opiera się na koncepcji znalezienia najbliższych danych treningowych do danego punktu, jest przykładem modelu leniwego uczenia;"
   },
   {
     "question": "Algorytm PCA w redukcji wymiarowości danych.",
     "choices": [
-      "a) Algorytm PCA nie jest stosowany w redukcji wymiarowości danych, ma inne zastosowania w uczeniu maszynowym",
-      "b) Algorytm PCA (Principal Component Analysis) jest używany do redukcji wymiarowości danych, identyfikując główne składowe",
-      "c) Algorytm PCA to jedynie inna nazwa dla algorytmu SVM"
+      "a) Algorytm PCA nie jest stosowany w redukcji wymiarowości danych, ma inne zastosowania w uczeniu maszynowym;",
+      "b) Algorytm PCA to jedynie inna nazwa dla algorytmu SVM;",
+      "c) Algorytm PCA (Principal Component Analysis) jest używany do redukcji wymiarowości danych, identyfikując główne składowe"
     ],
-    "correct_answer": "b) Algorytm PCA (Principal Component Analysis) jest używany do redukcji wymiarowości danych, identyfikując główne składowe"
+    "correct_answer": "c) Algorytm PCA (Principal Component Analysis) jest używany do redukcji wymiarowości danych, identyfikując główne składowe"
   },
   {
     "question": "Znaczenie i idea metody walidacji krzyżowej w metodach uczenia maszynowego.",
     "choices": [
-      "a) Walidacja krzyżowa to jedynie proces dodawania dodatkowych danych do zbioru treningowego",
-      "b) Metoda walidacji krzyżowej polega na podziale danych na kilka podzbiorów, ucząc model na jednym podzbiorze i testując na pozostałych, co pozwala lepiej ocenić jego ogólną wydajność",
+      "a) Metoda walidacji krzyżowej polega na podziale danych na kilka podzbiorów, ucząc model na jednym podzbiorze i testując na pozostałych, co pozwala lepiej ocenić jego ogólną wydajność;",
+      "b) Walidacja krzyżowa to jedynie proces dodawania dodatkowych danych do zbioru treningowego;",
       "c) Walidacja krzyżowa nie ma znaczenia w uczeniu maszynowym, jest przestarzałą techniką"
     ],
-    "correct_answer": "b) Metoda walidacji krzyżowej polega na podziale danych na kilka podzbiorów, ucząc model na jednym podzbiorze i testując na pozostałych, co pozwala lepiej ocenić jego ogólną wydajność"
+    "correct_answer": "a) Metoda walidacji krzyżowej polega na podziale danych na kilka podzbiorów, ucząc model na jednym podzbiorze i testując na pozostałych, co pozwala lepiej ocenić jego ogólną wydajność;"
   },
   {
     "question": "Porównanie algorytmów k-najbliższych sąsiadów (k-NN) oraz SVM (maszyny wektorów nośnych)",
     "choices": [
-      "a) Algorytmy k-najbliższych sąsiadów i SVM są identyczne, różnią się jedynie nazwami",
-      "b) Porównanie nie ma sensu, ponieważ algorytmy te są zupełnie różne i mają różne zastosowania w uczeniu maszynowym",
-      "c) Algorytmy k-najbliższych sąsiadów i SVM to różne metody klasyfikacji, różniące się podejściem do problemu"
+      "a) Algorytmy k-najbliższych sąsiadów i SVM to różne metody klasyfikacji, różniące się podejściem do problemu;",
+      "b) Porównanie nie ma sensu, ponieważ algorytmy te są zupełnie różne i mają różne zastosowania w uczeniu maszynowym;",
+      "c) Algorytmy k-najbliższych sąsiadów i SVM są identyczne, różnią się jedynie nazwami"
     ],
-    "correct_answer": "c) Algorytmy k-najbliższych sąsiadów i SVM to różne metody klasyfikacji, różniące się podejściem do problemu"
+    "correct_answer": "a) Algorytmy k-najbliższych sąsiadów i SVM to różne metody klasyfikacji, różniące się podejściem do problemu;"
   },
   {
     "question": "Modele drzew decyzyjnych i lasów losowych.",
     "choices": [
-      "a) Modele drzew decyzyjnych i lasów losowych to jedynie abstrakcyjne koncepcje, nie mają praktycznego zastosowania w uczeniu maszynowym",
-      "b) Modele drzew decyzyjnych opierają się na tworzeniu drzewa decyzyjnego, a lasy losowe to zbiór wielu drzew decyzyjnych, co pozwala na poprawę skuteczności klasyfikacji",
+      "a) Modele drzew decyzyjnych i lasów losowych to jedynie abstrakcyjne koncepcje, nie mają praktycznego zastosowania w uczeniu maszynowym;",
+      "b) Modele drzew decyzyjnych opierają się na tworzeniu drzewa decyzyjnego, a lasy losowe to zbiór wielu drzew decyzyjnych, co pozwala na poprawę skuteczności klasyfikacji;",
       "c) Modele drzew decyzyjnych i lasów losowych to różne nazwy dla tego samego modelu w uczeniu maszynowym"
     ],
-    "correct_answer": "b) Modele drzew decyzyjnych opierają się na tworzeniu drzewa decyzyjnego, a lasy losowe to zbiór wielu drzew decyzyjnych, co pozwala na poprawę skuteczności klasyfikacji"
+    "correct_answer": "b) Modele drzew decyzyjnych opierają się na tworzeniu drzewa decyzyjnego, a lasy losowe to zbiór wielu drzew decyzyjnych, co pozwala na poprawę skuteczności klasyfikacji;"
   },
   {
     "question": "Model Perceptronu.",
     "choices": [
-      "a) Perceptron to jedynie abstrakcyjne pojęcie, nie ma praktycznego zastosowania w uczeniu maszynowym",
-      "b) Perceptron to model neuronu sztucznego, używany do klasyfikacji binarnej, który może być używany jako podstawowy element sieci neuronowych",
-      "c) Perceptron to jedynie inna nazwa dla algorytmu k-NN"
+      "a) Perceptron to jedynie abstrakcyjne pojęcie, nie ma praktycznego zastosowania w uczeniu maszynowym;",
+      "b) Perceptron to jedynie inna nazwa dla algorytmu k-NN;",
+      "c) Perceptron to model neuronu sztucznego, używany do klasyfikacji binarnej, który może być używany jako podstawowy element sieci neuronowych"
     ],
-    "correct_answer": "b) Perceptron to model neuronu sztucznego, używany do klasyfikacji binarnej, który może być używany jako podstawowy element sieci neuronowych"
+    "correct_answer": "c) Perceptron to model neuronu sztucznego, używany do klasyfikacji binarnej, który może być używany jako podstawowy element sieci neuronowych"
   }
 ]

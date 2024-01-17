@@ -107,7 +107,8 @@
             var correctCount = 0;
 
             for (var i = 0; i < questions.length; i++) {
-                if (userAnswers[i] === " " + correctAnswers[i]) {
+
+                if (userAnswers[i] === "\n" + correctAnswers[i]) {
                     correctCount++;
                 }
             }

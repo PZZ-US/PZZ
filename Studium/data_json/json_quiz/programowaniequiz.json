@@ -2,26 +2,26 @@
   {
     "question": "Budowa języków programowania i ich podział.",
     "choices": [
-      "a) Języki programowania buduje się zaledwie z jednego rodzaju instrukcji",
-      "b) Języki programowania są jednorodne i nie podlegają podziałowi",
-      "c) Języki programowania składają się z różnych elementów, takich jak składnia, semantyka, instrukcje; można je podzielić na wiele kategorii, takich jak języki proceduralne, obiektowe, funkcyjne itp."
+      "a) Języki programowania buduje się zaledwie z jednego rodzaju instrukcji;",
+      "b) Języki programowania są jednorodne i nie podlegają podziałowi;",
+      "c) Języki programowania składają się z różnych elementów, takich jak składnia, semantyka, instrukcje, można je podzielić na wiele kategorii, takich jak języki proceduralne, obiektowe, funkcyjne itp."
     ],
-    "correct_answer": "c) Języki programowania składają się z różnych elementów, takich jak składnia, semantyka, instrukcje; można je podzielić na wiele kategorii, takich jak języki proceduralne, obiektowe, funkcyjne itp."
+    "correct_answer": "c) Języki programowania składają się z różnych elementów, takich jak składnia, semantyka, instrukcje, można je podzielić na wiele kategorii, takich jak języki proceduralne, obiektowe, funkcyjne itp."
   },
   {
     "question": "Podstawowe typy danych, typy podzielne, literały.",
     "choices": [
-      "a) Podstawowe typy danych obejmują tylko liczby całkowite, typy podzielne to jedynie liczby zmiennoprzecinkowe, literały to jedynie litery w tekście",
-      "b) Podstawowe typy danych obejmują liczby całkowite, zmiennoprzecinkowe, znaki, typy podzielne to tablice i listy, literały to konkretne wartości wpisane bezpośrednio do programu",
+      "a) Podstawowe typy danych obejmują tylko liczby całkowite, typy podzielne to jedynie liczby zmiennoprzecinkowe, literały to jedynie litery w tekście;",
+      "b) Podstawowe typy danych obejmują liczby całkowite, zmiennoprzecinkowe, znaki, typy podzielne to tablice i listy, literały to konkretne wartości wpisane bezpośrednio do programu;",
       "c) Typy danych to jedynie zmienna i stała, typy podzielne nie istnieją, literały to jedynie komentarze w kodzie źródłowym"
     ],
-    "correct_answer": "b) Podstawowe typy danych obejmują liczby całkowite, zmiennoprzecinkowe, znaki, typy podzielne to tablice i listy, literały to konkretne wartości wpisane bezpośrednio do programu"
+    "correct_answer": "b) Podstawowe typy danych obejmują liczby całkowite, zmiennoprzecinkowe, znaki, typy podzielne to tablice i listy, literały to konkretne wartości wpisane bezpośrednio do programu;"
   },
   {
     "question": "Metoda siłowa. Zgadnij i sprawdź. Przeszukiwanie wyczerpujące.",
     "choices": [
-      "a) Metoda siłowa to jedyny sposób rozwiązywania problemów, zgadnij i sprawdź polega na losowaniu odpowiedzi, przeszukiwanie wyczerpujące to nieefektywna technika przeszukiwania danych",
-      "b) Metoda siłowa to rozwiązanie problemów za pomocą siły fizycznej, zgadnij i sprawdź to technika losowego zgadywania, przeszukiwanie wyczerpujące to skomplikowana metoda przeszukiwania zbioru danych",
+      "a) Metoda siłowa to jedyny sposób rozwiązywania problemów, zgadnij i sprawdź polega na losowaniu odpowiedzi, przeszukiwanie wyczerpujące to nieefektywna technika przeszukiwania danych;",
+      "b) Metoda siłowa to rozwiązanie problemów za pomocą siły fizycznej, zgadnij i sprawdź to technika losowego zgadywania, przeszukiwanie wyczerpujące to skomplikowana metoda przeszukiwania zbioru danych;",
       "c) Metoda siłowa to próba wszystkich możliwych rozwiązań problemu, zgadnij i sprawdź to podejście oparte na domysłach, przeszukiwanie wyczerpujące to technika analizy wszystkich możliwych kombinacji danych"
     ],
     "correct_answer": "c) Metoda siłowa to próba wszystkich możliwych rozwiązań problemu, zgadnij i sprawdź to technika analizy wszystkich możliwych kombinacji danych"
@@ -29,109 +29,109 @@
   {
     "question": "Modularyzacja programu: podprogramy. Funkcje oraz procedury. Deklaracja i definicja funkcji. Zasady wywoływania funkcji. Komunikacja z innymi podprogramami.",
     "choices": [
-      "a) Modularyzacja programu to jedynie podział kodu źródłowego na sekcje, podprogramy to jedynie procedury, deklaracja i definicja funkcji to tożsame pojęcia, zasady wywoływania funkcji nie istnieją, komunikacja z innymi podprogramami jest niemożliwa",
-      "b) Modularyzacja programu to podział na moduły, podprogramy to funkcje i procedury, deklaracja to określenie sygnatury funkcji, definicja to implementacja, zasady wywoływania funkcji obejmują przekazywanie argumentów, komunikacja z innymi podprogramami to możliwość wywoływania jednych funkcji z innych",
+      "a) Modularyzacja programu to podział na moduły, podprogramy to funkcje i procedury, deklaracja to określenie sygnatury funkcji, definicja to implementacja, zasady wywoływania funkcji obejmują przekazywanie argumentów, komunikacja z innymi podprogramami to możliwość wywoływania jednych funkcji z innych;",
+      "b) Modularyzacja programu to jedynie podział kodu źródłowego na sekcje, podprogramy to jedynie procedury, deklaracja i definicja funkcji to tożsame pojęcia, zasady wywoływania funkcji nie istnieją, komunikacja z innymi podprogramami jest niemożliwa;",
       "c) Modularyzacja programu to tylko koncepcja, podprogramy to jedynie kroki wykonywane przez program, deklaracja funkcji to jedynie opis, definicja funkcji to jedynie określenie typu danych, zasady wywoływania funkcji są przypadkowe, komunikacja z innymi podprogramami to nieistotna kwestia"
     ],
-    "correct_answer": "b) Modularyzacja programu to podział na moduły, podprogramy to funkcje i procedury, deklaracja to określenie sygnatury funkcji, definicja to implementacja, zasady wywoływania funkcji obejmują przekazywanie argumentów, komunikacja z innymi podprogramami to możliwość wywoływania jednych funkcji z innych"
+    "correct_answer": "a) Modularyzacja programu to podział na moduły, podprogramy to funkcje i procedury, deklaracja to określenie sygnatury funkcji, definicja to implementacja, zasady wywoływania funkcji obejmują przekazywanie argumentów, komunikacja z innymi podprogramami to możliwość wywoływania jednych funkcji z innych;"
   },
   {
     "question": "Dekompozycja i abstrakcja. Parametry formalne i argumenty. Parametry domyślne.",
     "choices": [
-      "a) Dekompozycja to rozkładanie programu na składniki chemiczne, abstrakcja to jedynie intelektualna koncepcja, parametry formalne to jedynie nazwy zmiennych, parametry domyślne to nieistniejące pojęcie",
-      "b) Dekompozycja to podział programu na mniejsze części, abstrakcja to proces ukrywania szczegółów implementacyjnych, parametry formalne to nazwy argumentów, parametry domyślne to wartości, które są używane, jeśli nie podano innych",
+      "a) Dekompozycja to podział programu na mniejsze części, abstrakcja to proces ukrywania szczegółów implementacyjnych, parametry formalne to nazwy argumentów, parametry domyślne to wartości, które są używane, jeśli nie podano innych;",
+      "b) Dekompozycja to rozkładanie programu na składniki chemiczne, abstrakcja to jedynie intelektualna koncepcja, parametry formalne to jedynie nazwy zmiennych, parametry domyślne to nieistniejące pojęcie;",
       "c) Dekompozycja to jedynie koncepcja, abstrakcja to unikanie implementacji, parametry formalne to jedynie wartości, parametry domyślne to wartości wprowadzone automatycznie przez kompilator"
     ],
-    "correct_answer": "b) Dekompozycja to podział programu na mniejsze części, abstrakcja to proces ukrywania szczegółów implementacyjnych, parametry formalne to nazwy argumentów, parametry domyślne to wartości, które są używane, jeśli nie podano innych"
+    "correct_answer": "a) Dekompozycja to podział programu na mniejsze części, abstrakcja to proces ukrywania szczegółów implementacyjnych, parametry formalne to nazwy argumentów, parametry domyślne to wartości, które są używane, jeśli nie podano innych;"
   },
   {
     "question": "Zasięg i jego funkcja. Zmienne lokalne i globalne.",
     "choices": [
-      "a) Zasięg to jedynie zasięg widoczności programu w danym środowisku, zmienne lokalne i globalne to tożsame pojęcia",
-      "b) Zasięg określa zakres widoczności zmiennych, zmienne lokalne są dostępne tylko wewnątrz bloku kodu, zmienne globalne są dostępne wszędzie",
+      "a) Zasięg to jedynie zasięg widoczności programu w danym środowisku, zmienne lokalne i globalne to tożsame pojęcia;",
+      "b) Zasięg określa zakres widoczności zmiennych, zmienne lokalne są dostępne tylko wewnątrz bloku kodu, zmienne globalne są dostępne wszędzie;",
       "c) Zasięg to jedynie koncepcja, zmienne lokalne to jedynie zmienne typu lokalnego, zmienne globalne to zmienne dostępne globalnie w systemie"
     ],
-    "correct_answer": "b) Zasięg określa zakres widoczności zmiennych, zmienne lokalne są dostępne tylko wewnątrz bloku kodu, zmienne globalne są dostępne wszędzie"
+    "correct_answer": "b) Zasięg określa zakres widoczności zmiennych, zmienne lokalne są dostępne tylko wewnątrz bloku kodu, zmienne globalne są dostępne wszędzie;"
   },
   {
     "question": "Stos i jego funkcja.",
     "choices": [
-      "a) Stos to jedynie miejsce do przechowywania danych, jego funkcja polega na zbieraniu informacji",
-      "b) Stos to struktura danych, jego funkcja obejmuje przechowywanie lokalnych zmiennych i informacji o wywołanych funkcjach",
+      "a) Stos to struktura danych, jego funkcja obejmuje przechowywanie lokalnych zmiennych i informacji o wywołanych funkcjach;",
+      "b) Stos to jedynie miejsce do przechowywania danych, jego funkcja polega na zbieraniu informacji;",
       "c) Stos to jedynie koncepcja, jego funkcja to jedynie śledzenie kolejności wykonania programu"
     ],
-    "correct_answer": "b) Stos to struktura danych, jego funkcja obejmuje przechowywanie lokalnych zmiennych i informacji o wywołanych funkcjach"
+    "correct_answer": "a) Stos to struktura danych, jego funkcja obejmuje przechowywanie lokalnych zmiennych i informacji o wywołanych funkcjach;"
   },
   {
     "question": "Programowanie defensywne. Wyjątki.",
     "choices": [
-      "a) Programowanie defensywne to jedynie troska o wydajność programu, wyjątki to tylko błędy w kodzie",
-      "b) Programowanie defensywne to podejście polegające na zapobieganiu błędom i nieprawidłowym sytuacjom, wyjątki to sytuacje wyjątkowe, które można obsłużyć w kodzie",
-      "c) Programowanie defensywne to jedynie używanie firewalów, wyjątki to jedynie nieprawidłowe zachowanie programu"
+      "a) Programowanie defensywne to jedynie troska o wydajność programu, wyjątki to tylko błędy w kodzie;",
+      "b) Programowanie defensywne to jedynie używanie firewalów, wyjątki to jedynie nieprawidłowe zachowanie programu;",
+      "c) Programowanie defensywne to podejście polegające na zapobieganiu błędom i nieprawidłowym sytuacjom, wyjątki to sytuacje wyjątkowe, które można obsłużyć w kodzie"
     ],
-    "correct_answer": "b) Programowanie defensywne to podejście polegające na zapobieganiu błędom i nieprawidłowym sytuacjom, wyjątki to sytuacje wyjątkowe, które można obsłużyć w kodzie"
+    "correct_answer": "c) Programowanie defensywne to podejście polegające na zapobieganiu błędom i nieprawidłowym sytuacjom, wyjątki to sytuacje wyjątkowe, które można obsłużyć w kodzie"
   },
   {
     "question": "Testowanie oprogramowania. Testy strukturalne i funkcjonalne.",
     "choices": [
-      "a) Testowanie oprogramowania to jedynie sprawdzanie, czy program działa poprawnie, testy strukturalne i funkcjonalne to tożsame pojęcia",
-      "b) Testowanie oprogramowania to proces oceny jakości i poprawności programu, testy strukturalne obejmują testowanie poszczególnych komponentów, a testy funkcjonalne sprawdzają zgodność programu z wymaganiami",
+      "a) Testowanie oprogramowania to jedynie sprawdzanie, czy program działa poprawnie, testy strukturalne i funkcjonalne to tożsame pojęcia;",
+      "b) Testowanie oprogramowania to proces oceny jakości i poprawności programu, testy strukturalne obejmują testowanie poszczególnych komponentów, a testy funkcjonalne sprawdzają zgodność programu z wymaganiami;",
       "c) Testowanie oprogramowania to jedynie zadanie programisty, testy strukturalne to jedynie testowanie struktury kodu, testy funkcjonalne to jedynie testowanie funkcji programu"
     ],
-    "correct_answer": "b) Testowanie oprogramowania to proces oceny jakości i poprawności programu, testy strukturalne obejmują testowanie poszczególnych komponentów, a testy funkcjonalne sprawdzają zgodność programu z wymaganiami"
+    "correct_answer": "b) Testowanie oprogramowania to proces oceny jakości i poprawności programu, testy strukturalne obejmują testowanie poszczególnych komponentów, a testy funkcjonalne sprawdzają zgodność programu z wymaganiami;"
   },
   {
     "question": "Błędy i ich podział.",
     "choices": [
-      "a) Błędy to jedynie sytuacje nieprawidłowe, ich podział to jedynie błędy składniowe i logiczne",
-      "b) Błędy to sytuacje, w których program nie działa poprawnie, podział obejmuje błędy kompilacji, wykonania i logiczne",
+      "a) Błędy to jedynie sytuacje nieprawidłowe, ich podział to jedynie błędy składniowe i logiczne;",
+      "b) Błędy to sytuacje, w których program nie działa poprawnie, podział obejmuje błędy kompilacji, wykonania i logiczne;",
       "c) Błędy to jedynie koncepcja, ich podział to jedynie błędy w kodzie i w działaniu programu"
     ],
-    "correct_answer": "b) Błędy to sytuacje, w których program nie działa poprawnie, podział obejmuje błędy kompilacji, wykonania i logiczne"
+    "correct_answer": "b) Błędy to sytuacje, w których program nie działa poprawnie, podział obejmuje błędy kompilacji, wykonania i logiczne;"
   },
   {
     "question": "Dziel i zwyciężaj. Rekurencja. Przypadek podstawowy i część indukcyjna. Przykłady.",
     "choices": [
-      "a) Dziel i zwyciężaj to jedynie hasło motywacyjne, rekurencja to jedynie powtarzanie kodu, przypadki podstawowe i indukcyjne to jedynie koncepcje matematyczne",
-      "b) Dziel i zwyciężaj to podejście polegające na rozwiązaniu dużego problemu poprzez podzielenie go na mniejsze, rekurencja to wywoływanie samej siebie, przypadek podstawowy to warunek zakończenia rekurencji, a część indukcyjna to krok, który prowadzi do rozwiązania problemu",
-      "c) Dziel i zwyciężaj to jedynie hasło reklamowe, rekurencja to technika przekazywania danych, przypadki podstawowe i indukcyjne to jedynie skomplikowane pojęcia matematyczne"
+      "a) Dziel i zwyciężaj to jedynie hasło motywacyjne, rekurencja to jedynie powtarzanie kodu, przypadki podstawowe i indukcyjne to jedynie koncepcje matematyczne;",
+      "b) Dziel i zwyciężaj to jedynie hasło reklamowe, rekurencja to technika przekazywania danych, przypadki podstawowe i indukcyjne to jedynie skomplikowane pojęcia matematyczne;",
+      "c) Dziel i zwyciężaj to podejście polegające na rozwiązaniu dużego problemu poprzez podzielenie go na mniejsze, rekurencja to wywoływanie samej siebie, przypadek podstawowy to warunek zakończenia rekurencji, a część indukcyjna to krok, który prowadzi do rozwiązania problemu"
       ],
-      "correct_answer": "b) Dziel i zwyciężaj to podejście polegające na rozwiązaniu dużego problemu poprzez podzielenie go na mniejsze, rekurencja to wywoływanie samej siebie, przypadek podstawowy to warunek zakończenia rekurencji, a część indukcyjna to krok, który prowadzi do rozwiązania problemu"
+      "correct_answer": "c) Dziel i zwyciężaj to podejście polegające na rozwiązaniu dużego problemu poprzez podzielenie go na mniejsze, rekurencja to wywoływanie samej siebie, przypadek podstawowy to warunek zakończenia rekurencji, a część indukcyjna to krok, który prowadzi do rozwiązania problemu"
       },
       {
       "question": "Programowanie zorientowane obiektowo. Obiekty i ich identyfikatory, typy, tożsamość, stan. Instancje. Funkcje klas i metody instancji. Klasy abstrakcyjne.",
       "choices": [
-      "a) Programowanie zorientowane obiektowo to jedynie koncepcja, obiekty to jedynie miejsca przechowywania danych, identyfikatory to jedynie nazwy zmiennych, typy i tożsamość nie mają znaczenia, stan to jedynie moment w czasie, instancje to jedynie przypadki testowe, funkcje klas i metody instancji to tożsame pojęcia, klasy abstrakcyjne to zbędna koncepcja",
-      "b) Programowanie zorientowane obiektowo to podejście polegające na modelowaniu rzeczywistego świata za pomocą obiektów, obiekty mają identyfikatory, typy, tożsamość i stan, instancje to konkretni przedstawiciele obiektów, funkcje klas i metody instancji to różne kategorie funkcji, klasy abstrakcyjne to klasy, które nie mają instancji",
+      "a) Programowanie zorientowane obiektowo to podejście polegające na modelowaniu rzeczywistego świata za pomocą obiektów, obiekty mają identyfikatory, typy, tożsamość i stan, instancje to konkretni przedstawiciele obiektów, funkcje klas i metody instancji to różne kategorie funkcji, klasy abstrakcyjne to klasy, które nie mają instancji;",
+      "b) Programowanie zorientowane obiektowo to jedynie koncepcja, obiekty to jedynie miejsca przechowywania danych, identyfikatory to jedynie nazwy zmiennych, typy i tożsamość nie mają znaczenia, stan to jedynie moment w czasie, instancje to jedynie przypadki testowe, funkcje klas i metody instancji to tożsame pojęcia, klasy abstrakcyjne to zbędna koncepcja;",
       "c) Programowanie zorientowane obiektowo to jedynie moda, obiekty to jedynie koncepcje, identyfikatory to jedynie oznaczenia, typy, tożsamość i stan nie są istotne, instancje to jedynie formy obiektów, funkcje klas i metody instancji to jedno i to samo, klasy abstrakcyjne to jedynie wyjątki w programowaniu"
       ],
-      "correct_answer": "b) Programowanie zorientowane obiektowo to podejście polegające na modelowaniu rzeczywistego świata za pomocą obiektów, obiekty mają identyfikatory, typy, tożsamość i stan, instancje to konkretni przedstawiciele obiektów, funkcje klas i metody instancji to różne kategorie funkcji, klasy abstrakcyjne to klasy, które nie mają instancji"
+      "correct_answer": "a) Programowanie zorientowane obiektowo to podejście polegające na modelowaniu rzeczywistego świata za pomocą obiektów, obiekty mają identyfikatory, typy, tożsamość i stan, instancje to konkretni przedstawiciele obiektów, funkcje klas i metody instancji to różne kategorie funkcji, klasy abstrakcyjne to klasy, które nie mają instancji;"
       },
       {
       "question": "Dziedziczenie. Hierarchia klas, klasy bazowe i pochodne.",
       "choices": [
-      "a) Dziedziczenie to jedynie przypadkowe podobieństwo między klasami, hierarchia klas to jedynie schemat blokowy programu, klasy bazowe i pochodne to jedynie różne sposoby deklaracji zmiennych",
-      "b) Dziedziczenie to mechanizm, który umożliwia jednej klasie korzystanie z cech innej, hierarchia klas to organizacja klas w strukturę drzewiastą, klasy bazowe zawierają podstawowe cechy, a klasy pochodne dziedziczą i rozszerzają te cechy",
-      "c) Dziedziczenie to jedynie teoretyczna koncepcja, hierarchia klas to jedynie kolejność ich deklaracji, klasy bazowe i pochodne to jedynie dwie różne nazwy dla tego samego"
+      "a) Dziedziczenie to jedynie przypadkowe podobieństwo między klasami, hierarchia klas to jedynie schemat blokowy programu, klasy bazowe i pochodne to jedynie różne sposoby deklaracji zmiennych;",
+      "b) Dziedziczenie to jedynie teoretyczna koncepcja, hierarchia klas to jedynie kolejność ich deklaracji, klasy bazowe i pochodne to jedynie dwie różne nazwy dla tego samego;",
+      "c) Dziedziczenie to mechanizm, który umożliwia jednej klasie korzystanie z cech innej, hierarchia klas to organizacja klas w strukturę drzewiastą, klasy bazowe zawierają podstawowe cechy, a klasy pochodne dziedziczą i rozszerzają te cechy"
       ],
-      "correct_answer": "b) Dziedziczenie to mechanizm, który umożliwia jednej klasie korzystanie z cech innej, hierarchia klas to organizacja klas w strukturę drzewiastą, klasy bazowe zawierają podstawowe cechy, a klasy pochodne dziedziczą i rozszerzają te cechy"
+      "correct_answer": "c) Dziedziczenie to mechanizm, który umożliwia jednej klasie korzystanie z cech innej, hierarchia klas to organizacja klas w strukturę drzewiastą, klasy bazowe zawierają podstawowe cechy, a klasy pochodne dziedziczą i rozszerzają te cechy"
       },
       {
       "question": "Debugowanie, usuwanie błędów.",
       "choices": [
-      "a) Debugowanie to jedynie szukanie błędów w kodzie, usuwanie błędów to jedynie ich zignorowanie",
-      "b) Debugowanie to proces znajdowania, analizy i naprawy błędów w kodzie źródłowym, usuwanie błędów to eliminowanie ich z programu",
+      "a) Debugowanie to jedynie szukanie błędów w kodzie, usuwanie błędów to jedynie ich zignorowanie;",
+      "b) Debugowanie to proces znajdowania, analizy i naprawy błędów w kodzie źródłowym, usuwanie błędów to eliminowanie ich z programu;",
       "c) Debugowanie to jedynie testowanie programu, usuwanie błędów to jedynie przenoszenie ich do innej części kodu"
       ],
-      "correct_answer": "b) Debugowanie to proces znajdowania, analizy i naprawy błędów w kodzie źródłowym, usuwanie błędów to eliminowanie ich z programu"
+      "correct_answer": "b) Debugowanie to proces znajdowania, analizy i naprawy błędów w kodzie źródłowym, usuwanie błędów to eliminowanie ich z programu;"
       },
       {
       "question": "Polimorfizm. Przeciążanie operatorów. Rzutowanie.",
       "choices": [
-      "a) Polimorfizm to jedynie abstrakcyjne pojęcie, przeciążanie operatorów to jedynie zmiana znaczenia operatorów, rzutowanie to jedynie zamiana typów danych",
-      "b) Polimorfizm to zdolność jednego rodzaju obiektu do przyjmowania różnych form, przeciążanie operatorów to możliwość nadawania różnych znaczeń operatorom w zależności od kontekstu, rzutowanie to konwersja jednego typu danych na inny",
+      "a) Polimorfizm to zdolność jednego rodzaju obiektu do przyjmowania różnych form, przeciążanie operatorów to możliwość nadawania różnych znaczeń operatorom w zależności od kontekstu, rzutowanie to konwersja jednego typu danych na inny;", 
+      "b) Polimorfizm to jedynie abstrakcyjne pojęcie, przeciążanie operatorów to jedynie zmiana znaczenia operatorów, rzutowanie to jedynie zamiana typów danych;",
       "c) Polimorfizm to jedynie unikanie stosowania operatorów, przeciążanie operatorów to nieprawidłowe użycie operatorów, rzutowanie to tylko zrozumienie programu"
       ],
-      "correct_answer": "b) Polimorfizm to zdolność jednego rodzaju obiektu do przyjmowania różnych form, przeciążanie operatorów to możliwość nadawania różnych znaczeń operatorom w zależności od kontekstu, rzutowanie to konwersja jednego typu danych na inny"
+      "correct_answer": "a) Polimorfizm to zdolność jednego rodzaju obiektu do przyjmowania różnych form, przeciążanie operatorów to możliwość nadawania różnych znaczeń operatorom w zależności od kontekstu, rzutowanie to konwersja jednego typu danych na inny;"
       }
 ]

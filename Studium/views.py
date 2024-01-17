@@ -80,7 +80,7 @@ def update_quiz_and_progress(request):
                         user=request.user,
                         category=category,
                         category_type='quiz',
-                        progress__lt=100,
+                        progress__lt=101,
                         defaults={'progress': new_progress}
                     )
 
@@ -281,7 +281,8 @@ def my_result(request):
             return JsonResponse({'error': 'Database error: {}'.format(str(e))}, status=500)
 
     else:
-        user_progresses = UserProgress.objects.filter(user=request.user, progress__gt=0)
+
+        user_progresses = UserProgress.objects.filter(user=request.user, progress__gt=-1)
         user_answers = UserAnswers.objects.filter(user=request.user)
 
         context = {
